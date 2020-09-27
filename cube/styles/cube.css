@@ -52,6 +52,10 @@
       #cube_left .closs-btn:hover, #cube-house .closs-btn:hover {
         background-color: rgba(238, 238, 238, 0.4); } }
 
+@media screen and (max-width: 991px) {
+  #cube_left .closs-btn, #cube-house .closs-btn {
+    display: none; } }
+
 #cube_left {
   background-color: #FAFAFA;
   -webkit-box-shadow: 0 0 14px 0 rgba(204, 204, 204, 0.8);
@@ -527,7 +531,7 @@
           color: #FFF;
           background-color: rgba(0, 0, 0, 0.2); } }
 
-#map_markName, #map_search {
+#map_markName, #map_search, #cube_nav {
   position: absolute;
   z-index: 96; }
 
@@ -928,10 +932,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
               box-shadow: 0 5px 40px #8da9ff;
       color: #404040; }
   @media screen and (max-width: 991px) {
-    #cube-list .headline {
-      padding-bottom: 0;
-      margin-bottom: 0 !important;
-      border: none !important; } }
+    #cube-list {
+      padding: 80px 10px 20px; }
+      #cube-list .headline {
+        padding-bottom: 0;
+        margin-bottom: 0 !important;
+        border: none !important; } }
   @media screen and (max-width: 767px) {
     #cube-list {
-      padding: 40px 20px; } }
+      padding: 60px 10px 20px; }
+      #cube-list .paperblock {
+        width: 100%; }
+        #cube-list .paperblock .house-data_item {
+          margin: 20px 0; } }
