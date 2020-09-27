@@ -80,13 +80,30 @@
       #cube_left > * {
         padding-left: 20px;
         padding-right: 20px; } }
-  @media screen and (max-width: 1440px) {
+  #cube_left .cube_search_form {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 -10px; }
+    @media screen and (max-width: 991px) {
+      #cube_left .cube_search_form {
+        padding-left: 5px;
+        padding-right: 5px; } }
+  @media screen and (min-width: 992px) {
     #cube_left {
       padding-top: 40px;
-      padding-bottom: 40px; } }
-  @media screen and (min-width: 992px) {
-    #cube_left.close {
-      left: -100%; } }
+      padding-bottom: 40px; }
+      #cube_left.close {
+        left: -100%; } }
+  @media screen and (max-width: 1199px) {
+    #cube_left {
+      z-index: 9999; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #cube_left {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      #cube_left > * {
+        padding-left: 30px;
+        padding-right: 30px; } }
   @media screen and (max-width: 991px) {
     #cube_left {
       padding: 30px; }
@@ -110,14 +127,18 @@
     margin-top: 80px;
     position: relative; } }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .cube_search {
-    height: calc(100% - (45px + 40px));
-    margin-top: 40px; } }
+    height: calc(100% - (45px + 30px));
+    margin-top: 30px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .cube_search {
+    height: calc(100% - 75px); } }
 
 @media screen and (max-width: 1199px) {
   .cube_search {
-    margin-top: 40px; } }
+    margin-top: 30px; } }
 
 @media screen and (max-width: 991px) {
   .cube_search {
@@ -135,10 +156,9 @@
     height: 36px; } }
 
 .cube_search_form {
-  height: calc(100% - 70px);
-  margin-bottom: 20px;
+  height: calc(100% - 46px);
   overflow-y: auto; }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     .cube_search_form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -904,15 +924,38 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     height: 100%; }
 
 #cube-list {
-  padding: 80px 5% 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 120px 5% 60px;
   background-color: rgba(239, 239, 239, 0.5);
   overflow-y: auto; }
+  #cube-list .paperblock {
+    width: calc(50% - 10px); }
+    #cube-list .paperblock .house-data_item .headline {
+      width: 100%;
+      border: none;
+      padding-right: 0; }
   #cube-list .house-data_item {
     padding: 15px;
     background-color: #fff;
     -webkit-box-shadow: 0 5px 40px #DBE4FF;
             box-shadow: 0 5px 40px #DBE4FF;
-    margin: 30px 0; }
+    margin: 20px 10px;
+    -webkit-transition: box-shadow 0.25s ease-in-out;
+    -webkit-transition: -webkit-box-shadow 0.25s ease-in-out;
+    transition: -webkit-box-shadow 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out; }
+    #cube-list .house-data_item:hover {
+      -webkit-box-shadow: 0 5px 40px #8da9ff;
+              box-shadow: 0 5px 40px #8da9ff;
+      color: #404040; }
   @media screen and (max-width: 991px) {
     #cube-list .headline {
       padding-bottom: 0;

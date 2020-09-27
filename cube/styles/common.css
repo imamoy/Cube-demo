@@ -151,9 +151,14 @@ img {
 
 .main-scrollbar::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: #DEDEDE;
+  background: transparent;
   -webkit-box-shadow: 0 0 0 0; }
   .main-scrollbar::-webkit-scrollbar-thumb:window-inactive {
+    background: transparent; }
+
+.main-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #DEDEDE; }
+  .main-scrollbar:hover::-webkit-scrollbar-thumb:window-inactive {
     background: #DEDEDE; }
 
 .pop::-webkit-scrollbar {
@@ -2994,18 +2999,21 @@ header {
       color: #0050E6 !important; }
     header .menu .nav a:hover {
       color: #0050E6 !important; } }
+  @media screen and (max-width: 1199px) {
+    header .menu .nav {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 20%; }
+      header .menu .nav li {
+        margin: 20px 0; } }
   @media screen and (max-width: 767px) {
     header .menu.active {
       width: 100%;
       padding: 5% 0; }
     header .menu .nav {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       margin: 5% 0;
       padding: 0; }
-      header .menu .nav li {
-        margin: 20px 0; }
     header .menu .login-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3095,6 +3103,10 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #header_mini .menu.active {
+    left: 300px; } }
+
 @media screen and (max-width: 991px) {
   #header_mini .logo {
     width: 80vw; }
@@ -3181,13 +3193,16 @@ a.main-color {
 
 .l-pageFill_left {
   z-index: 50; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     .l-pageFill_left {
       position: fixed;
       left: 0;
       top: 0;
       width: 360px;
       height: 100%; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .l-pageFill_left {
+      width: 300px; } }
   @media screen and (max-width: 991px) {
     .l-pageFill_left {
       z-index: 1; } }
