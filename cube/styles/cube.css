@@ -944,21 +944,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       -webkit-box-shadow: 0 5px 40px #8da9ff;
               box-shadow: 0 5px 40px #8da9ff;
       color: #404040; }
+  @media screen and (max-width: 1199px) {
+    #cube-list .paperblock {
+      width: 100%; }
+      #cube-list .paperblock .house-data_item {
+        margin: 20px 0; } }
   @media screen and (max-width: 991px) {
     #cube-list {
       padding: 80px 10px 20px; }
-      #cube-list .paperblock {
-        width: 100%; }
-        #cube-list .paperblock .house-data_item {
-          margin: 20px 0; }
       #cube-list .headline {
         padding-bottom: 0;
         margin-bottom: 0 !important;
         border: none !important; } }
   @media screen and (max-width: 767px) {
     #cube-list {
-      padding: 60px 10px 20px; }
-      #cube-list .paperblock {
-        width: 100%; }
-        #cube-list .paperblock .house-data_item {
-          margin: 20px 0; } }
+      padding: 60px 10px 20px; } }

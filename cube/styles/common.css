@@ -3236,7 +3236,8 @@ a.main-color {
       z-index: 1; } }
 
 .l-pageFill_main {
-  height: 100vh; }
+  height: 100vh;
+  overflow-x: hidden; }
   @media screen and (min-width: 1200px) {
     .l-pageFill_main {
       width: calc(100% - 360px);
