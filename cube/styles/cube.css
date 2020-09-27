@@ -111,13 +111,17 @@
     #cube_left {
       padding: 30px; }
       #cube_left > * {
-        padding: 0 0; } }
+        padding: 0 0; }
+      #cube_left .cube_search_form {
+        padding-left: 10px !important;
+        padding-right: 10px !important; } }
   @media screen and (max-width: 479px) {
     #cube_left {
       padding: 20px 20px 16px; }
       #cube_left > * {
         padding: 0; }
       #cube_left.active {
+        height: 100vh;
         position: relative;
         z-index: 9999; } }
   #cube_left .closs-btn {
@@ -177,7 +181,7 @@
   @media screen and (max-width: 479px) {
     .cube_search_form {
       display: block;
-      height: calc(100vh - 217px); }
+      height: calc(100vh - 200px); }
       .cube_search_form .form-row {
         width: 100%; } }
   @media screen and (max-width: 600px) {
@@ -236,8 +240,10 @@
       #cube-house.l-pageFill_right.active {
         display: block;
         width: 100%;
-        top: 150px;
-        opacity: 1; }
+        top: auto;
+        opacity: 1;
+        bottom: 0;
+        height: 50vh; }
       #cube-house.l-pageFill_right .top, #cube-house.l-pageFill_right .btm {
         padding: 14px 30px; }
       #cube-house.l-pageFill_right .btm {
@@ -268,16 +274,20 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        font-size: 24px;
+        font-size: 10px;
         width: 40px;
         height: 40px;
         border-radius: 50%;
         background-color: #0050E6;
         z-index: 50;
         position: absolute;
-        top: 20px;
-        right: 30px; } }
+        top: -20px;
+        right: 10px;
+        padding-right: 2px; } }
   @media screen and (max-width: 767px) {
+    #cube-house.l-pageFill_right .btm {
+      padding-left: 14px;
+      padding-right: 10px; }
     #cube-house.l-pageFill_right .cube-house_item {
       display: block;
       width: 100%;
@@ -285,8 +295,7 @@
       padding: 20px 0; } }
   @media screen and (max-width: 479px) {
     #cube-house.l-pageFill_right {
-      height: 58vh;
-      overflow: hidden; }
+      height: 58vh; }
       #cube-house.l-pageFill_right .cube-house_item {
         padding: 10px 0; }
         #cube-house.l-pageFill_right .cube-house_item:first-child {
@@ -294,14 +303,12 @@
       #cube-house.l-pageFill_right .cube_house_close {
         width: 28px;
         height: 28px;
-        top: 14px; }
+        top: -14px; }
       #cube-house.l-pageFill_right .top {
-        padding: 14px 30px 20px; }
+        padding: 14px 16px 20px; }
       #cube-house.l-pageFill_right .btm {
-        height: calc(100% - 155px);
-        overflow-y: auto; }
-      #cube-house.l-pageFill_right.active {
-        top: 42vh; } }
+        height: calc(100% - 130px);
+        overflow-y: auto; } }
 
 .cube-house_nav {
   display: -webkit-box;
@@ -896,7 +903,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 #cube-map, #cube-list {
   width: 100%; }
   #cube-map.cutover-in.show, #cube-list.cutover-in.show {
-    height: 100%; }
+    height: 100%;
+    z-index: 90; }
 
 #cube-list {
   display: -webkit-box;
