@@ -464,6 +464,7 @@
     margin-left: 0; }
 
 .map_area {
+  overflow: hidden;
   position: relative;
   z-index: 40; }
   @media screen and (min-width: 992px) {
@@ -933,7 +934,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 120px 5% 60px;
+  padding: 120px 2.6% 60px;
   background-color: rgba(239, 239, 239, 0.5);
   overflow-y: auto; }
   #cube-list .paperblock {
