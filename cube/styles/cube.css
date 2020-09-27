@@ -963,7 +963,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       -webkit-box-shadow: 0 5px 40px #8da9ff;
               box-shadow: 0 5px 40px #8da9ff;
       color: #404040; }
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1680px) {
     #cube-list .paperblock {
       width: calc(50% - 10px); } }
   @media screen and (max-width: 1199px) {
