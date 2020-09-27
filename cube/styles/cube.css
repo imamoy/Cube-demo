@@ -934,9 +934,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 120px 2.6% 20px;
+  padding: 120px 1.8% 20px;
   background-color: rgba(239, 239, 239, 0.5);
   overflow-y: auto; }
+  @media screen and (max-width: 1680px) {
+    #cube-list {
+      padding: 120px 2.6% 20px; } }
   #cube-list .paperblock {
     width: calc(50% - 10px); }
     #cube-list .paperblock .house-data_item .headline {

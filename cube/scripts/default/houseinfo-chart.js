@@ -3,7 +3,7 @@ var circle1 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoom: {
+    zoomed: {
       enabled: false
     }
   },
@@ -44,7 +44,7 @@ var circle2 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoom: {
+    zoomed: {
       enabled: false
     }
   },
@@ -85,7 +85,7 @@ var circle3 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoom: {
+    zoomed: {
       enabled: false
     }
   },
@@ -127,7 +127,7 @@ var circle4 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoom: {
+    zoomed: {
       enabled: false
     }
   },
@@ -183,7 +183,7 @@ var houseinfo_chart1 = {
     {name: '實價登錄', data: [, 65, 60, 70, 75, 87, 105, 91, 114, 94, 80]}, 
     {name: '估價', data: [, 35, 41, 36, 26, 45, 48, 52, 53, 41,70]}
   ],
-  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, zoom: {
+  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, zoomed: {
     enabled: false
   }},
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
@@ -197,14 +197,7 @@ var houseinfo_chart1 = {
   },
   yaxis: {title: {text: '單價(萬)'}},
   fill: {opacity: 1},
-  tooltip: {
-    enabled: true,
-    y: {
-      formatter: function (val) {
-        return "單價" + val + " 萬"
-      }
-    }
-  }
+  tooltip: {enabled: false}
 };
 
 var chart = new ApexCharts(document.querySelector("#houseinfo1_chart1"), houseinfo_chart1);
@@ -222,7 +215,7 @@ var houseinfo_chart2 = {
     {name: '實價登錄', data: [, 65, 60, 70, 75, 87, 105, 91, 114, 94, 80]}, 
     {name: '估價', data: [, 35, 41, 36, 26, 45, 48, 52, 53, 41,70]}
   ],
-  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, zoom: {
+  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, zoomed: {
     enabled: false
   }},
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
@@ -269,7 +262,7 @@ var houseinfo2_chart1 = {
     sparkline: {
         enabled: false,
     },
-    zoom: {
+    zoomed: {
       enabled: false
     },
     height: 300 ,toolbar: {show: false},
@@ -313,7 +306,7 @@ var houseinfo2_chart2 = {
     sparkline: {
         enabled: false,
     },
-    zoom: {
+    zoomed: {
       enabled: false
     },
     height: 300 ,toolbar: {show: false},
@@ -343,7 +336,7 @@ var houseinfo2_chart3 = {
     sparkline: {
         enabled: false,
     },
-    zoom: {
+    zoomed: {
       enabled: false
     },
     height: 300 ,toolbar: {show: false},
@@ -392,7 +385,7 @@ var houseinfoData_chartA1 = {
   series: [
   {name: "市場貸款平均值",data: [0,10,20,30,40,50,60],type: 'line'},
   {name: "市場貸款負擔率",data: [12, 11, 14, 40, 42, 50,20],type: 'line'}],
-  chart: {height: 180,zoom: {enabled: false}, toolbar: {show: false}, zoom: {
+  chart: {height: 180,zoomed: {enabled: false}, toolbar: {show: false}, zoomed: {
     enabled: false
   }},
   stroke: {width: 3,curve: ['straight','smooth'],dashArray: [4, 0]},
@@ -408,9 +401,9 @@ var houseinfoData_chartA2 = {
   colors: ["#FF9C01"],
   series: [
   {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
-  chart: {height: 180,zoom: {enabled: false},
+  chart: {height: 180,zoomed: {enabled: false},
   toolbar: {show: false},
-  zoom: {
+  zoomed: {
     enabled: false
   }
   },
@@ -439,9 +432,9 @@ var houseinfoData_chartA3 = {
   colors: ["#FF9C01"],
   series: [
   {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
-  chart: {height: 180,zoom: {enabled: false},
+  chart: {height: 180,zoomed: {enabled: false},
   toolbar: {show: false},
-  zoom: {
+  zoomed: {
     enabled: false
   }
   },
@@ -473,7 +466,7 @@ var houseinfoData_chartB1 = {
     {data: [50,80,10,85,100]},
     {data: [60,21,70,80,35]}
   ],
-  chart: { type: 'bar', height: 230 ,toolbar: {show: false}, zoom: {
+  chart: { type: 'bar', height: 230 ,toolbar: {show: false}, zoomed: {
     enabled: false
   }},
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
@@ -495,7 +488,7 @@ var houseinfoData_chartB2 = {
   series: [
     {data: [60,80,70,85,100]},
   ],
-  chart: { type: 'bar', height: 210 ,toolbar: {show: false}, zoom: {
+  chart: { type: 'bar', height: 210 ,toolbar: {show: false}, zoomed: {
     enabled: false
   }},
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
@@ -523,7 +516,7 @@ var houseinfoData_chartB3 = {
   series: [
     {data: [60,80,70,85,100]},
   ],
-  chart: { type: 'bar', height: 210 ,toolbar: {show: false}, zoom: {
+  chart: { type: 'bar', height: 210 ,toolbar: {show: false}, zoomed: {
     enabled: false
   }},
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},

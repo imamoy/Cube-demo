@@ -332,6 +332,7 @@ $(document).ready(function () {
 			$('.houseinfo-dataInfo').addClass('active');
 		});
 	});
+	
 	$('.houseinfo-dataInfo .close').click(function(){
 		$('.houseinfo-dataInfo').removeClass('active');
 	});
