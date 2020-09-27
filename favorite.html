@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CM2 CUBE智能找房</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/favorite.css">
+  </head>
+  <body>
+    <header class="wow fadeInDown" id="header">
+      <div class="logo logo_cm2cube"><a href="index.html"><em class="hidden">CUBE智能找房</em></a></div>
+      <div class="right">
+        <div class="login-row mobile-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+        <div class="lang-btn"><i class="icon-global"></i>
+          <ul class="nostyle lang-menu">
+            <li><a href="">繁體中文</a></li>
+            <li><a href="">English</a></li>
+          </ul>
+        </div>
+        <div class="menu-toggle"><i class="icon-menu"></i></div>
+        <div class="menu">
+          <div class="menu-close"><i class="icon-cancel"></i></div>
+          <ul class="nav">
+                        <li><a class="animsition-link" href="index.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-ai-house"></i></span><span class="nav_item">智能搜房</span></a></li>
+                        <li><a class="animsition-link" href="cube.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-house-map"></i></span><span class="nav_item">地圖找房</span></a></li>
+                        <li><a class="animsition-link" href="favorite.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的收藏</span></a></li>
+                        <li><a class="animsition-link" href="report.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的報告</span></a></li>
+            <li>
+              <div class="login-row pc-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="favorite" id="favorite">
+      <div class="favorite-top">
+        <div class="container-full">
+          <h2 class="favorite-title">   <span class="icon"><i class="icon-like"></i></span><span class="title">我的收藏</span></h2>
+          <ul class="nostyle tag-rowbox">
+            <li>
+              <div class="tagrow-item active"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+            <li>
+              <div class="tagrow-item active"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+            <li>
+              <div class="tagrow-item"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+            <li>
+              <div class="tagrow-item"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+            <li>
+              <button class="tag-btn"><i class="icon-filter"></i></button>
+              <div class="tag-btn-inner">
+                <ul class="nostyle tag-rowbox">
+                  <li>
+                    <div class="tagrow-item active"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+                  </li>
+                  <li>
+                    <div class="tagrow-item active"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+                  </li>
+                  <li>
+                    <div class="tagrow-item"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+                  </li>
+                  <li>
+                    <div class="tagrow-item"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="flex-center">
+            <button class="tags-edit-btn btn-nostyle"><i class="icon icon-tag"></i><span>管理標籤</span></button><span style="display:block;margin: 0 10px;color:#DEDEDE;">|</span>
+            <div class="input-select select_under-line">
+              <label class="label"><span class="name">排序依據</span></label>
+              <div class="pure_select_underline ping" style="width:100px;">
+                <select>
+                  <option value="">最近創建</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="favorite-inner">
+        <div class="container flex-row jc-center">
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>介壽華廈低公設 - 明星學區</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+                    <div class="favorite-houseItem">
+                      <div class="house-title"> 
+                        <h4>立功花園漫悠美居</h4>
+                      </div>
+                      <div class="house_point d-flex jc-space-between ai-center">
+                        <div class="house_price"><span class="price_label">市價</span><span class="price">3,080</span><span class="price_unit">萬</span></div>
+                        <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                      </div>
+                      <div class="house_detail">
+                        <div class="d-flex jc-space-between ai-center mb-5">
+                          <div class="address">台北市松山區延壽街</div><span>40年</span>
+                        </div>
+                        <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></div>
+                      </div>
+                      <div class="house_btnrow d-flex jc-space-between ai-center"><a class="btn btn-fillet40 w50" href="houseinfo.html" target="_blank">前往查看</a>
+                        <button class="btn btn-fillet40 w50 edit-favorite-btn">編輯收藏</button>
+                      </div>
+                    </div>
+        </div>
+      </div>
+    </main>
+    <div class="pop pop_main" id="favorite-tagedit-pop">
+      <div class="pop_mainhead">
+        <div class="pop_title">   <span class="icon"><i class="icon-like"></i></span><span class="title">編輯收藏</span></div>
+        <div class="pop_close"><i class="icon-cancel"></i></div>
+      </div>
+      <div class="pop_maininner">
+        <div class="favorite-houseItem">
+          <div class="house-title"> 
+            <h4>健安新城裝潢三房 - 優質學區</h4>
+          </div>
+          <div class="house_point d-flex jc-space-between ai-center">
+            <div class="house_price"><span class="price_label">市價</span><span class="price">4,380</span><span class="price_unit">萬</span></div>
+            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+          </div>
+          <div class="house_detail">
+            <div class="d-flex jc-space-between ai-center mb-5">
+              <div class="address">台北市松山區三民路</div><span>12.7年</span>
+            </div>
+            <div class="d-flex jc-space-between ai-center"><span>電梯大樓</span><span>61.21坪</span><span>3房2廳2衛</span></div>
+          </div>
+        </div>
+        <div class="pop-line"></div>
+        <form action="">
+          <div class="has-iconInput"><i class="icon-tag"></i>
+            <input type="text" placeholder="新增一個Tag...">
+          </div><b style="margin:14px 0 10px;display:block;font-size:18px;">已標記的標籤</b>
+          <ul class="nostyle tag-rowbox">
+            <li>
+              <div class="tagrow-item active"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+            <li>
+              <div class="tagrow-item active"><i class="icon"></i><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+          </ul>
+          <div class="house_btnrow d-flex jc-space-between ai-center mt-20">
+            <button class="btn btn-fillet40 btn-border-primary mr-10" style="border-radius:40px!important;">刪除</button>
+            <button class="btn btn-fillet40 btn-border-primary" style="border-radius:40px!important;">取消</button>
+            <button class="btn btn-fillet40 btn-primary-dp ml-10" style="border-radius:40px!important;">儲存</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="cursor"></div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="cube/scripts/plugins/wow.js"></script>
+    <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
+    <script src="cube/scripts/plugins/jquery-ui.min.js"></script>
+    <script src="cube/scripts/default/compare.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop" id="sign_in">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text d-flex">
+          <h2 class="title">歡迎使用</h2><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-10" type="email" placeholder="電子郵件">
+        <input class="main-inputBorder my-10" type="password" placeholder="密碼">
+        <div class="t-center my-10"><span class="forgetpassword_toggle">忘記密碼</span></div>
+        <input class="btn main_Rbtn blue-btn" type="button" value="登入">
+        <p class="my-20 t-center">或</p>
+        <button class="facebook_login"><span class="icon mr-10"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 帳號登入</span></button>
+        <button class="google_login"><span class="icon mr-10"><img src="images/cube/google.png" alt=""></span><span>使用 Google 帳號登入</span></button>
+      </form>
+      <div class="t-center"><span>還沒有帳號嗎？</span>
+        <button class="sign_up_toggle">註冊</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="sign_up">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text"><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+          <h2 class="title">歡迎您・立即註冊！</h2>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">帳號<span class="t-red ml-5">*</span></label>
+            <input type="text" placeholder="請輸入您的帳號">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">密碼<span class="t-red ml-5">*</span></label>
+            <input type="password" placeholder="請輸入您的密碼">
+          </div>
+        </div>
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">E-mail<span class="t-red ml-5">*</span></label>
+            <input type="email" placeholder="請輸入您的E-mail">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">電話</label>
+            <input type="text" placeholder="請輸入您的電話">
+          </div>
+        </div>
+        <div class="form-row _h">
+          <label class="form_label">選擇會員身份
+            <div class="pure_select_border">
+              <select id="Identity">
+                <option value="選擇會員身份">選擇會員身份</option>
+                <option value="買家">買家</option>
+                <option value="賣家(屋主或代理人)">賣家(屋主或代理人)</option>
+                <option value="房仲(房產經紀人)">房仲(房產經紀人)</option>
+                <option value="仲介公司">仲介公司</option>
+                <option value="建商">建商</option>
+              </select>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="text_and_line">或使用社群媒體註冊</div>
+      <div class="form-row _w">
+        <button class="facebook_login"><span class="icon"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 註冊</span></button>
+        <button class="google_login"><span class="icon"><img src="images/cube/google.png" alt=""></span><span>使用 Google 註冊</span></button>
+      </div>
+      <div class="t-center"><span class="mb10" style="font-size:14px;">若建立帳戶，即表示我同意 CUBE AI 的 網站條款、隱私權政策 與 授權條款。</span></div>
+      <div class="t-center mt-10"><span>還沒有帳號嗎？</span>
+        <button class="sign_in_toggle">登入</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="forgetpassword">
+      <div class="pop_head">
+        <div class="text d-flex mb-20">
+          <h2 class="title">忘記密碼</h2>
+        </div>
+        <p>請輸入電子郵件</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-20" type="email" placeholder="電子郵件">
+        <input class="btn main_Rbtn blue-btn" type="button" value="確認">
+      </form>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop_bg"></div>
+  </body>
+</html>

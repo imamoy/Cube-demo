@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CM2 CUBE智能找房</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/houseInfo.css">
+  </head>
+  <body>
+    <header class="wow fadeInDown" id="header">
+      <div class="logo logo_cm2cube"><a href="index.html"><em class="hidden">CUBE智能找房</em></a></div>
+      <div class="right">
+        <div class="login-row mobile-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+        <div class="lang-btn"><i class="icon-global"></i>
+          <ul class="nostyle lang-menu">
+            <li><a href="">繁體中文</a></li>
+            <li><a href="">English</a></li>
+          </ul>
+        </div>
+        <div class="menu-toggle"><i class="icon-menu"></i></div>
+        <div class="menu">
+          <div class="menu-close"><i class="icon-cancel"></i></div>
+          <ul class="nav">
+                        <li><a class="animsition-link" href="index.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-ai-house"></i></span><span class="nav_item">智能搜房</span></a></li>
+                        <li><a class="animsition-link" href="cube.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-house-map"></i></span><span class="nav_item">地圖找房</span></a></li>
+                        <li><a class="animsition-link" href="favorite.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的收藏</span></a></li>
+                        <li><a class="animsition-link" href="report.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的報告</span></a></li>
+            <li>
+              <div class="login-row pc-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="house_padNav">
+      <ul class="nostyle">
+        <li><a class="anchor" href="#houseInfo_head">概況</a></li>
+        <li><a class="anchor" href="#house-ai">智能鄰舍</a></li>
+        <li><a class="anchor" href="#house-diagram">走勢圖</a></li>
+        <li><a class="anchor" href="#house-12month">未來推估</a></li>
+        <li><a class="anchor" href="#house-data">推薦</a></li>
+      </ul>
+    </div>
+    <main class="underHeader" id="houseInfo">
+      <div id="houseInfo_head">
+        <div class="container">
+          <div class="left w50 text wow fadeInLeft">
+            <h2 class="title">超級景觀朝南美屋 - 高樓超級景觀朝南美屋</h2><em class="address">台北市松山區民生東路五段</em>
+            <div class="houseInfo_head__Nav">
+              <ul class="houseInfo_cutover houseInfoPhone_cutover nostyle">
+                <li class="active notebook"><a href="#housePings"><span class="icon"><i class="icon-house_one"></i></span><span class="name">房屋資料</span></a></li>
+                <li class="active phone"><a href="#housePingsPhone"><span class="icon"><i class="icon-house_one"></i></span><span class="name">房屋資料</span></a></li>
+                <li class="phone"><a href="#house_salerentPhone"> <span class="icon"><i class="icon-moneypaper"></i></span><span class="name">房屋價值</span></a></li>
+                <li><a href="#houseBuild"> <span class="icon"><i class="icon-hand_house"></i></span><span class="name">增值建議</span></a></li>
+              </ul>
+            </div>
+            <div class="houseInfo_head_info l-half_box l-half">
+              <div class="houseInfo_cutover-in show" id="housePings"></div>
+              <div class="item l-half_w45 flex-row houseInfoPhone_cutover-in show" id="housePingsPhone">
+                <div class="w50 l-inline-label">
+                  <h5 class="label">坪數</h5><span>45坪</span>
+                </div>
+                <div class="w50 l-inline-label">
+                  <h5 class="label">屋齡</h5><span>30年</span>
+                </div>
+                <div class="w50 l-inline-label">
+                  <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                </div>
+                <div class="w50 l-inline-label">
+                  <h5 class="label">樓層</h5><span>電梯大樓 15樓</span>
+                </div>
+                <div class="w100 l-inline-label mrt_label"><span class="icon t-primary"><i class="icon icon-mrt"></i></span>
+                  <h5 class="label">距離捷運站</h5><span class="f-blue">10 </span><span>分鐘</span>
+                </div>
+                <div class="w100 l-inline-label"><span class="icon t-primary"><i class="icon-bus"></i></span>
+                  <h5 class="label">500公尺內有公車站</h5><span class="f-blue">20 </span><span>個</span>
+                </div>
+                <div class="w100 l-inline-label"><span class="icon t-primary"><i class="icon-bag"></i></span>
+                  <h5 class="label">500公尺內有百貨超市</h5><span class="f-blue">20 </span><span>個</span>
+                </div>
+              </div>
+              <div class="item l-half_w55 houseInfoPhone_cutover-in" id="house_salerentPhone">
+                <div class="w100 l-inline-label house_sale">
+                  <div class="house_price">
+                    <div class="house_price_label"><span class="icon t-primary"><i class="icon-sale"></i></span>
+                      <h5 class="price_label">買屋</h5>
+                    </div>
+                    <div class="btm">
+                      <div class="price_label">市價</div><span class="price">3,080</span><span class="price_unit">萬</span><span class="f-gary-lg price_note">(68 萬/坪)</span>
+                    </div>
+                  </div>
+                  <div class="cube_price cube_up"><span class="icon"></span><span class="text">3.24%</span></div>
+                </div>
+                <div class="w100 l-inline-label">
+                  <div class="house_price">
+                    <div class="btm">
+                      <h5 class="price_label f-gary-lg">估價</h5><span class="price f-dark">2,980</span><span class="price_unit">萬</span><span class="f-gary-lg price_note">(66 萬/坪)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w100 l-inline-label house_rent">
+                  <div class="house_price">
+                    <div class="house_price_label"><span class="icon t-secondary"><i class="icon-rent"></i></span>
+                      <h5 class="price_label">租屋</h5>
+                    </div>
+                    <div class="btm">
+                      <div class="price_label">市價</div><span class="price">20,000</span><span class="price_unit">萬</span><span class="f-gary-lg price_note">(68 萬/坪)</span>
+                    </div>
+                  </div>
+                  <div class="cube_price cube_up"><span class="icon"></span><span class="text">3.24%</span></div>
+                </div>
+                <div class="w100 l-inline-label">
+                  <div class="house_price">
+                    <div class="btm">
+                      <h5 class="price_label f-gary-lg">估價</h5><span class="price f-dark">2,980</span><span class="price_unit">萬</span><span class="f-gary-lg price_note">(68 萬/坪)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-build l-head_text houseInfo_cutover-in houseInfoPhone_cutover-in" id="houseBuild">
+                <h5 class="label mb-10">物件增值建議 <span>(買入後出租)</span></h5>
+                <form class="house-build-search">
+                  <ul class="info nostyle flex-row">
+                    <li class="flex-row ai-center mb-10"><span class="icon icon-door f-24"></span>
+                      <p class="house-build-item mx-5">房間
+                        <input type="number" value="3">房，價錢提升50萬 
+                      </p>
+                    </li>
+                    <li class="flex-row ai-center mb-10">
+                      <p class="house-build-item mx-5">
+                        <div class="form-check">
+                          <label for="check1"><span class="icon icon-balcony f-24"></span> 陽台外推，價錢提升30萬</label>
+                          <input id="check1" type="checkbox" name="check1">
+                        </div>
+                      </p>
+                    </li>
+                    <li class="flex-row ai-center mb-10"><span class="icon icon-bath f-24"></span>
+                      <p class="house-build-item mx-5">衛浴
+                        <input type="number" value="2">間，價錢提升50萬 
+                      </p>
+                    </li>
+                    <li class="flex-row ai-center mb-10">
+                      <p class="house-build-item mx-5">
+                        <div class="form-check">
+                          <label for="check2"><span class="icon icon-wall f-24"></span> 如有加建物</label>
+                          <input id="check2" type="checkbox" name="check2">
+                        </div>
+                      </p>
+                    </li>
+                  </ul>
+                  <button class="btn btn-dp">增值結果</button>
+                </form>
+                <div class="house-build-result">物件增值，價格為
+                  <div class="house_price"><span class="price">3,080</span><span class="price_unit">萬</span><span class="f-gary-lg price_note">(68 萬/坪)</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right pic wow fadeIn"><img src="images/cube/pic/house.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="bg-gary_lg py-50 wow fadeInUp" id="house-ai">
+        <div class="container l-half">
+          <div class="item l-half_w50"> 
+            <div class="title flex-row ai-center jc-space-between">
+              <div class="page-title">
+                <div class="page-title_icon"><i class="icon-ai-house"></i></div>
+                <h3 class="page-title_title"><span class="under_line">智能鄰舍</span> 跨區域相似建案</h3>
+              </div>
+              <ul class="mark-list nostyle">
+                <li><span class="color"><span class="coloritem blue-1"></span><span class="coloritem orange-1"></span></span><span class="name">過去12個月</span></li>
+                <li><span class="color"><span class="coloritem blue-2"></span><span class="coloritem orange-2"></span></span><span class="name">目前現況</span></li>
+                <li><span class="color"><span class="coloritem blue-3"></span><span class="coloritem orange-3"></span></span><span class="name">智能預估</span></li>
+              </ul>
+            </div>
+            <div class="info flex-row">
+              <div class="left paper l-half">
+                <div class="house-ai_chart l-half_w50">
+                  <div class="top">
+                    <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                  </div>
+                  <div class="btm">
+                    <div class="ai_chart--range">
+                      <div class="max"><span class="label">MAX</span> 40</div>
+                      <div class="min"><span class="label">MIN</span> 20</div>
+                    </div>
+                    <div class="ai_chart--grapic buy">
+                      <div class="ai_chart--bg">
+                        <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                        <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                        <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="house-ai_chart l-half_w50">
+                  <div class="top">
+                    <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                  </div>
+                  <div class="btm">
+                    <div class="ai_chart--range">
+                      <div class="max"><span class="label">MAX</span> 6</div>
+                      <div class="min"><span class="label">MIN</span> 4</div>
+                    </div>
+                    <div class="ai_chart--grapic rent">
+                      <div class="ai_chart--bg">
+                        <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                        <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                        <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="house-ai_search">
+                  <h4 class="title">智能搜索</h4>
+                  <div class="input-select select_under-line">
+                    <label class="label">縣市</label>
+                    <div class="pure_select_underline">
+                      <select>
+                        <option value="台北市">台北市</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-select select_under-line">
+                    <label class="label">區域</label>
+                    <div class="pure_select_underline">
+                      <select>
+                        <option value="信義區">信義區</option>
+                        <option value="大安區">大安區</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="btn btn-dp">比較</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item l-half_w50"> 
+            <div class="title flex-row ai-center jc-space-between">
+              <div class="page-title">
+                <div class="page-title_icon"><i class="icon-house-map"></i></div>
+                <div class="page-title_title">
+                  <div class="input-select select_under-line">
+                    <select class="selectstyle">
+                      <option value="500公尺">500公尺</option>
+                    </select>
+                  </div><span>周邊相似建案</span>
+                </div>
+              </div>
+              <ul class="mark-list nostyle">
+                <li><span class="color"><span class="coloritem blue-1"></span><span class="coloritem orange-1"></span></span><span class="name">過去12個月</span></li>
+                <li><span class="color"><span class="coloritem blue-2"></span><span class="coloritem orange-2"></span></span><span class="name">目前現況</span></li>
+                <li><span class="color"><span class="coloritem blue-3"></span><span class="coloritem orange-3"></span></span><span class="name">智能預估</span></li>
+              </ul>
+            </div>
+            <div class="info flex-row">
+              <div class="left paper l-half">
+                <div class="house-ai_chart l-half_w50">
+                  <div class="top">
+                    <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                  </div>
+                  <div class="btm">
+                    <div class="ai_chart--range">
+                      <div class="max"><span class="label">MAX</span> 40</div>
+                      <div class="min"><span class="label">MIN</span> 20</div>
+                    </div>
+                    <div class="ai_chart--grapic buy">
+                      <div class="ai_chart--bg">
+                        <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                        <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                        <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="house-ai_chart l-half_w50">
+                  <div class="top">
+                    <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                  </div>
+                  <div class="btm">
+                    <div class="ai_chart--range">
+                      <div class="max"><span class="label">MAX</span> 6</div>
+                      <div class="min"><span class="label">MIN</span> 4</div>
+                    </div>
+                    <div class="ai_chart--grapic rent">
+                      <div class="ai_chart--bg">
+                        <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                        <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                        <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="house-ai_search">
+                  <button class="btn btn-dp">比較</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-50" id="house-diagram">
+        <div class="container">
+          <div class="item">
+            <div class="page-title border-btm ai-center jc-space-between">
+              <div class="headline">
+                <div class="page-title_icon"><i class="icon-link-ball"></i></div>
+                <ul class="page-title_nav cutover nostyle">
+                  <li class="active"><a href="#buy_chart1">
+                      <h3>買房走勢圖</h3></a></li>
+                  <li><a href="#rent_chart2"> 
+                      <h3>租房走勢圖</h3></a></li>
+                </ul>
+              </div>
+              <ul class="mark-list nostyle">
+                <li><span class="icon"><img src="images/cube/icon/Line_green.png" alt=""></span><span class="name">智能鄰舍</span></li>
+                <li><span class="icon"><img src="images/cube/icon/Rectangle_blueLg.png" alt=""></span><span class="name">500公尺內</span></li>
+                <li><span class="icon"><img src="images/cube/icon/Line_og.png" alt=""></span><span class="name">市區平均價</span></li>
+                <li><span class="icon"><img src="imagescube/icon/Line_gary.png" alt=""></span><span class="name">地區平均價</span></li>
+              </ul>
+            </div>
+            <div class="info">
+              <div class="cutover-in show" id="buy_chart1">
+                <div class="chart-box">
+                  <canvas id="myChart" style="max-height:400px;"></canvas>
+                </div>
+              </div>
+              <div class="cutover-in" id="rent_chart2">
+                <div class="chart-box"><img src="images/cube/pic/chart1.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="page-title border-btm ai-center jc-space-between">
+              <div class="headline">
+                <div class="page-title_icon"><i class="icon-link-ball"></i></div>
+                <ul class="page-title_nav cutover nostyle">
+                  <li class="active"><a href="#buy_chartA">
+                      <h3>買房走勢圖</h3></a></li>
+                  <li><a href="#rent_chartB"> 
+                      <h3>租房走勢圖</h3></a></li>
+                </ul>
+              </div>
+              <ul class="mark-list nostyle">
+                <li><span class="icon"><img src="images/cube/icon/Path_blue.png" alt=""></span><span class="name">智能鄰舍</span></li>
+                <li><span class="icon"><img src="images/cube/icon/Path_og.png" alt=""></span><span class="name">物件市價</span></li>
+                <li><span class="icon"><img src="images/cube/icon/Line-circle_ig.png" alt=""></span><span class="name">物件估價</span></li>
+                <li><span class="icon"></span><span class="name">趨勢線</span></li>
+              </ul>
+            </div>
+            <div class="info">
+              <div class="cutover-in show" id="buy_chartA">
+                <div class="chart-box">
+                  <canvas id="myChart1" style="max-height:400px;"></canvas>
+                </div>
+              </div>
+              <div class="cutover-in" id="rent_chartB">
+                <div class="chart-box"><img src="images/cube/pic/chart2.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-50" id="house-12month">
+        <div class="container">
+          <div class="page-title border-btm">
+            <div class="page-title_icon"><i class="icon-link-ball"></i></div>
+            <h3 class="page-title_title">未來12個月 市場推估</h3>
+          </div>
+          <div class="info mt-40">
+            <ul class="nostyle flex-row">
+              <li>
+                <div class="top">
+                  <h5 class="label">買屋房市</h5>
+                </div>
+                <div class="btm flex-row ai-end"><span class="price f-gary-lg">$3,080</span><span class="price_unit">萬</span>
+                  <div class="date_price_up"><span class="icon f-red"><i class="icon-arrow-up"></i></span><span>上漲</span><span class="num f-red">3.24%</span></div>
+                </div>
+              </li>
+              <li>
+                <div class="top">
+                  <h5 class="label">租屋房市</h5>
+                </div>
+                <div class="btm flex-row ai-end"><span class="price f-gary-lg">$22,000</span><span class="price_unit">萬</span>
+                  <div class="date_price_up"><span class="icon f-red"><i class="icon-arrow-up"></i></span><span>上漲</span><span class="num f-red">2%</span></div>
+                </div>
+              </li>
+              <li>
+                <div class="top t-center">
+                  <h5 class="label">人口遷移</h5>
+                </div>
+                <div class="btm">
+                  <input class="input-border" type="text" value="5.3%">
+                </div>
+              </li>
+              <li>
+                <div class="top t-center">
+                  <h5 class="label">房貸利率</h5>
+                </div>
+                <div class="btm">
+                  <input class="input-border" type="text" value="1.8%">
+                </div>
+              </li>
+              <li>
+                <div class="top t-center">
+                  <h5 class="label">GDP增長</h5>
+                </div>
+                <div class="btm">
+                  <input class="input-border" type="text" value="2.3">
+                </div>
+              </li>
+              <li>
+                <div class="top t-center">
+                  <h5 class="label">股票指數</h5>
+                </div>
+                <div class="btm">
+                  <input class="input-border" type="text" value="+ 3.5%">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="py-50 bg-blue" id="house-data">
+        <div class="container">
+          <div class="page-title mb-40">
+            <div class="page-title_icon"><i class="icon-house-door"></i></div>
+            <h3 class="page-title_title">智能推薦</h3>
+            <ul class="nostyle flex-row cutover">
+              <li class="active"><a class="btn" href="#houseData_500">500公尺內推薦</a></li>
+              <li><a class="btn btn" href="#houseData_area">同區推薦</a></li>
+              <li><a class="btn btn" href="#houseData_cross">跨區推薦</a></li>
+            </ul>
+          </div>
+          <div class="cutover-in show" id="houseData_500">
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p1.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區三民路</em>
+                            <div class="house_price"><span class="price">4,380</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>61.21坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>12.7年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>電梯大樓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">3.2%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p2.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">介壽華廈低公設 - 明星學區</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區延壽街</em>
+                            <div class="house_price"><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>45坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>30年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>電梯大樓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">0.8%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p3.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">與介壽國中為鄰 - 國泰建設</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區三民路</em>
+                            <div class="house_price"><span class="price">2,380</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>30.18坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>41年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳1.5衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>公寓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">2.5%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+          <div class="cutover-in" id="houseData_area">
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p1.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區三民路</em>
+                            <div class="house_price"><span class="price">4,380</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>61.21坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>12.7年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>電梯大樓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">3.2%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p2.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">介壽華廈低公設 - 明星學區</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區延壽街</em>
+                            <div class="house_price"><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>45坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>30年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>電梯大樓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">0.8%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p3.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">與介壽國中為鄰 - 國泰建設</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區三民路</em>
+                            <div class="house_price"><span class="price">2,380</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>30.18坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>41年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳1.5衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>公寓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">2.5%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+          <div class="cutover-in" id="houseData_cross">
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p1.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區三民路</em>
+                            <div class="house_price"><span class="price">4,380</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>61.21坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>12.7年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>電梯大樓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">3.2%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p2.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">介壽華廈低公設 - 明星學區</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區延壽街</em>
+                            <div class="house_price"><span class="price">3,150</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>45坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>30年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>電梯大樓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">0.8%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-data_item wow fadeInUp">
+                      <div class="headline">
+                        <div class="pic"><img src="images/cube/pic/house-p3.jpg" alt=""></div>
+                        <div class="house-name">
+                          <h4 class="title">與介壽國中為鄰 - 國泰建設</h4>
+                          <div class="house-name_info"><em class="address">台北市松山區三民路</em>
+                            <div class="house_price"><span class="price">2,380</span><span class="price_unit">萬</span></div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <div class="houseInfo_head_info">
+                            <div class="item flex-row">
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">坪數</h5><span>30.18坪</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋齡</h5><span>41年</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">格局</h5><span>3房2廳1.5衛</span>
+                              </div>
+                              <div class="w50 l-inline-label">
+                                <h5 class="label">屋型</h5><span>公寓</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info">
+                        <div class="house-ai_box">
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">買房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 40</div>
+                                <div class="min"><span class="label">MIN</span> 20</div>
+                              </div>
+                              <div class="ai_chart--grapic buy">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="house-ai_chart">
+                            <div class="top">
+                              <h4 class="title">租房預估</h4><span class="f-12 f-gary-lg">(單位：萬 / 月)</span>
+                            </div>
+                            <div class="btm">
+                              <div class="ai_chart--range">
+                                <div class="max"><span class="label">MAX</span> 6</div>
+                                <div class="min"><span class="label">MIN</span> 4</div>
+                              </div>
+                              <div class="ai_chart--grapic rent">
+                                <div class="ai_chart--bg">
+                                  <div class="data"><span class="bar bar1" style="height:20%"><span class="num">35</span></span></div>
+                                  <div class="data"><span class="bar bar2" style="height:50%"><span class="num">38</span></span></div>
+                                  <div class="data"><span class="bar bar3" style="height:80%"><span class="num">22</span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="house-discuss">
+                          <div class="flex-row ai-center">
+                            <h5 class="title">價差</h5><span class="f-12 f-gary-lg">(單位：萬 / 坪)</span>
+                          </div>
+                          <div class="num price mb-30">2.5%</div>
+                          <h5 class="title">推薦指數</h5>
+                          <div class="star-row mt-10"><span class="star f-blue"></span><span class="star f-blue"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span><span class="star f-gary-lg"></span></div>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="cursor"></div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="cube/scripts/plugins/wow.js"></script>
+    <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="cube/scripts/default/mychart.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop" id="sign_in">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text d-flex">
+          <h2 class="title">歡迎使用</h2><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-10" type="email" placeholder="電子郵件">
+        <input class="main-inputBorder my-10" type="password" placeholder="密碼">
+        <div class="t-center my-10"><span class="forgetpassword_toggle">忘記密碼</span></div>
+        <input class="btn main_Rbtn blue-btn" type="button" value="登入">
+        <p class="my-20 t-center">或</p>
+        <button class="facebook_login"><span class="icon mr-10"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 帳號登入</span></button>
+        <button class="google_login"><span class="icon mr-10"><img src="images/cube/google.png" alt=""></span><span>使用 Google 帳號登入</span></button>
+      </form>
+      <div class="t-center"><span>還沒有帳號嗎？</span>
+        <button class="sign_up_toggle">註冊</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="sign_up">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text"><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+          <h2 class="title">歡迎您・立即註冊！</h2>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">帳號<span class="t-red ml-5">*</span></label>
+            <input type="text" placeholder="請輸入您的帳號">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">密碼<span class="t-red ml-5">*</span></label>
+            <input type="password" placeholder="請輸入您的密碼">
+          </div>
+        </div>
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">E-mail<span class="t-red ml-5">*</span></label>
+            <input type="email" placeholder="請輸入您的E-mail">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">電話</label>
+            <input type="text" placeholder="請輸入您的電話">
+          </div>
+        </div>
+        <div class="form-row _h">
+          <label class="form_label">選擇會員身份
+            <div class="pure_select_border">
+              <select id="Identity">
+                <option value="選擇會員身份">選擇會員身份</option>
+                <option value="買家">買家</option>
+                <option value="賣家(屋主或代理人)">賣家(屋主或代理人)</option>
+                <option value="房仲(房產經紀人)">房仲(房產經紀人)</option>
+                <option value="仲介公司">仲介公司</option>
+                <option value="建商">建商</option>
+              </select>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="text_and_line">或使用社群媒體註冊</div>
+      <div class="form-row _w">
+        <button class="facebook_login"><span class="icon"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 註冊</span></button>
+        <button class="google_login"><span class="icon"><img src="images/cube/google.png" alt=""></span><span>使用 Google 註冊</span></button>
+      </div>
+      <div class="t-center"><span class="mb10" style="font-size:14px;">若建立帳戶，即表示我同意 CUBE AI 的 網站條款、隱私權政策 與 授權條款。</span></div>
+      <div class="t-center mt-10"><span>還沒有帳號嗎？</span>
+        <button class="sign_in_toggle">登入</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="forgetpassword">
+      <div class="pop_head">
+        <div class="text d-flex mb-20">
+          <h2 class="title">忘記密碼</h2>
+        </div>
+        <p>請輸入電子郵件</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-20" type="email" placeholder="電子郵件">
+        <input class="btn main_Rbtn blue-btn" type="button" value="確認">
+      </form>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop_bg"></div>
+  </body>
+</html>

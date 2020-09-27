@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CM2 CUBE智能找房</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/houseinfoNew.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/cube.css">
+  </head>
+  <body>
+    <main class="pageFill" id="cube">
+      <div class="l-pageFill_left" id="cube_left">
+        <div class="closs-btn"><i class="icon-angle-double-left"></i></div>
+        <header id="header_mini">
+          <div class="logo"><a href="home.html"></a>
+            <h1 class="hidden">CM2 CUBE智能找房</h1>
+          </div>
+          <div class="lang-btn"><i class="icon-global"></i>
+            <ul class="nostyle lang-menu">
+              <li><a href="">繁體中文</a></li>
+              <li><a href="">English</a></li>
+            </ul>
+          </div>
+          <div class="menu-toggle"><i class="icon-menu menu-btn"></i></div>
+          <div class="menu">
+            <div class="menu-close"><i class="icon-cancel"></i></div>
+            <ul class="nav">
+                    <li><a class="animsition-link" href="index.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-ai-house"></i></span><span class="nav_item">智能搜房</span></a></li>
+                    <li><a class="animsition-link" href="cube.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-house-map"></i></span><span class="nav_item">地圖找房</span></a></li>
+                    <li><a class="animsition-link" href="projects.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的收藏</span></a></li>
+                    <li><a class="animsition-link" href="report.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的報告</span></a></li>
+              <li>
+                <div class="login-row"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="cube_search_toggle btn btn-border-primary">開啟搜索</div>
+        <form class="cube_search">
+          <div class="cube_search_form myscrollbar" data-mcs-theme="minimal-dark">
+            <div class="form-row _h">
+              <label class="form_label">房屋用途</label>
+              <div class="checkbox_btn_row">
+                <div class="checkbox_btn">
+                  <input class="hide-checkbox" id="Housing_purposes1" type="checkbox" name="checkbox-option">
+                  <label for="Housing_purposes1"><i class="icon icon-house-door"></i><span>電梯大樓</span></label>
+                </div>
+                <div class="checkbox_btn">
+                  <input class="hide-checkbox" id="Housing_purposes2" type="checkbox" name="checkbox-option">
+                  <label for="Housing_purposes2"><i class="icon icon-shop"></i><span>公寓</span></label>
+                </div>
+                <div class="checkbox_btn">
+                  <input class="hide-checkbox" id="Housing_purposes3" type="checkbox" name="checkbox-option">
+                  <label for="Housing_purposes3"><i class="icon icon-company"></i><span>華夏</span></label>
+                </div>
+                <div class="checkbox_btn">
+                  <input class="hide-checkbox" id="Housing_purposes4" type="checkbox" name="checkbox-option">
+                  <label for="Housing_purposes4"><i class="icon icon-bed"></i><span>套房</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row _h rooms">
+              <label class="form_label">填寫房數</label>
+              <div class="mb-10">
+                <div class="form_radiobox">
+                  <input id="roomauto" type="radio" name="rooms">
+                  <label for="roomauto">不限</label>
+                </div>
+                <div class="form_radiobox">
+                  <input id="room1" type="radio" name="rooms">
+                  <label for="room1">1房</label>
+                </div>
+                <div class="form_radiobox">
+                  <input id="room2" type="radio" name="rooms">
+                  <label for="room2">2房</label>
+                </div>
+                <div class="form_radiobox">
+                  <input id="room3" type="radio" name="rooms">
+                  <label for="room3">3房</label>
+                </div>
+                <div class="form_radiobox">
+                  <input id="room4" type="radio" name="rooms">
+                  <label for="room4">4房</label>
+                </div>
+                <div class="form_radiobox" style="min-width: 80px;">
+                  <input id="room5" type="radio" name="rooms">
+                  <label for="room5">5房以上</label>
+                </div>
+              </div>
+              <div class="form-row _w">
+                <input class="main-inputBorder" id="min-room" type="text" placeholder="最低"><span>房</span><span style="display: inline-block;margin: 0 5px;">-</span>
+                <input class="main-inputBorder" id="max-room" type="text" placeholder="最高"><span>房</span>
+              </div>
+            </div>
+            <div class="form-row _h">
+              <label class="form_label">物件區域</label>
+              <div class="pure_select_border">
+                <select id="year">
+                  <option value="台北市">台北市</option>
+                </select>
+              </div>
+            </div><br>
+            <div class="form-row _h range-slider">
+              <div class="form_label" id="totalPrice">
+                <label for="amount">總價</label>
+                <div class="form-value">
+                  <div class="form-value_num" id="totalPrice_amount"></div><span class="form-value_unit">萬</span>
+                </div>
+              </div>
+              <div id="totalPrice_range"></div>
+            </div>
+            <div class="form-row _h range-slider">
+              <div class="form_label" id="all_pings">
+                <label for="pings_amount">坪數</label>
+                <div class="form-value">
+                  <div class="form-value_num" id="pings_amount"></div><span class="form-value_unit">坪</span>
+                </div>
+              </div>
+              <div id="pings-range"></div>
+            </div>
+            <div class="form-row _h range-slider">
+              <div class="form_label" id="migration">
+                <label for="migration_amount">人口遷移</label>
+                <div class="form-value">
+                  <div class="form-value_num" id="migration_amount"></div><span class="form-value_unit">%</span>
+                </div>
+              </div>
+              <div id="migration-range"></div>
+            </div><br>
+            <div class="form-row _h range-slider">
+              <div class="form_label" id="MRT">
+                <label for="MRT_amount">距離捷運站</label>
+                <div class="form-value">
+                  <div class="form-value_num" id="MRT_amount"></div><span class="form-value_unit">分鐘</span>
+                </div>
+              </div>
+              <div id="MRT-range"></div>
+            </div>
+            <div class="form-row _h range-slider">
+              <div class="form_label" id="bus">
+                <label for="bus_amount">500公尺內有公車站</label>
+                <div class="form-value">
+                  <div class="form-value_num" id="bus_amount"></div><span class="form-value_unit">個</span>
+                </div>
+              </div>
+              <div id="bus-range"></div>
+            </div>
+            <div class="form-row _h range-slider">
+              <div class="form_label" id="mart">
+                <label for="mart_amount">500公尺內有百貨超市</label>
+                <div class="form-value">
+                  <div class="form-value_num" id="mart_amount"></div><span class="form-value_unit">個</span>
+                </div>
+              </div>
+              <div id="mart-range"></div>
+            </div>
+          </div>
+          <input class="search-btn btn btn-dp" type="button" value="Search">
+        </form>
+      </div>
+      <div class="l-pageFill_main map_area">
+        <div id="cube_left-toggle"><i class="icon-angle-double-right"></i></div>
+        <ul class="no-style cutover" id="cube_nav">
+          <li class="active"><a href="#cube-map"> <i class="icon-mapbook"></i><span class="ml-5">地圖顯示</span></a></li>
+          <li><a href="#cube-list"> <i class="icon-list"></i><span class="ml-5">列表顯示</span></a></li>
+        </ul>
+        <div class="cutover-in show" id="cube-map">
+          <div class="map"></div>
+          <div id="map_markName">
+            <div class="mark-toggle"><i class="icon-object-group"></i></div>
+            <div class="mark-list">
+              <ul class="nostyle">
+                <li><span class="mark_img"><img class="pc" src="images/cube/icon/more_maker_red.png" alt=""><img class="mobile" src="images/cube/icon/more_maker_redG.png" alt=""></span><span class="mark_name">區域高於估價<br>顏色越深越高</span></li>
+                <li><span class="mark_img"><img class="pc" src="images/cube/icon/more_maker_green.png" alt=""><img class="mobile" src="images/cube/icon/more_maker_greenG.png" alt=""></span><span class="mark_name">區域低於估價<br>顏色越淺越低</span></li>
+                <li><span class="mark_img house"><img src="images/cube/icon/house_up.png" alt=""></span><span class="mark_name">單一物件<br>高於估價</span></li>
+                <li><span class="mark_img house"><img src="images/cube/icon/house_down.png" alt=""></span><span class="mark_name">單一物件<br>低於估價</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cutover-in main-scrollbar" id="cube-list">
+          <section class="paperblock">
+            <div class="block">
+              <div class="house-data_item">
+                <div class="headline">
+                  <div class="house-name">
+                    <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                    <div class="house-name_info">
+                      <div class="houseinfo-price">
+                        <div class="total-price d-flex jc-space-between ai-center">
+                          <div class="left">
+                            <div>
+                              <label class="label">總價開價</label> <span class="bigprice f-dark f-en">3,080</span> <span>萬</span> <span class="f-gary-lg price_note">(60萬/坪)</span>
+                            </div>
+                            <div>
+                              <label class="sub-label">估價</label> <span class="bigprice f-green f-en">2,980</span> <span>萬</span> <span class="f-gary-lg price_note">(66萬/坪)</span>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="cube_price cube_down"><span class="icon"></span>
+                              <div class="d-flex jc-space-between ai-center"><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex ai-center jc-space-between">
+                      <div class="houseInfo_head_info">
+                        <div class="item flex-row jc-space-between">
+                          <div class="l-inline-label">
+                            <h5 class="label">地址</h5><span>台北市松山區三民路</span>
+                          </div>
+                          <div class="l-inline-label">
+                            <h5 class="label">坪數</h5><span>61.21坪</span>
+                          </div>
+                        </div>
+                        <div class="item flex-row">
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋齡</h5><span>12.7年</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋型</h5><span>電梯大樓</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="starbox">
+                        <div class="star-mask">
+                          <div class="level" style="height:80%"></div>
+                          <div class="star-text"><span class="num f-en">8</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paperblock">
+            <div class="block">
+              <div class="house-data_item">
+                <div class="headline">
+                  <div class="house-name">
+                    <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                    <div class="house-name_info">
+                      <div class="houseinfo-price">
+                        <div class="total-price d-flex jc-space-between ai-center">
+                          <div class="left">
+                            <div>
+                              <label class="label">總價開價</label> <span class="bigprice f-dark f-en">3,080</span> <span>萬</span> <span class="f-gary-lg price_note">(60萬/坪)</span>
+                            </div>
+                            <div>
+                              <label class="sub-label">估價</label> <span class="bigprice f-green f-en">2,980</span> <span>萬</span> <span class="f-gary-lg price_note">(66萬/坪)</span>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="cube_price cube_down"><span class="icon"></span>
+                              <div class="d-flex jc-space-between ai-center"><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex ai-center jc-space-between">
+                      <div class="houseInfo_head_info">
+                        <div class="item flex-row jc-space-between">
+                          <div class="l-inline-label">
+                            <h5 class="label">地址</h5><span>台北市松山區三民路</span>
+                          </div>
+                          <div class="l-inline-label">
+                            <h5 class="label">坪數</h5><span>61.21坪</span>
+                          </div>
+                        </div>
+                        <div class="item flex-row">
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋齡</h5><span>12.7年</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋型</h5><span>電梯大樓</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="starbox">
+                        <div class="star-mask">
+                          <div class="level" style="height:80%"></div>
+                          <div class="star-text"><span class="num f-en">8</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paperblock">
+            <div class="block">
+              <div class="house-data_item">
+                <div class="headline">
+                  <div class="house-name">
+                    <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                    <div class="house-name_info">
+                      <div class="houseinfo-price">
+                        <div class="total-price d-flex jc-space-between ai-center">
+                          <div class="left">
+                            <div>
+                              <label class="label">總價開價</label> <span class="bigprice f-dark f-en">3,080</span> <span>萬</span> <span class="f-gary-lg price_note">(60萬/坪)</span>
+                            </div>
+                            <div>
+                              <label class="sub-label">估價</label> <span class="bigprice f-green f-en">2,980</span> <span>萬</span> <span class="f-gary-lg price_note">(66萬/坪)</span>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="cube_price cube_down"><span class="icon"></span>
+                              <div class="d-flex jc-space-between ai-center"><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex ai-center jc-space-between">
+                      <div class="houseInfo_head_info">
+                        <div class="item flex-row jc-space-between">
+                          <div class="l-inline-label">
+                            <h5 class="label">地址</h5><span>台北市松山區三民路</span>
+                          </div>
+                          <div class="l-inline-label">
+                            <h5 class="label">坪數</h5><span>61.21坪</span>
+                          </div>
+                        </div>
+                        <div class="item flex-row">
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋齡</h5><span>12.7年</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋型</h5><span>電梯大樓</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="starbox">
+                        <div class="star-mask">
+                          <div class="level" style="height:80%"></div>
+                          <div class="star-text"><span class="num f-en">8</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paperblock">
+            <div class="block">
+              <div class="house-data_item">
+                <div class="headline">
+                  <div class="house-name">
+                    <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                    <div class="house-name_info">
+                      <div class="houseinfo-price">
+                        <div class="total-price d-flex jc-space-between ai-center">
+                          <div class="left">
+                            <div>
+                              <label class="label">總價開價</label> <span class="bigprice f-dark f-en">3,080</span> <span>萬</span> <span class="f-gary-lg price_note">(60萬/坪)</span>
+                            </div>
+                            <div>
+                              <label class="sub-label">估價</label> <span class="bigprice f-green f-en">2,980</span> <span>萬</span> <span class="f-gary-lg price_note">(66萬/坪)</span>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="cube_price cube_down"><span class="icon"></span>
+                              <div class="d-flex jc-space-between ai-center"><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex ai-center jc-space-between">
+                      <div class="houseInfo_head_info">
+                        <div class="item flex-row jc-space-between">
+                          <div class="l-inline-label">
+                            <h5 class="label">地址</h5><span>台北市松山區三民路</span>
+                          </div>
+                          <div class="l-inline-label">
+                            <h5 class="label">坪數</h5><span>61.21坪</span>
+                          </div>
+                        </div>
+                        <div class="item flex-row">
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋齡</h5><span>12.7年</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋型</h5><span>電梯大樓</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="starbox">
+                        <div class="star-mask">
+                          <div class="level" style="height:80%"></div>
+                          <div class="star-text"><span class="num f-en">8</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paperblock">
+            <div class="block">
+              <div class="house-data_item">
+                <div class="headline">
+                  <div class="house-name">
+                    <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                    <div class="house-name_info">
+                      <div class="houseinfo-price">
+                        <div class="total-price d-flex jc-space-between ai-center">
+                          <div class="left">
+                            <div>
+                              <label class="label">總價開價</label> <span class="bigprice f-dark f-en">3,080</span> <span>萬</span> <span class="f-gary-lg price_note">(60萬/坪)</span>
+                            </div>
+                            <div>
+                              <label class="sub-label">估價</label> <span class="bigprice f-green f-en">2,980</span> <span>萬</span> <span class="f-gary-lg price_note">(66萬/坪)</span>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="cube_price cube_down"><span class="icon"></span>
+                              <div class="d-flex jc-space-between ai-center"><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex ai-center jc-space-between">
+                      <div class="houseInfo_head_info">
+                        <div class="item flex-row jc-space-between">
+                          <div class="l-inline-label">
+                            <h5 class="label">地址</h5><span>台北市松山區三民路</span>
+                          </div>
+                          <div class="l-inline-label">
+                            <h5 class="label">坪數</h5><span>61.21坪</span>
+                          </div>
+                        </div>
+                        <div class="item flex-row">
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋齡</h5><span>12.7年</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋型</h5><span>電梯大樓</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="starbox">
+                        <div class="star-mask">
+                          <div class="level" style="height:80%"></div>
+                          <div class="star-text"><span class="num f-en">8</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paperblock">
+            <div class="block">
+              <div class="house-data_item">
+                <div class="headline">
+                  <div class="house-name">
+                    <h4 class="title">健安新城裝潢三房 - 優質學區</h4>
+                    <div class="house-name_info">
+                      <div class="houseinfo-price">
+                        <div class="total-price d-flex jc-space-between ai-center">
+                          <div class="left">
+                            <div>
+                              <label class="label">總價開價</label> <span class="bigprice f-dark f-en">3,080</span> <span>萬</span> <span class="f-gary-lg price_note">(60萬/坪)</span>
+                            </div>
+                            <div>
+                              <label class="sub-label">估價</label> <span class="bigprice f-green f-en">2,980</span> <span>萬</span> <span class="f-gary-lg price_note">(66萬/坪)</span>
+                            </div>
+                          </div>
+                          <div class="right">
+                            <div class="cube_price cube_down"><span class="icon"></span>
+                              <div class="d-flex jc-space-between ai-center"><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex ai-center jc-space-between">
+                      <div class="houseInfo_head_info">
+                        <div class="item flex-row jc-space-between">
+                          <div class="l-inline-label">
+                            <h5 class="label">地址</h5><span>台北市松山區三民路</span>
+                          </div>
+                          <div class="l-inline-label">
+                            <h5 class="label">坪數</h5><span>61.21坪</span>
+                          </div>
+                        </div>
+                        <div class="item flex-row">
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋齡</h5><span>12.7年</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">格局</h5><span>3房2廳2衛</span>
+                          </div>
+                          <div class="w33 l-inline-label">
+                            <h5 class="label">屋型</h5><span>電梯大樓</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="starbox">
+                        <div class="star-mask">
+                          <div class="level" style="height:80%"></div>
+                          <div class="star-text"><span class="num f-en">8</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div id="map_search">
+          <div class="search-toggle"><i class="icon-magnifier"></i></div>
+          <div class="search-box">
+            <input type="text" placeholder="search...">
+          </div>
+        </div>
+      </div>
+      <div class="l-pageFill_right" id="cube-house">
+        <div class="closs-btn"><i class="icon-angle-double-right"></i></div>
+        <div class="cube_house_close"><i class="icon-cancel"></i></div>
+        <div class="top">
+          <div class="cube-house_sort form-row _w">
+            <label class="form_label">排序方式：</label>
+            <div class="pure_select_border">
+              <select>
+                <option value="金額從大到小">金額從大到小</option>
+              </select>
+            </div>
+          </div>
+          <div class="house_data">
+            <div class="cylinder_info"><span class="cube_price cube_up"><span class="icon"></span></span><span>高於市價 有<span class="num upcolor">5</span>間</span><span class="line">|</span><span class="cube_price cube_down"><span class="icon"></span></span><span>低於市價 有<span class="num downcolor">6</span>間</span></div>
+          </div>
+        </div>
+        <div class="btm">
+          <div id="buy_house">
+                      <div class="cube-house_item"><a href="" title="健安新城裝潢三房 - 優質學區">
+                          <h2 class="title">健安新城裝潢三房 - 優質學區</h2>
+                          <div class="house_point">
+                            <div class="house_pricebox">
+                              <div class="house_price"><span class="price_label">總價開價</span><span class="price f-green">4,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                              <div class="house_price"><span class="price_label" style="margin-left:30px;">估價</span><span class="price f-gray">4,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                            </div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <ul class="house_info nostyle">
+                            <li><span>台北市松山區三民路</span><span>12.7年</span></li>
+                            <li><span>電梯大樓</span><span>61.21坪</span><span>3房2廳2衛</span></li>
+                          </ul></a></div>
+                      <div class="cube-house_item"><a href="" title="介壽華廈低公設 - 明星學區">
+                          <h2 class="title">介壽華廈低公設 - 明星學區</h2>
+                          <div class="house_point">
+                            <div class="house_pricebox">
+                              <div class="house_price"><span class="price_label">總價開價</span><span class="price f-green">3,150</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                              <div class="house_price"><span class="price_label" style="margin-left:30px;">估價</span><span class="price f-gray">3,150</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                            </div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <ul class="house_info nostyle">
+                            <li><span>台北市松山區延壽街</span><span>40年</span></li>
+                            <li><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></li>
+                          </ul></a></div>
+                      <div class="cube-house_item"><a href="" title="與介壽國中為鄰 - 國泰建設">
+                          <h2 class="title">與介壽國中為鄰 - 國泰建設</h2>
+                          <div class="house_point">
+                            <div class="house_pricebox">
+                              <div class="house_price"><span class="price_label">總價開價</span><span class="price f-green">2,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                              <div class="house_price"><span class="price_label" style="margin-left:30px;">估價</span><span class="price f-gray">2,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                            </div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">2%</span></div>
+                          </div>
+                          <ul class="house_info nostyle">
+                            <li><span>台北市松山區延壽街</span><span>41年</span></li>
+                            <li><span>公寓</span><span>30.18坪</span><span>3房2廳1.5衛</span></li>
+                          </ul></a></div>
+                      <div class="cube-house_item"><a href="" title="健安新城裝潢三房 - 優質學區">
+                          <h2 class="title">健安新城裝潢三房 - 優質學區</h2>
+                          <div class="house_point">
+                            <div class="house_pricebox">
+                              <div class="house_price"><span class="price_label">總價開價</span><span class="price f-green">4,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                              <div class="house_price"><span class="price_label" style="margin-left:30px;">估價</span><span class="price f-gray">4,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                            </div>
+                            <div class="cube_price cube_up"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <ul class="house_info nostyle">
+                            <li><span>台北市松山區三民路</span><span>12.7年</span></li>
+                            <li><span>電梯大樓</span><span>61.21坪</span><span>3房2廳2衛</span></li>
+                          </ul></a></div>
+                      <div class="cube-house_item"><a href="" title="介壽華廈低公設 - 明星學區">
+                          <h2 class="title">介壽華廈低公設 - 明星學區</h2>
+                          <div class="house_point">
+                            <div class="house_pricebox">
+                              <div class="house_price"><span class="price_label">總價開價</span><span class="price f-green">3,150</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                              <div class="house_price"><span class="price_label" style="margin-left:30px;">估價</span><span class="price f-gray">3,150</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                            </div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">5%</span></div>
+                          </div>
+                          <ul class="house_info nostyle">
+                            <li><span>台北市松山區延壽街</span><span>40年</span></li>
+                            <li><span>電梯大樓</span><span>45坪</span><span>3房2廳1.5衛</span></li>
+                          </ul></a></div>
+                      <div class="cube-house_item"><a href="" title="與介壽國中為鄰 - 國泰建設">
+                          <h2 class="title">與介壽國中為鄰 - 國泰建設</h2>
+                          <div class="house_point">
+                            <div class="house_pricebox">
+                              <div class="house_price"><span class="price_label">總價開價</span><span class="price f-green">2,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                              <div class="house_price"><span class="price_label" style="margin-left:30px;">估價</span><span class="price f-gray">2,380</span><span class="price_unit">萬</span><span class="price_note">(68萬/坪)</span></div>
+                            </div>
+                            <div class="cube_price cube_down"><span class="icon"></span><span class="text">2%</span></div>
+                          </div>
+                          <ul class="house_info nostyle">
+                            <li><span>台北市松山區延壽街</span><span>41年</span></li>
+                            <li><span>公寓</span><span>30.18坪</span><span>3房2廳1.5衛</span></li>
+                          </ul></a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="cube/scripts/plugins/wow.js"></script>
+    <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
+    <script src="cube/scripts/plugins/nouislider.min.js"></script>
+    <script src="cube/scripts/plugins/tinyMap.js"></script>
+    <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
+    <script src="cube/scripts/default/cube_range.js"></script>
+    <script src="cube/scripts/default/cube_map.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop" id="sign_in">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text d-flex">
+          <h2 class="title">歡迎使用</h2><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-10" type="email" placeholder="電子郵件">
+        <input class="main-inputBorder my-10" type="password" placeholder="密碼">
+        <div class="t-center my-10"><span class="forgetpassword_toggle">忘記密碼</span></div>
+        <input class="btn main_Rbtn blue-btn" type="button" value="登入">
+        <p class="my-20 t-center">或</p>
+        <button class="facebook_login"><span class="icon mr-10"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 帳號登入</span></button>
+        <button class="google_login"><span class="icon mr-10"><img src="images/cube/google.png" alt=""></span><span>使用 Google 帳號登入</span></button>
+      </form>
+      <div class="t-center"><span>還沒有帳號嗎？</span>
+        <button class="sign_up_toggle">註冊</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="sign_up">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text"><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+          <h2 class="title">歡迎您・立即註冊！</h2>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">帳號<span class="t-red ml-5">*</span></label>
+            <input type="text" placeholder="請輸入您的帳號">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">密碼<span class="t-red ml-5">*</span></label>
+            <input type="password" placeholder="請輸入您的密碼">
+          </div>
+        </div>
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">E-mail<span class="t-red ml-5">*</span></label>
+            <input type="email" placeholder="請輸入您的E-mail">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">電話</label>
+            <input type="text" placeholder="請輸入您的電話">
+          </div>
+        </div>
+        <div class="form-row _h">
+          <label class="form_label">選擇會員身份
+            <div class="pure_select_border">
+              <select id="Identity">
+                <option value="選擇會員身份">選擇會員身份</option>
+                <option value="買家">買家</option>
+                <option value="賣家(屋主或代理人)">賣家(屋主或代理人)</option>
+                <option value="房仲(房產經紀人)">房仲(房產經紀人)</option>
+                <option value="仲介公司">仲介公司</option>
+                <option value="建商">建商</option>
+              </select>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="text_and_line">或使用社群媒體註冊</div>
+      <div class="form-row _w">
+        <button class="facebook_login"><span class="icon"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 註冊</span></button>
+        <button class="google_login"><span class="icon"><img src="images/cube/google.png" alt=""></span><span>使用 Google 註冊</span></button>
+      </div>
+      <div class="t-center"><span class="mb10" style="font-size:14px;">若建立帳戶，即表示我同意 CUBE AI 的 網站條款、隱私權政策 與 授權條款。</span></div>
+      <div class="t-center mt-10"><span>還沒有帳號嗎？</span>
+        <button class="sign_in_toggle">登入</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="forgetpassword">
+      <div class="pop_head">
+        <div class="text d-flex mb-20">
+          <h2 class="title">忘記密碼</h2>
+        </div>
+        <p>請輸入電子郵件</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-20" type="email" placeholder="電子郵件">
+        <input class="btn main_Rbtn blue-btn" type="button" value="確認">
+      </form>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop_bg"></div>
+  </body>
+</html>

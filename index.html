@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CM2 CUBE智能找房</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/index.css">
+  </head>
+  <body>
+    <header class="wow fadeInDown" id="header">
+      <div class="logo logo_cm2cube"><a href="index.html"><em class="hidden">CUBE智能找房</em></a></div>
+      <div class="right">
+        <div class="login-row mobile-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+        <div class="lang-btn"><i class="icon-global"></i>
+          <ul class="nostyle lang-menu">
+            <li><a href="">繁體中文</a></li>
+            <li><a href="">English</a></li>
+          </ul>
+        </div>
+        <div class="menu-toggle"><i class="icon-menu"></i></div>
+        <div class="menu">
+          <div class="menu-close"><i class="icon-cancel"></i></div>
+          <ul class="nav">
+                        <li><a class="animsition-link" href="index.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-ai-house"></i></span><span class="nav_item">智能搜房</span></a></li>
+                        <li><a class="animsition-link" href="cube.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-house-map"></i></span><span class="nav_item">地圖找房</span></a></li>
+                        <li><a class="animsition-link" href="favorite.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的收藏</span></a></li>
+                        <li><a class="animsition-link" href="report.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的報告</span></a></li>
+            <li>
+              <div class="login-row pc-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="pageFill" id="home">
+      <div class="container">
+        <form action="houseinfo.html">
+          <div class="home-inner">
+            <h1 class="title">CUBE 智能估價</h1>
+            <p>用AI智能 幫您估出好房 </p>
+            <div class="search-box">
+              <div class="btm">
+                <div id="buy_house">
+                  <div class="search-box_row">
+                    <div class="input-select select_under-line map" id="house-location">
+                      <label class="label"><span class="icon"><i class="icon-locationmap"></i></span><span class="name">搜尋地址</span></label>
+                      <div class="pure_select_underline">
+                        <select>
+                          <option value="台北市">台北市</option>
+                        </select>
+                      </div>
+                      <div class="pure_select_underline">
+                        <select>
+                          <option value="信義區">信義區</option>
+                        </select>
+                      </div>
+                      <div class="search-input">
+                        <input class="main-input" type="text" placeholder="標的 / 社區名 / 地址">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-box_row floor_row">
+                    <div class="input-select select_under-line">
+                      <label class="label ml-34"><span class="name">坪數</span></label>
+                      <div class="pure_select_underline ping">
+                        <select>
+                          <option value="建坪60坪 主建物40坪 附屬建物20坪">建坪 60坪 | 主 40坪 | 附屬 20坪</option>
+                          <option value="找不到">找不到</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-select select_under-line"> 
+                      <label class="label ml-34"><span class="name">樓層</span></label>
+                      <div class="input-unit floor">
+                        <input class="main-input" type="text" maxlength="3"><span class="unit">樓</span>
+                      </div>
+                      <label class="label ml-34"><span class="name">總樓層</span></label>
+                      <div class="input-unit floor">
+                        <input class="main-input" type="text" maxlength="3"><span class="unit">樓</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-box_row floor_row floor-hide">
+                    <div class="input-select select_under-line">
+                      <label class="label ml-34"><span class="name">建坪</span></label>
+                      <div class="input-unit floor">
+                        <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
+                      </div>
+                      <label class="label ml-34"><span class="name">主建物</span></label>
+                      <div class="input-unit floor">
+                        <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
+                      </div>
+                      <label class="label ml-34"><span class="name">附屬建物</span></label>
+                      <div class="input-unit floor">
+                        <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-box_row floor_row">
+                    <div class="input-select select_under-line w80 ml-34" id="pattern">
+                      <label class="label"><span class="name">格局</span></label>
+                      <div class="pure_select_underline">
+                        <select>
+                          <option value="3房">3房</option>
+                        </select>
+                      </div>
+                      <div class="pure_select_underline">
+                        <select>
+                          <option value="2廳">2廳</option>
+                        </select>
+                      </div>
+                      <div class="pure_select_underline">
+                        <select>
+                          <option value="2衛">2衛</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label houseYear"><span class="name">屋齡</span></label>
+                      <div class="input-unit floor">
+                        <input class="main-input" type="text" maxlength="3"><span class="unit">年</span>
+                      </div>
+                      <label class="label ml-30" id="car"><span class="name">車位</span></label>
+                      <div class="pure_select_underline">
+                        <select>
+                          <option value="0">0</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-box_row not-flexgrow other">
+                    <div class="form-check ml-34">
+                      <label for="check1">管理系統</label>
+                      <input id="check1" type="checkbox" name="">
+                    </div>
+                    <div class="input-select select_under-line inputprice">
+                      <label class="label"><span class="name">開價</span></label>
+                      <div class="search-input">
+                        <input class="main-input" type="text" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-box_row search-box_btm mt-30">
+                    <div class="search-btn_box">
+                      <input class="search-btn btn btn-dp" type="submit" value="搜出好房">
+                      <div class="btn">清除重填</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <div class="cursor"></div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="cube/scripts/plugins/wow.js"></script>
+    <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop" id="sign_in">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text d-flex">
+          <h2 class="title">歡迎使用</h2><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-10" type="email" placeholder="電子郵件">
+        <input class="main-inputBorder my-10" type="password" placeholder="密碼">
+        <div class="t-center my-10"><span class="forgetpassword_toggle">忘記密碼</span></div>
+        <input class="btn main_Rbtn blue-btn" type="button" value="登入">
+        <p class="my-20 t-center">或</p>
+        <button class="facebook_login"><span class="icon mr-10"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 帳號登入</span></button>
+        <button class="google_login"><span class="icon mr-10"><img src="images/cube/google.png" alt=""></span><span>使用 Google 帳號登入</span></button>
+      </form>
+      <div class="t-center"><span>還沒有帳號嗎？</span>
+        <button class="sign_up_toggle">註冊</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="sign_up">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text"><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+          <h2 class="title">歡迎您・立即註冊！</h2>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">帳號<span class="t-red ml-5">*</span></label>
+            <input type="text" placeholder="請輸入您的帳號">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">密碼<span class="t-red ml-5">*</span></label>
+            <input type="password" placeholder="請輸入您的密碼">
+          </div>
+        </div>
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">E-mail<span class="t-red ml-5">*</span></label>
+            <input type="email" placeholder="請輸入您的E-mail">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">電話</label>
+            <input type="text" placeholder="請輸入您的電話">
+          </div>
+        </div>
+        <div class="form-row _h">
+          <label class="form_label">選擇會員身份
+            <div class="pure_select_border">
+              <select id="Identity">
+                <option value="選擇會員身份">選擇會員身份</option>
+                <option value="買家">買家</option>
+                <option value="賣家(屋主或代理人)">賣家(屋主或代理人)</option>
+                <option value="房仲(房產經紀人)">房仲(房產經紀人)</option>
+                <option value="仲介公司">仲介公司</option>
+                <option value="建商">建商</option>
+              </select>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="text_and_line">或使用社群媒體註冊</div>
+      <div class="form-row _w">
+        <button class="facebook_login"><span class="icon"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 註冊</span></button>
+        <button class="google_login"><span class="icon"><img src="images/cube/google.png" alt=""></span><span>使用 Google 註冊</span></button>
+      </div>
+      <div class="t-center"><span class="mb10" style="font-size:14px;">若建立帳戶，即表示我同意 CUBE AI 的 網站條款、隱私權政策 與 授權條款。</span></div>
+      <div class="t-center mt-10"><span>還沒有帳號嗎？</span>
+        <button class="sign_in_toggle">登入</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="forgetpassword">
+      <div class="pop_head">
+        <div class="text d-flex mb-20">
+          <h2 class="title">忘記密碼</h2>
+        </div>
+        <p>請輸入電子郵件</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-20" type="email" placeholder="電子郵件">
+        <input class="btn main_Rbtn blue-btn" type="button" value="確認">
+      </form>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop_bg"></div>
+  </body>
+</html>
