@@ -3,6 +3,9 @@ var circle1 = {
     width: 145,
     height: 145,
     type: "radialBar",
+    zoom: {
+      enabled: false,
+    },
     events: {
       beforeMount: {enabled: false},
       mounted: {enabled: false},
@@ -57,11 +60,24 @@ var circle2 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoomed: {
-      enabled: false
+    zoom: {
+      enabled: false,
     },
-    scrolled: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     }
   },
   series: [8],
@@ -101,6 +117,9 @@ var circle3 = {
     width: 145,
     height: 145,
     type: "radialBar",
+    zoom: {
+      enabled: false,
+    },
     events: {
       beforeMount: {enabled: false},
       mounted: {enabled: false},
@@ -156,6 +175,9 @@ var circle4 = {
     width: 145,
     height: 145,
     type: "radialBar",
+    zoom: {
+      enabled: false,
+    },
     events: {
       beforeMount: {enabled: false},
       mounted: {enabled: false},
@@ -226,6 +248,9 @@ var houseinfo_chart1 = {
     {name: '估價', data: [, 35, 41, 36, 26, 45, 48, 52, 53, 41,70]}
   ],
   chart: { type: 'bar', height: 300 ,toolbar: {show: false}, 
+    zoom: {
+      enabled: false,
+    },
     events: {
       beforeMount: {enabled: false},
       mounted: {enabled: false},
@@ -273,6 +298,9 @@ var houseinfo_chart2 = {
     {name: '估價', data: [, 35, 41, 36, 26, 45, 48, 52, 53, 41,70]}
   ],
   chart: { type: 'bar', height: 300 ,toolbar: {show: false}, 
+    zoom: {
+      enabled: false,
+    },
     events: {
       beforeMount: {enabled: false},
       mounted: {enabled: false},
@@ -331,6 +359,9 @@ var houseinfo2_chart1 = {
   
   chart: {
     id: 'vuechart-example',
+    zoom: {
+      enabled: false,
+    },
     sparkline: {
         enabled: false,
     },
@@ -391,6 +422,9 @@ var houseinfo2_chart2 = {
     sparkline: {
         enabled: false,
     },
+    zoom: {
+      enabled: false,
+    },
     events: {
       beforeMount: {enabled: false},
       mounted: {enabled: false},
@@ -433,6 +467,9 @@ var houseinfo2_chart3 = {
   chart: {
     sparkline: {
         enabled: false,
+    },
+    zoom: {
+      enabled: false,
     },
     events: {
       beforeMount: {enabled: false},
@@ -496,9 +533,25 @@ var houseinfoData_chartA1 = {
   series: [
   {name: "市場貸款平均值",data: [0,10,20,30,40,50,60],type: 'line'},
   {name: "市場貸款負擔率",data: [12, 11, 14, 40, 42, 50,20],type: 'line'}],
-  chart: {height: 180,zoomed: {enabled: false}, toolbar: {show: false}, zoomed: {
-    enabled: false
-  }},
+  chart: {height: 180, toolbar: {show: false}, zoom: {
+    enabled: false,
+  },
+  events: {
+    beforeMount: {enabled: false},
+    mounted: {enabled: false},
+    updated: {enabled: false},
+    click: {enabled: false},
+    mouseMove: {enabled: false},
+    legendClick: {enabled: false},
+    markerClick: {enabled: false},
+    selection: {enabled: false},
+    dataPointSelection: {enabled: false},
+    dataPointMouseEnter: {enabled: false},
+    dataPointMouseLeave: {enabled: false},
+    beforeZoom: {enabled: false},
+    zoomed: {enabled: false},
+    scrolled: {enabled: false},
+  },},
   stroke: {width: 3,curve: ['straight','smooth'],dashArray: [4, 0]},
   dataLabels: { enabled: false},
   xaxis: {categories: ['2014','2015','2016', '2017', '2018', '2019', '2020'],},
@@ -513,6 +566,9 @@ var houseinfoData_chartA2 = {
   series: [
   {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
   chart: {height: 180,toolbar: {show: false},
+  zoom: {
+    enabled: false,
+  },
   events: {
     beforeMount: {enabled: false},
     mounted: {enabled: false},
@@ -556,6 +612,9 @@ var houseinfoData_chartA3 = {
   series: [
   {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
   chart: {height: 180,toolbar: {show: false},
+  zoom: {
+    enabled: false,
+  },
   events: {
     beforeMount: {enabled: false},
     mounted: {enabled: false},
@@ -602,6 +661,9 @@ var houseinfoData_chartB1 = {
     {data: [60,21,70,80,35]}
   ],
   chart: { type: 'bar', height: 230,
+  zoom: {
+    enabled: false,
+  },
   events: {
     beforeMount: {enabled: false},
     mounted: {enabled: false},
@@ -639,6 +701,9 @@ var houseinfoData_chartB2 = {
     {data: [60,80,70,85,100]},
   ],
   chart: { type: 'bar', height: 210 ,toolbar: {show: false},
+  zoom: {
+    enabled: false,
+  },
   events: {
     beforeMount: {enabled: false},
     mounted: {enabled: false},
@@ -682,6 +747,9 @@ var houseinfoData_chartB3 = {
     {data: [60,80,70,85,100]},
   ],
   chart: { type: 'bar', height: 210 ,toolbar: {show: false},
+  zoom: {
+    enabled: false,
+  },
   events: {
     beforeMount: {enabled: false},
     mounted: {enabled: false},
