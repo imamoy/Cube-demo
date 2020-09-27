@@ -3,8 +3,21 @@ var circle1 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoomed: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     }
   },
   series: [67],
@@ -46,6 +59,9 @@ var circle2 = {
     type: "radialBar",
     zoomed: {
       enabled: false
+    },
+    scrolled: {
+      enabled: false
     }
   },
   series: [8],
@@ -85,8 +101,21 @@ var circle3 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoomed: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     }
   },
   series: [8],
@@ -127,8 +156,21 @@ var circle4 = {
     width: 145,
     height: 145,
     type: "radialBar",
-    zoomed: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     }
   },
   series: [67],
@@ -183,9 +225,24 @@ var houseinfo_chart1 = {
     {name: '實價登錄', data: [, 65, 60, 70, 75, 87, 105, 91, 114, 94, 80]}, 
     {name: '估價', data: [, 35, 41, 36, 26, 45, 48, 52, 53, 41,70]}
   ],
-  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, zoomed: {
-    enabled: false
-  }},
+  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, 
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
+    }  
+  },
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
@@ -215,9 +272,24 @@ var houseinfo_chart2 = {
     {name: '實價登錄', data: [, 65, 60, 70, 75, 87, 105, 91, 114, 94, 80]}, 
     {name: '估價', data: [, 35, 41, 36, 26, 45, 48, 52, 53, 41,70]}
   ],
-  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, zoomed: {
-    enabled: false
-  }},
+  chart: { type: 'bar', height: 300 ,toolbar: {show: false}, 
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
+    }  
+  },
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
@@ -262,8 +334,21 @@ var houseinfo2_chart1 = {
     sparkline: {
         enabled: false,
     },
-    zoomed: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     },
     height: 300 ,toolbar: {show: false},
   },
@@ -306,8 +391,21 @@ var houseinfo2_chart2 = {
     sparkline: {
         enabled: false,
     },
-    zoomed: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     },
     height: 300 ,toolbar: {show: false},
   },
@@ -336,8 +434,21 @@ var houseinfo2_chart3 = {
     sparkline: {
         enabled: false,
     },
-    zoomed: {
-      enabled: false
+    events: {
+      beforeMount: {enabled: false},
+      mounted: {enabled: false},
+      updated: {enabled: false},
+      click: {enabled: false},
+      mouseMove: {enabled: false},
+      legendClick: {enabled: false},
+      markerClick: {enabled: false},
+      selection: {enabled: false},
+      dataPointSelection: {enabled: false},
+      dataPointMouseEnter: {enabled: false},
+      dataPointMouseLeave: {enabled: false},
+      beforeZoom: {enabled: false},
+      zoomed: {enabled: false},
+      scrolled: {enabled: false},
     },
     height: 300 ,toolbar: {show: false},
   },
@@ -401,11 +512,23 @@ var houseinfoData_chartA2 = {
   colors: ["#FF9C01"],
   series: [
   {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
-  chart: {height: 180,zoomed: {enabled: false},
-  toolbar: {show: false},
-  zoomed: {
-    enabled: false
-  }
+  chart: {height: 180,toolbar: {show: false},
+  events: {
+    beforeMount: {enabled: false},
+    mounted: {enabled: false},
+    updated: {enabled: false},
+    click: {enabled: false},
+    mouseMove: {enabled: false},
+    legendClick: {enabled: false},
+    markerClick: {enabled: false},
+    selection: {enabled: false},
+    dataPointSelection: {enabled: false},
+    dataPointMouseEnter: {enabled: false},
+    dataPointMouseLeave: {enabled: false},
+    beforeZoom: {enabled: false},
+    zoomed: {enabled: false},
+    scrolled: {enabled: false},
+  }  
   },
   stroke: {width: 3,curve: 'smooth'},
   fill: {
@@ -432,10 +555,22 @@ var houseinfoData_chartA3 = {
   colors: ["#FF9C01"],
   series: [
   {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
-  chart: {height: 180,zoomed: {enabled: false},
-  toolbar: {show: false},
-  zoomed: {
-    enabled: false
+  chart: {height: 180,toolbar: {show: false},
+  events: {
+    beforeMount: {enabled: false},
+    mounted: {enabled: false},
+    updated: {enabled: false},
+    click: {enabled: false},
+    mouseMove: {enabled: false},
+    legendClick: {enabled: false},
+    markerClick: {enabled: false},
+    selection: {enabled: false},
+    dataPointSelection: {enabled: false},
+    dataPointMouseEnter: {enabled: false},
+    dataPointMouseLeave: {enabled: false},
+    beforeZoom: {enabled: false},
+    zoomed: {enabled: false},
+    scrolled: {enabled: false},
   }
   },
   stroke: {width: 3,curve: 'smooth'},
@@ -466,9 +601,24 @@ var houseinfoData_chartB1 = {
     {data: [50,80,10,85,100]},
     {data: [60,21,70,80,35]}
   ],
-  chart: { type: 'bar', height: 230 ,toolbar: {show: false}, zoomed: {
-    enabled: false
-  }},
+  chart: { type: 'bar', height: 230,
+  events: {
+    beforeMount: {enabled: false},
+    mounted: {enabled: false},
+    updated: {enabled: false},
+    click: {enabled: false},
+    mouseMove: {enabled: false},
+    legendClick: {enabled: false},
+    markerClick: {enabled: false},
+    selection: {enabled: false},
+    dataPointSelection: {enabled: false},
+    dataPointMouseEnter: {enabled: false},
+    dataPointMouseLeave: {enabled: false},
+    beforeZoom: {enabled: false},
+    zoomed: {enabled: false},
+    scrolled: {enabled: false},
+  }  
+  },
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
@@ -488,9 +638,24 @@ var houseinfoData_chartB2 = {
   series: [
     {data: [60,80,70,85,100]},
   ],
-  chart: { type: 'bar', height: 210 ,toolbar: {show: false}, zoomed: {
-    enabled: false
-  }},
+  chart: { type: 'bar', height: 210 ,toolbar: {show: false},
+  events: {
+    beforeMount: {enabled: false},
+    mounted: {enabled: false},
+    updated: {enabled: false},
+    click: {enabled: false},
+    mouseMove: {enabled: false},
+    legendClick: {enabled: false},
+    markerClick: {enabled: false},
+    selection: {enabled: false},
+    dataPointSelection: {enabled: false},
+    dataPointMouseEnter: {enabled: false},
+    dataPointMouseLeave: {enabled: false},
+    beforeZoom: {enabled: false},
+    zoomed: {enabled: false},
+    scrolled: {enabled: false},
+  }  
+  },
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
@@ -516,9 +681,24 @@ var houseinfoData_chartB3 = {
   series: [
     {data: [60,80,70,85,100]},
   ],
-  chart: { type: 'bar', height: 210 ,toolbar: {show: false}, zoomed: {
-    enabled: false
-  }},
+  chart: { type: 'bar', height: 210 ,toolbar: {show: false},
+  events: {
+    beforeMount: {enabled: false},
+    mounted: {enabled: false},
+    updated: {enabled: false},
+    click: {enabled: false},
+    mouseMove: {enabled: false},
+    legendClick: {enabled: false},
+    markerClick: {enabled: false},
+    selection: {enabled: false},
+    dataPointSelection: {enabled: false},
+    dataPointMouseEnter: {enabled: false},
+    dataPointMouseLeave: {enabled: false},
+    beforeZoom: {enabled: false},
+    zoomed: {enabled: false},
+    scrolled: {enabled: false},
+  }  
+  },
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
