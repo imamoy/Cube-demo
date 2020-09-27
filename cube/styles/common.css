@@ -3213,6 +3213,10 @@ a.main-color {
     .l-pageFill_main {
       width: calc(100% - 360px);
       margin-left: 360px; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .l-pageFill_main {
+      width: calc(100% - 300px);
+      margin-left: 300px; } }
   @media screen and (max-width: 991px) {
     .l-pageFill_main {
       height: calc(100vh - 156px);
@@ -3223,7 +3227,7 @@ a.main-color {
 
 .l-pageFill_right {
   z-index: 50; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     .l-pageFill_right {
       width: 334px;
       height: 100%;

@@ -45,9 +45,6 @@
   color: #808080; }
   #cube_left .closs-btn i::before, #cube-house .closs-btn i::before {
     margin: 0; }
-  @media screen and (max-width: 1199px) {
-    #cube_left .closs-btn, #cube-house .closs-btn {
-      display: none; } }
   @media screen and (min-width: 992px) {
     #cube_left .closs-btn, #cube-house .closs-btn {
       -webkit-transition: all 0.25s ease-in-out;
@@ -93,7 +90,9 @@
       padding-top: 40px;
       padding-bottom: 40px; }
       #cube_left.close {
-        left: -100%; } }
+        left: -100%; }
+      #cube_left .cube_search_form {
+        padding-bottom: 40px; } }
   @media screen and (max-width: 1199px) {
     #cube_left {
       z-index: 9999; } }
@@ -205,10 +204,13 @@
   #cube-house.l-pageFill_right .top {
     background-color: #F4F4F4; }
   #cube-house.l-pageFill_right .btm {
-    background-color: #fff; }
+    height: calc(100% - 156px);
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto; }
   #cube-house.l-pageFill_right .cube_house_close {
     display: none; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     #cube-house.l-pageFill_right {
       display: block;
       right: -100% !important;
@@ -216,57 +218,38 @@
       transition: right 0.25s ease-in-out; }
       #cube-house.l-pageFill_right.active {
         right: 0 !important; } }
-  @media screen and (min-width: 992px) {
-    #cube-house.l-pageFill_right .btm {
-      height: calc(100% - 160px);
-      overflow-y: auto; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    #cube-house.l-pageFill_right .top {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      #cube-house.l-pageFill_right .top > * {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: 1;
-                flex-flow: 1;
-        width: 40%; }
-      #cube-house.l-pageFill_right .top ul {
-        width: 30%; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     #cube-house.l-pageFill_right {
       display: none;
       position: absolute;
       opacity: 0;
       top: -100%;
-      height: calc(100vh - 156px);
+      height: calc(100vh - 150px);
+      -webkit-box-shadow: 0 0 0 0;
+              box-shadow: 0 0 0 0;
       -webkit-transition: opacity 0.25s ease-in-out;
       transition: opacity 0.25s ease-in-out; }
       #cube-house.l-pageFill_right.active {
         display: block;
-        top: 500px;
+        width: 100%;
+        top: 150px;
         opacity: 1; }
       #cube-house.l-pageFill_right .top, #cube-house.l-pageFill_right .btm {
         padding: 14px 30px; }
+      #cube-house.l-pageFill_right .btm {
+        height: calc(100% - 124px); }
       #cube-house.l-pageFill_right .cube-house_item {
         display: inline-block;
         width: calc(50% - 20px); }
         #cube-house.l-pageFill_right .cube-house_item:first-child {
           padding-top: 20px; } }
-      @media screen and (max-width: 1199px) and (max-width: 991px) {
+      @media screen and (max-width: 991px) and (max-width: 991px) {
         #cube-house.l-pageFill_right .cube-house_item:first-child {
           padding-top: 17px; } }
-      @media screen and (max-width: 1199px) and (max-width: 479px) {
+      @media screen and (max-width: 991px) and (max-width: 479px) {
         #cube-house.l-pageFill_right .cube-house_item:first-child {
           padding-top: 13.2px; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
         #cube-house.l-pageFill_right .cube-house_item:nth-child(even) {
           float: right; }
       #cube-house.l-pageFill_right .cube_house_close {
@@ -290,13 +273,6 @@
         position: absolute;
         top: 20px;
         right: 30px; } }
-  @media screen and (max-width: 991px) {
-    #cube-house.l-pageFill_right {
-      -webkit-box-shadow: 0 0 0 0;
-              box-shadow: 0 0 0 0; }
-      #cube-house.l-pageFill_right.active {
-        width: 100%;
-        top: 156px; } }
   @media screen and (max-width: 767px) {
     #cube-house.l-pageFill_right .cube-house_item {
       display: block;
@@ -630,15 +606,10 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     #map_markName {
       top: 40px;
       left: 100px; } }
-  @media screen and (max-width: 1199px) {
-    #map_markName {
-      display: block;
-      top: 40px;
-      right: 30px; } }
   @media screen and (max-width: 991px) {
     #map_markName {
       top: 20px;

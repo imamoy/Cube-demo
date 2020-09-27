@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
     <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
     <link rel="stylesheet" type="text/css" href="cube/styles/plugins/nouislider.css">
-    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/mCustomScrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="cube/styles/houseinfo_new.css">
     <link rel="stylesheet" type="text/css" href="cube/styles/cube.css">
   </head>
@@ -174,17 +173,6 @@
         </ul>
         <div class="cutover-in show" id="cube-map">
           <div class="map"></div>
-          <div id="map_markName">
-            <div class="mark-toggle"><i class="icon-object-group"></i></div>
-            <div class="mark-list">
-              <ul class="nostyle">
-                <li><span class="mark_img"><img class="pc" src="images/cube/icon/more_maker_red.png" alt=""><img class="mobile" src="images/cube/icon/more_maker_redG.png" alt=""></span><span class="mark_name">區域高於估價<br>顏色越深越高</span></li>
-                <li><span class="mark_img"><img class="pc" src="images/cube/icon/more_maker_green.png" alt=""><img class="mobile" src="images/cube/icon/more_maker_greenG.png" alt=""></span><span class="mark_name">區域低於估價<br>顏色越淺越低</span></li>
-                <li><span class="mark_img house"><img src="images/cube/icon/house_up.png" alt=""></span><span class="mark_name">單一物件<br>高於估價</span></li>
-                <li><span class="mark_img house"><img src="images/cube/icon/house_down.png" alt=""></span><span class="mark_name">單一物件<br>低於估價</span></li>
-              </ul>
-            </div>
-          </div>
         </div>
         <div class="cutover-in main-scrollbar" id="cube-list">
           <section class="paperblock">
@@ -860,6 +848,17 @@
                 </div></a></div>
           </section>
         </div>
+        <div id="map_markName">
+          <div class="mark-toggle"><i class="icon-object-group"></i></div>
+          <div class="mark-list">
+            <ul class="nostyle">
+              <li><span class="mark_img"><img class="pc" src="images/cube/icon/more_maker_red.png" alt=""><img class="mobile" src="images/cube/icon/more_maker_redG.png" alt=""></span><span class="mark_name">區域高於估價<br>顏色越深越高</span></li>
+              <li><span class="mark_img"><img class="pc" src="images/cube/icon/more_maker_green.png" alt=""><img class="mobile" src="images/cube/icon/more_maker_greenG.png" alt=""></span><span class="mark_name">區域低於估價<br>顏色越淺越低</span></li>
+              <li><span class="mark_img house"><img src="images/cube/icon/house_up.png" alt=""></span><span class="mark_name">單一物件<br>高於估價</span></li>
+              <li><span class="mark_img house"><img src="images/cube/icon/house_down.png" alt=""></span><span class="mark_name">單一物件<br>低於估價</span></li>
+            </ul>
+          </div>
+        </div>
         <div id="map_search">
           <div class="search-toggle"><i class="icon-magnifier"></i></div>
           <div class="search-box">
@@ -883,7 +882,7 @@
             <div class="cylinder_info"><span class="cube_price cube_up"><span class="icon"></span></span><span>高於市價 有<span class="num upcolor">5</span>間</span><span class="line">|</span><span class="cube_price cube_down"><span class="icon"></span></span><span>低於市價 有<span class="num downcolor">6</span>間</span></div>
           </div>
         </div>
-        <div class="btm">
+        <div class="btm main-scrollbar">
           <div id="buy_house">
                       <div class="cube-house_item"><a href="" title="健安新城裝潢三房 - 優質學區">
                           <h2 class="title">健安新城裝潢三房 - 優質學區</h2>
@@ -972,7 +971,6 @@
     <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
     <script src="cube/scripts/plugins/nouislider.min.js"></script>
     <script src="cube/scripts/plugins/tinyMap.js"></script>
-    <script src="cube/scripts/plugins/mCustomScrollbar.min.js"></script>
     <script src="cube/scripts/default/cube_range.js"></script>
     <script src="cube/scripts/default/cube_map.js"></script>
     <script src="cube/scripts/default/ui.js"></script>
