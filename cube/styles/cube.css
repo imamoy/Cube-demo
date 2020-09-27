@@ -947,6 +947,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   @media screen and (max-width: 991px) {
     #cube-list {
       padding: 80px 10px 20px; }
+      #cube-list .paperblock {
+        width: 100%; }
+        #cube-list .paperblock .house-data_item {
+          margin: 20px 0; }
       #cube-list .headline {
         padding-bottom: 0;
         margin-bottom: 0 !important;
