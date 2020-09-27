@@ -228,14 +228,16 @@ var circle4 = {
 };
 
 
-var chart = new ApexCharts(document.querySelector("#circle-chart1"), circle1);
-chart.render();
-var chart = new ApexCharts(document.querySelector("#circle-chart2"), circle2);
-chart.render();
-var chart = new ApexCharts(document.querySelector("#circle-chart3"), circle3);
-chart.render();
-var chart = new ApexCharts(document.querySelector("#circle-chart4"), circle4);
-chart.render();
+var chart1 = new ApexCharts(document.querySelector("#circle-chart1"), circle1);
+chart1.render();
+var chart2 = new ApexCharts(document.querySelector("#circle-chart2"), circle2);
+chart2.render();
+var chart3 = new ApexCharts(document.querySelector("#circle-chart3"), circle3);
+chart3.render();
+var chart4 = new ApexCharts(document.querySelector("#circle-chart4"), circle4);
+chart4.render();
+
+
 
 
 //------- 估值概觀 ------------------------------------------------------------------------
@@ -282,8 +284,8 @@ var houseinfo_chart1 = {
   tooltip: {enabled: false}
 };
 
-var chart = new ApexCharts(document.querySelector("#houseinfo1_chart1"), houseinfo_chart1);
-chart.render();
+var chart5 = new ApexCharts(document.querySelector("#houseinfo1_chart1"), houseinfo_chart1);
+chart5.render();
 
 
 
@@ -338,8 +340,8 @@ var houseinfo_chart2 = {
   }
 };
 
-var chart = new ApexCharts(document.querySelector("#houseinfo1_chart2"), houseinfo_chart2);
-chart.render();
+var chart6 = new ApexCharts(document.querySelector("#houseinfo1_chart2"), houseinfo_chart2);
+chart6.render();
 
 
 
@@ -501,12 +503,12 @@ var houseinfo2_chart3 = {
   yaxis: {title: {text: '單價(萬)'}}  
 };
 
-var chart = new ApexCharts(document.querySelector("#houseinfo2_chart1"), houseinfo2_chart1);
-chart.render();
-var chart = new ApexCharts(document.querySelector("#houseinfo2_chart2_y1"), houseinfo2_chart2);
-chart.render();
-var chart = new ApexCharts(document.querySelector("#similar_chart_y1"), houseinfo2_chart3);
-chart.render();
+var chart7 = new ApexCharts(document.querySelector("#houseinfo2_chart1"), houseinfo2_chart1);
+chart7.render();
+var chart8 = new ApexCharts(document.querySelector("#houseinfo2_chart2_y1"), houseinfo2_chart2);
+chart8.render();
+var chart9 = new ApexCharts(document.querySelector("#similar_chart_y1"), houseinfo2_chart3);
+chart9.render();
 
 
 
@@ -603,8 +605,8 @@ var houseinfoData_chartA2 = {
   xaxis: {categories: ['台北市','新北市','桃園市','台中市', '台南市', '高雄市']},
   yaxis: {title: {text: '單價(萬)'}}
 };
-var chart = new ApexCharts(document.querySelector("#houseinfoData-chartA2"), houseinfoData_chartA2);
-chart.render();
+var chart10 = new ApexCharts(document.querySelector("#houseinfoData-chartA2"), houseinfoData_chartA2);
+chart10.render();
 
 
 var houseinfoData_chartA3 = {
@@ -649,8 +651,8 @@ var houseinfoData_chartA3 = {
   xaxis: {categories: ['台北市','新北市','桃園市','台中市', '台南市', '高雄市']},
   yaxis: {title: {text: '單價(萬)'}}
 };
-var chart = new ApexCharts(document.querySelector("#houseinfoData-chartA3"), houseinfoData_chartA3);
-chart.render();
+var chart11 = new ApexCharts(document.querySelector("#houseinfoData-chartA3"), houseinfoData_chartA3);
+chart11.render();
 
 
 //------- 彈跳視窗 - 資料  中間 ------------
@@ -660,7 +662,7 @@ var houseinfoData_chartB1 = {
     {data: [50,80,10,85,100]},
     {data: [60,21,70,80,35]}
   ],
-  chart: { type: 'bar', height: 230,
+  chart: { type: 'bar', height: 230,toolbar: {show: false},
   zoom: {
     enabled: false,
   },
@@ -682,6 +684,11 @@ var houseinfoData_chartB1 = {
   }  
   },
   plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
+  plotOptions: {
+    bar: {
+        distributed: true
+    }
+},
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
   xaxis: {
@@ -692,8 +699,8 @@ var houseinfoData_chartB1 = {
   tooltip:{enabled: false}
 };
 
-var chart = new ApexCharts(document.querySelector("#houseinfoData-chartB1"), houseinfoData_chartB1);
-chart.render();
+var chart12 = new ApexCharts(document.querySelector("#houseinfoData-chartB1"), houseinfoData_chartB1);
+chart12.render();
 
 
 var houseinfoData_chartB2 = {
@@ -738,8 +745,8 @@ var houseinfoData_chartB2 = {
   tooltip:{enabled: false}
 };
 
-var chart = new ApexCharts(document.querySelector("#houseinfoData-chartB2"), houseinfoData_chartB2);
-chart.render();
+var chart13 = new ApexCharts(document.querySelector("#houseinfoData-chartB2"), houseinfoData_chartB2);
+chart13.render();
 
 
 var houseinfoData_chartB3 = {
@@ -784,5 +791,6 @@ var houseinfoData_chartB3 = {
   tooltip:{enabled: false}
 };
 
-var chart = new ApexCharts(document.querySelector("#houseinfoData-chartB3"), houseinfoData_chartB3);
-chart.render();
+var chart14 = new ApexCharts(document.querySelector("#houseinfoData-chartB3"), houseinfoData_chartB3);
+chart14.render();
+

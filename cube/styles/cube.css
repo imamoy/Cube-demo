@@ -937,15 +937,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding: 120px 1.8% 20px;
   background-color: rgba(239, 239, 239, 0.5);
   overflow-y: auto; }
-  @media screen and (max-width: 1680px) {
+  @media screen and (min-width: 1441px) {
     #cube-list {
       padding: 120px 2.6% 20px; } }
   #cube-list .paperblock {
-    width: calc(50% - 10px); }
+    width: calc(33% - 10px); }
     #cube-list .paperblock .house-data_item .headline {
       width: 100%;
       border: none;
       padding-right: 0; }
+    #cube-list .paperblock .house-data_item .house-name, #cube-list .paperblock .house-data_item .houseinfo-price {
+      max-width: none; }
   #cube-list .house-data_item {
     padding: 15px;
     background-color: #fff;
@@ -961,6 +963,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       -webkit-box-shadow: 0 5px 40px #8da9ff;
               box-shadow: 0 5px 40px #8da9ff;
       color: #404040; }
+  @media screen and (max-width: 1440px) {
+    #cube-list .paperblock {
+      width: calc(50% - 10px); } }
   @media screen and (max-width: 1199px) {
     #cube-list .paperblock {
       width: 100%; }

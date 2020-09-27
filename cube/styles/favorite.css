@@ -125,3 +125,9 @@
   @media screen and (max-width: 991px) {
     .favorite-inner {
       padding: 20px 0; } }
+
+.favorite-houseItem {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .favorite-houseItem > * {
+    width: 100%; }

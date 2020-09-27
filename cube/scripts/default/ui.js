@@ -160,6 +160,10 @@ $(document).ready(function () {
 		$('#searchimg-pop .houseimg-item').click(function(){
 			$(this).toggleClass('active');
 		});
+
+		$('#housenote .star').click(function(){
+			$(this).toggleClass('active');
+		});
 	});
 
 
