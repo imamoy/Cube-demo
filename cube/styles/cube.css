@@ -479,7 +479,8 @@
       z-index: 90; } }
   @media screen and (max-width: 991px) {
     .map_area {
-      margin-top: 152px; }
+      margin-top: 152px;
+      overflow: hidden; }
       .map_area #cube_left-toggle {
         display: none; } }
   @media screen and (max-width: 479px) {
@@ -551,7 +552,7 @@
 
 #map_markName, #map_search, #cube_nav {
   position: absolute;
-  z-index: 96; }
+  z-index: 99 !important; }
 
 #map_search {
   display: -webkit-inline-box;
