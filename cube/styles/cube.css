@@ -712,6 +712,11 @@
   @media screen and (max-width: 1440px) {
     .mark-list li {
       margin: 0 6px; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .mark-list {
+      right: auto !important;
+      left: 0 !important;
+      margin: 10px 0; } }
   @media screen and (max-width: 1199px) {
     .mark-list {
       height: auto;
