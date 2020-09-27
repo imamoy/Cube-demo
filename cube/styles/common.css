@@ -2902,6 +2902,16 @@ header {
       header .menu .nav .nav_item-icon {
         font-size: 40px;
         margin-bottom: 5px; }
+      header .menu .nav::after {
+        display: block;
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        opacity: 0; }
     header .menu .menu-close {
       position: absolute;
       right: 20px;
@@ -2914,6 +2924,8 @@ header {
       opacity: 1;
       visibility: visible;
       right: 0; }
+      header .menu.active .nav::after {
+        opacity: 1; }
   header .menu-toggle {
     display: block; }
   header .menu-toggle, header .lang-btn, header .search-btn {
@@ -3013,13 +3025,18 @@ header {
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); } }
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    header.z-index .logo {
+      background-image: url("../../images/cube/logo-w.svg"); } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
     header.z-index .logo {
       background-image: url("../../images/cube/logo-w.svg"); } }
   @media screen and (max-width: 767px) {
     header .menu.active {
       width: 100%;
       padding: 5% 0; }
+      header .menu.active .nav::after {
+        display: none; }
     header .menu .nav {
       margin: 5% 0;
       padding: 0; }
@@ -3069,6 +3086,8 @@ header {
     margin-right: 1.8vw; }
   #header .login-row a {
     color: #606060; }
+  #header .menu .nav::after {
+    right: 100%; }
   @media screen and (min-width: 480px) {
     #header .search-btn {
       display: none; } }
@@ -3076,7 +3095,7 @@ header {
     #header {
       -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.16);
               box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.16);
-      padding: 10px 40px;
+      padding: 30px 40px 10px;
       position: fixed;
       width: 100%;
       background-color: #FFF; } }
@@ -3130,6 +3149,8 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  #header_mini .menu.active .nav::after {
+    left: 100%; }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   #header_mini .menu.active {
@@ -3142,7 +3163,10 @@ header {
     z-index: 999; }
   #header_mini .menu.active {
     left: auto;
-    right: 0; } }
+    right: 0; }
+    #header_mini .menu.active .nav::after {
+      left: auto;
+      right: 100%; } }
 
 /* ==========================================================================
 		footer

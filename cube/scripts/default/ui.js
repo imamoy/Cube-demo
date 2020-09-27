@@ -6,12 +6,10 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		$(this).next(".menu").addClass('active');
 		$('header').addClass('z-index');
-		$('.pop_bg').addClass('active');
 		$('header').addClass('logo-w');
 	});
 	$('.menu-close').click(function(){
 		$(this).parent('.menu').removeClass('active');
-		$('.pop_bg').removeClass('active');
 		$('header').removeClass('z-index');
 		$('header').removeClass('logo-w');
 	});
@@ -66,6 +64,7 @@ $(document).ready(function () {
 	
 
 	$('#cube').each(function () {
+		$('body').css('overflow','hidden');
 		$('.mark-toggle').click(function () {
 			$('.mark-list').toggleClass('active');
 		});
@@ -104,12 +103,6 @@ $(document).ready(function () {
 			$('#cube-house').removeClass('active');
 			$('.map_area').removeClass('active');
 		});
-
-		if (jQuery(window).width() < 600){
-			$('body').css('overflow','hidden');
-		}
-
-
 		$('.rooms input:radio:checked').val();
 	});
 
