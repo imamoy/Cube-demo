@@ -1,5 +1,5 @@
 // circle_chart 共用變數
-var circle_chart = { width: 145, height: 145, type: "radialBar", zoom: {enabled: false}}
+var circle_chart = { width: 138, height: 138, type: "radialBar", zoom: {enabled: false}}
 var circle_stroke = {lineCap: "round"}
 var circle_hollow = { margin: 0, size: "60%" }
 var circle_lableTW = {offsetY: 20, show: true, color: "#808080", fontSize: "13px"}
