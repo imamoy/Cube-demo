@@ -121,15 +121,15 @@ $(document).ready(function () {
 			$('.bulid-detail').slideToggle();
 		});
 
-		$(window).scroll(function () {
-			if (jQuery(window).width() < 1025 && $(this).scrollTop() > 50) {
-				$(".houseinfo-head").addClass("fixed");
-				$(".houseinfo-nav").addClass("fixed");
-			} else {
-				$(".houseinfo-head").removeClass("fixed");
-				$(".houseinfo-nav").removeClass("fixed");
-			}
-		});
+		// $(window).scroll(function () {
+		// 	if (jQuery(window).width() < 1025 && $(this).scrollTop() > 50) {
+		// 		$(".houseinfo-head").addClass("fixed");
+		// 		$(".houseinfo-nav").addClass("fixed");
+		// 	} else {
+		// 		$(".houseinfo-head").removeClass("fixed");
+		// 		$(".houseinfo-nav").removeClass("fixed");
+		// 	}
+		// });
 
 		$('.add-btn').click(function(){
 			$(this).toggleClass('active');
