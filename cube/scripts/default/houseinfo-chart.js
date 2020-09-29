@@ -278,7 +278,7 @@ var houseinfo2_chart3 = {
     {name: '社區大樓', data: [30, 32, 36, 34, 40, 42, 45]},
     {name: '郵政區號', data: [50, 50, 53, 55, 60, 65, 62]}, 
     {name: '大安區', data: [40, 45, 45, 50, 55, 45,50]},
-    {name: '物件開價', data: [,,,,,,60]}
+    {name: '物件開價', data: [null,null,null,null,null,null,60]}
   ],
   chart: {
     sparkline: {
