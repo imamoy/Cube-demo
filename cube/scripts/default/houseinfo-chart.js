@@ -1,165 +1,107 @@
+// circle_chart 共用變數
+var circle_chart = { width: 145, height: 145, type: "radialBar", zoom: {enabled: false}}
+var circle_stroke = {lineCap: "round"}
+var circle_hollow = { margin: 0, size: "60%" }
+var circle_lableTW = {offsetY: 20, show: true, color: "#808080", fontSize: "13px"}
+//
+
+var circle1_coler = "#2BA84A"
 var circle1 = {
-  chart: {
-    width: 145,
-    height: 145,
-    type: "radialBar",
-    zoom: {
-      enabled: false,
-    }
-  },
+  chart: circle_chart,
   series: [67],
-  colors: ["#2BA84A"],
+  colors: [circle1_coler],
   plotOptions: {
     radialBar: {
-      hollow: {
-        margin: 0,
-        size: "60%"
-      },
-     
+      hollow: circle_hollow,
+
       dataLabels: {
         showOn: "always",
-        name: {
-          offsetY: 20,
-          show: true,
-          color: "#808080",
-          fontSize: "13px"
-        },
+        name: circle_lableTW,
         value: {
           offsetY: -15,
-          color: "#2BA84A",
+          color: circle1_coler,
           fontSize: "24px",
           show: true
         }
       }
     }
   },
-  stroke: {
-    lineCap: "round",
-  },
+  stroke: circle_stroke,
   labels: ["準確指數"]
 };
 
+var circle2_coler = "#FF9D0E"
 var circle2 = {
-  chart: {
-    width: 145,
-    height: 145,
-    type: "radialBar",
-    zoom: {
-      enabled: false,
-    }
-  },
+  chart: circle_chart,
   series: [8],
-  colors: ["#FF9D0E"],
+  colors: [circle2_coler],
   plotOptions: {
     radialBar: {
-      hollow: {
-        margin: 0,
-        size: "60%"
-      },
-     
+      hollow: circle_hollow,
+
       dataLabels: {
         showOn: "always",
-        name: {
-          offsetY: 20,
-          show: true,
-          color: "#808080",
-          fontSize: "13px"
-        },
+        name: circle_lableTW,
         value: {
           offsetY: -15,
-          color: "#FF9D0E",
+          color: circle2_coler,
           fontSize: "24px",
           show: true
         }
       }
     }
   },
-  stroke: {
-    lineCap: "round",
-  },
+  stroke: circle_stroke,
   labels: ["中性市場"]
 };
 
+var circle3_coler = "#0050E6"
 var circle3 = {
-  chart: {
-    width: 145,
-    height: 145,
-    type: "radialBar",
-    zoom: {
-      enabled: false,
-    }
-  },
+  chart: circle_chart,
   series: [8],
-  colors: ["#0050E6"],
+  colors: [circle3_coler],
   plotOptions: {
     radialBar: {
-      hollow: {
-        margin: 0,
-        size: "60%"
-      },
-     
+      hollow: circle_hollow,
+
       dataLabels: {
         showOn: "always",
-        name: {
-          offsetY: 20,
-          show: true,
-          color: "#808080",
-          fontSize: "13px"
-        },
+        name: circle_lableTW,
         value: {
           offsetY: -15,
-          color: "#0050E6",
+          color: circle3_coler,
           fontSize: "24px",
           show: true
         }
       }
     }
   },
-  stroke: {
-    lineCap: "round",
-  },
+  stroke: circle_stroke,
   labels: ["相似件數"]
 };
 
-
+var circle4_coler = "#FF0006"
 var circle4 = {
-  chart: {
-    width: 145,
-    height: 145,
-    type: "radialBar",
-    zoom: {
-      enabled: false,
-    }
-  },
+  chart: circle_chart,
   series: [67],
-  colors: ["#FF0006"],
+  colors: [circle4_coler],
   plotOptions: {
     radialBar: {
-      hollow: {
-        margin: 0,
-        size: "60%"
-      },
-     
+      hollow: circle_hollow,
+
       dataLabels: {
         showOn: "always",
-        name: {
-          offsetY: 20,
-          show: true,
-          color: "#808080",
-          fontSize: "13px"
-        },
+        name: circle_lableTW,
         value: {
           offsetY: -15,
-          color: "#FF0006",
+          color: circle4_coler,
           fontSize: "24px",
           show: true
         }
       }
     }
   },
-  stroke: {
-    lineCap: "round",
-  },
+  stroke: circle_stroke,
   labels: ["12月預測"]
 };
 
