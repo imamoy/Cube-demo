@@ -553,7 +553,7 @@
 
 #map_markName, #map_search, #cube_nav {
   position: absolute;
-  z-index: 99 !important; }
+  z-index: 98 !important; }
 
 #map_search {
   display: -webkit-inline-box;
@@ -561,7 +561,8 @@
   display: inline-flex;
   height: 50px;
   top: 40px;
-  left: 40px; }
+  left: 40px;
+  z-index: 99 !important; }
   @media screen and (max-width: 991px) {
     #map_search {
       top: 20px;
