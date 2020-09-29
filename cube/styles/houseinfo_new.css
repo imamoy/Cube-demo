@@ -102,7 +102,7 @@
       width: 73.4% !important;
       margin-left: 26.4% !important; }
     .houseinfo-paper .top-head {
-      width: 70% !important;
+      width: 69.7% !important;
       top: 99px !important;
       padding-top: 58px !important; } }
   @media screen and (min-width: 1200px) {
@@ -123,15 +123,15 @@
           position: fixed;
           z-index: 50; }
       .houseinfo-paper .top-head {
-        width: 63.2%;
+        width: 63%;
         padding-top: 38px;
         top: 100px;
         right: 40px;
         padding-right: 2.8%;
-        padding-left: 10px; } }
-  @media screen and (min-width: 1441px) {
-    .houseinfo-paper .top-head {
-      width: 66.37%; } }
+        padding-left: 35px; } }
+  @media screen and (min-width: 1200px) {
+    .houseinfo-paper .paperblock {
+      margin: 30px; } }
   @media screen and (max-width: 1440px) {
     .houseinfo-paper > .left .detail-price {
       -webkit-box-orient: vertical;
@@ -786,7 +786,7 @@
 
 .houseinfo-inner {
   margin-top: 40px;
-  padding: 40px 0; }
+  padding: 30px 0 40px; }
   .houseinfo-inner .paperblock {
     background-color: #fff;
     -webkit-box-shadow: 0 5px 40px #DBE4FF;
@@ -833,9 +833,13 @@
     padding-left: 30px; }
   .houseinfo-inner .detail-price .icon i::before {
     margin-left: 0; }
+  @media screen and (min-width: 1200px) {
+    .houseinfo-inner {
+      margin-right: -30px; } }
   @media screen and (max-width: 1440px) {
     .houseinfo-inner {
-      padding: 30px 0; }
+      padding: 30px 0;
+      margin-top: 20px; }
       .houseinfo-inner .block {
         padding: 20px 24px; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1024,6 +1028,10 @@ table {
       .btn_nav .btn-item:hover {
         background-color: rgba(0, 80, 230, 0.1); } }
 
+#houseInfo4 .btn_nav {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 ul.mark-list {
   padding: 0; }
 
@@ -1110,7 +1118,8 @@ ul.mark-list li {
   @media screen and (max-width: 1440px) {
     .block-unpading {
       margin: 20px -24px 0;
-      width: calc(100% + 48px); } }
+      width: calc(100% + 48px);
+      padding: 20px; } }
   @media screen and (max-width: 1199px) {
     .block-unpading {
       margin: 10px -20px 0;
@@ -1608,8 +1617,7 @@ ul.mark-list li {
 
 #recommend_1 .block, #recommend_2 .block, #recommend_3 .block {
   -webkit-box-shadow: 0 5px 20px #DBE4FF;
-          box-shadow: 0 5px 20px #DBE4FF;
-  margin: 20px; }
+          box-shadow: 0 5px 20px #DBE4FF; }
 
 @media screen and (max-width: 991px) {
   #recommend_1 .block, #recommend_2 .block, #recommend_3 .block {
@@ -1925,3 +1933,7 @@ ul.mark-list li {
   transition: color 0.25s ease-in-out; }
   #housenote .star.active {
     color: #0050E6; }
+
+@media screen and (min-width: 1200px) {
+  #houseInfo6 > * {
+    margin: 20px 30px; } }

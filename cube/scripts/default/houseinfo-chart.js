@@ -348,7 +348,8 @@ chart10.render();
 var houseinfoData_chartA2 = {
   colors: ["#FF9C01"],
   series: [
-  {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
+    {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}
+  ],
   chart: {height: 180,toolbar: {show: false},
   zoom: {
     enabled: false,
