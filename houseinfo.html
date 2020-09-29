@@ -164,6 +164,7 @@
         <div class="houseinfo-inner">
           <div class="cutover-in show" id="houseInfo1">
             <section class="paperblock">
+              <div class="houseinfo-map"></div>
               <div class="block">
                 <form class="w100" action="">
                   <div class="detail-price" style="background-color: #FFF;">
@@ -1918,7 +1919,6 @@
     </div>
     <div class="cursor"></div>
     <script src="cube/scripts/default/jquery.min.js"></script>
-    <script src="cube/scripts/plugins/wow.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="cube/scripts/default/houseinfo-chart.js"></script>
     <script src="cube/scripts/plugins/tinyMap.js"></script>
@@ -2015,5 +2015,67 @@
       <div class="pop_close"><i class="icon-cancel"></i></div>
     </div>
     <div class="pop_bg"></div>
+    <script>
+      $('#houseinfo').each(function(){
+          $(this).prev('#header').addClass('gary');
+          $(this).prev('#header').addClass('fixed');
+      
+          $('.houseinfo-tabtoggle').click(function(){
+              $('.houseinfo-tabhide').slideToggle();
+          });
+          $('.check-btn').click(function(){
+              $(this).toggleClass('active');
+          });
+      
+          $('.bulid-detail-toggle').click(function(){
+              $('.bulid-detail').slideToggle();
+          });
+      
+          $(window).scroll(function () {
+              if (jQuery(window).width() < 1025 && $(this).scrollTop() > 50) {
+                  $(".houseinfo-head").addClass("fixed");
+                  $(".houseinfo-nav").addClass("fixed");
+              } else {
+                  $(".houseinfo-head").removeClass("fixed");
+                  $(".houseinfo-nav").removeClass("fixed");
+              }
+          });
+      
+          $('.add-btn').click(function(){
+              $(this).toggleClass('active');
+          });
+      
+          $('#save-as').click(function(){
+              $('#saveasfile-pop').addClass('active');
+              $('.pop_bg').addClass('active');
+          });
+          $('#open').click(function(){
+              $('#openfile-pop').addClass('active');
+              $('.pop_bg').addClass('active');
+          });
+          $('.upload-btn').click(function(){
+              $('#upload-pop').addClass('active');
+              $('.pop_bg').addClass('active');
+          });
+          $('.searchImg-btn').click(function(){
+              $('#searchimg-pop').addClass('active');
+              $('.pop_bg').addClass('active');
+          });
+      
+          $('.houseinfo2_block1_detail-toggle').click(function(){
+              $(this).toggleClass('active');
+              $(this).next('.houseinfo2_block1_detail').slideToggle();
+          });
+      
+          $('#searchimg-pop .houseimg-item').click(function(){
+              $(this).toggleClass('active');
+          });
+      
+          $('#housenote .star').click(function(){
+              $(this).toggleClass('active');
+          });
+      });
+      
+    </script>
   </body>
 </html>

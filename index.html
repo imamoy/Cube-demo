@@ -161,7 +161,6 @@
     </main>
     <div class="cursor"></div>
     <script src="cube/scripts/default/jquery.min.js"></script>
-    <script src="cube/scripts/plugins/wow.js"></script>
     <script src="cube/scripts/default/ui.js"></script>
     <div class="pop" id="sign_in">
       <div class="pop_head">
@@ -254,5 +253,25 @@
       <div class="pop_close"><i class="icon-cancel"></i></div>
     </div>
     <div class="pop_bg"></div>
+    <script>
+      $('#home').each(function(){
+          $(this).prev('#header').addClass('white');
+          $(this).prev('#header').addClass('fixed');
+      
+          $('.advanced-btn').click(function(){
+              $('.search-box_btm').toggleClass('active');
+              $('.advanced-box').toggleClass('active');
+              $('.advanced-inner').slideToggle();
+          });
+      
+          $(window).scroll(function () {
+              if (jQuery(window).width() < 991 && $(this).scrollTop() > 100) {
+                  $("header").addClass("active");
+              } else {
+                  $("header").removeClass("active");
+              }
+          });
+      });
+    </script>
   </body>
 </html>

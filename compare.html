@@ -345,8 +345,8 @@
     </main>
     <div class="cursor"></div>
     <script src="cube/scripts/default/jquery.min.js"></script>
-    <script src="cube/scripts/plugins/wow.js"></script>
     <script src="cube/scripts/plugins/jquery-ui.min.js"></script>
+    <script src="cube/scripts/plugins/jquery.ui.touch-punch.min.js"></script>
     <script src="cube/scripts/default/compare.js"></script>
     <script src="cube/scripts/default/ui.js"></script>
     <div class="pop" id="sign_in">
@@ -440,5 +440,44 @@
       <div class="pop_close"><i class="icon-cancel"></i></div>
     </div>
     <div class="pop_bg"></div>
+    <script>
+      $('#compare').each(function(){
+          $('.filter-toggle').click(function(){
+              $('.filter-btnbox').slideToggle();
+          });
+      
+          var houseTop_height = $('.compare-houseItem .compare-houseTop').height();
+          $('.compare-hold .compare-houseTop').css('height', houseTop_height + 5);
+      
+          $('.add-btn').click(function(){
+              $('#compare_addpop').addClass('active');
+              $('.pop_bg').addClass('active');
+          });
+      
+          $('#compare_addpop_btn').click(function(){
+              $('#compare_addpop').removeClass('active');
+              $('.pop_bg').removeClass('active');
+          });
+          $('.pop_bg').click(function(){
+              $('#compare_addpop').removeClass('active');
+              $('.pop_bg').removeClass('active');
+          });
+      
+          $("#header").removeClass("active");
+      
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 120) {
+                  $("#header").addClass("hide");
+                  $('#compare > .compare-top').addClass("fixed");
+                  $('#compare > .compare-inner').addClass("active");
+              } else {
+                  $("#header").removeClass("hide");
+                  $('#compare > .compare-top').removeClass("fixed");
+                  $('#compare > .compare-inner').removeClass("active");
+              }
+          });
+      });
+      
+    </script>
   </body>
 </html>

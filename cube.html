@@ -966,7 +966,6 @@
       </div>
     </main>
     <script src="cube/scripts/default/jquery.min.js"></script>
-    <script src="cube/scripts/plugins/wow.js"></script>
     <script src="cube/scripts/plugins/nouislider.min.js"></script>
     <script src="cube/scripts/plugins/tinyMap.js"></script>
     <script src="cube/scripts/default/cube_range.js"></script>
@@ -1063,5 +1062,50 @@
       <div class="pop_close"><i class="icon-cancel"></i></div>
     </div>
     <div class="pop_bg"></div>
+    <script>
+      $('#cube').each(function () {
+          $('body').css('overflow','hidden');
+          $('.mark-toggle').click(function () {
+              $('.mark-list').toggleClass('active');
+          });
+          $('.cube_search_toggle').click(function () {
+              $('.cube_search').slideToggle();
+              $('#cube_left').toggleClass('active');
+          });
+          $('#cube_left .closs-btn').click(function(){
+              $('#cube_left').addClass('close');
+              $('.l-pageFill_main').addClass('fill');
+          });
+          $('#cube-house .closs-btn').click(function(){
+              $('#cube-house').removeClass('active');
+          });
+          $('#cube_left-toggle').click(function(){
+              $('#cube_left').removeClass('close');
+              $('.l-pageFill_main').removeClass('fill');
+          });
+      
+          $('.mark-item').click(function () {
+              $(this).find('.mark-pop').toggleClass('active');
+              $(this).find('.cylinder_box').toggleClass('active');
+              $('#cube-house').toggleClass('active');
+              $('.map_area').toggleClass('active');
+          });
+          $('.map').click(function () {
+              $('.cylinder_box').removeClass('active');
+              $('.mark-pop').removeClass('actvie');
+          });
+      
+          $('.search-toggle').click(function () {
+              $('.search-box').toggleClass('active');
+          });
+      
+          $('.cube_house_close').click(function () {
+              $('#cube-house').removeClass('active');
+              $('.map_area').removeClass('active');
+          });
+          $('.rooms input:radio:checked').val();
+      });
+      
+    </script>
   </body>
 </html>
