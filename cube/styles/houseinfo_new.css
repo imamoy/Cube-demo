@@ -655,28 +655,19 @@
   @media screen and (min-width: 1441px) {
     .houseinfo-price {
       margin-bottom: 0; } }
-  @media screen and (min-width: 1441px) and (max-width: 1680px) {
-    .houseinfo-price .cube_price {
-      margin-top: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .houseinfo-price .cube_price .icon {
-        margin-bottom: 2px; } }
-  @media screen and (min-width: 1200px) and (max-width: 1440px) {
-    .houseinfo-price .cube_price {
-      margin-top: 0;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .houseinfo-price .cube_price .icon {
-        margin-bottom: 2px; } }
   @media screen and (min-width: 1200px) {
     .houseinfo-price .cube_price .icon {
       width: 46px;
       height: 30px; } }
+  @media screen and (min-width: 992px) {
+    .houseinfo-price .cube_price {
+      margin-top: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .houseinfo-price .cube_price .icon {
+        margin-bottom: 2px; } }
   @media screen and (max-width: 1440px) {
     .houseinfo-price {
       margin-top: 15px;
