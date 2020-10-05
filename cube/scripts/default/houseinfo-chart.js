@@ -2,26 +2,29 @@
 var circle_chart = { width: 138, height: 138, type: "radialBar", zoom: {enabled: false}}
 var circle_stroke = {lineCap: "round"}
 var circle_hollow = { margin: 0, size: "60%" }
-var circle_lableTW = {offsetY: 20, show: true, color: "#808080", fontSize: "13px"}
+var circle_LableTW = {offsetY: 20, show: true, color: "#808080", fontSize: "13px"}
 //
 
-var circle1_coler = "#2BA84A"
+var circle1_color = "#2BA84A"
 var circle1 = {
   chart: circle_chart,
-  series: [67],
-  colors: [circle1_coler],
+  series: [90],
+  colors: [circle1_color],
   plotOptions: {
     radialBar: {
       hollow: circle_hollow,
 
       dataLabels: {
         showOn: "always",
-        name: circle_lableTW,
+        name: circle_LableTW,
         value: {
-          offsetY: -15,
-          color: circle1_coler,
+          offsetY: '-15',
+          color: circle1_color,
           fontSize: "24px",
-          show: true
+          show: true,
+          formatter: function () {
+            return '9'
+          }
         }
       }
     }
@@ -30,23 +33,26 @@ var circle1 = {
   labels: ["準確指數"]
 };
 
-var circle2_coler = "#FF9D0E"
+var circle2_color = "#FF9D0E"
 var circle2 = {
   chart: circle_chart,
-  series: [8],
-  colors: [circle2_coler],
+  series: [50],
+  colors: [circle2_color],
   plotOptions: {
     radialBar: {
       hollow: circle_hollow,
 
       dataLabels: {
         showOn: "always",
-        name: circle_lableTW,
+        name: circle_LableTW,
         value: {
-          offsetY: -15,
-          color: circle2_coler,
+          offsetY: '-15',
+          color: circle2_color,
           fontSize: "24px",
-          show: true
+          show: true,
+          formatter: function () {
+            return '5'
+          }
         }
       }
     }
@@ -55,23 +61,26 @@ var circle2 = {
   labels: ["中性市場"]
 };
 
-var circle3_coler = "#0050E6"
+var circle3_color = "#0050E6"
 var circle3 = {
   chart: circle_chart,
   series: [8],
-  colors: [circle3_coler],
+  colors: [circle3_color],
   plotOptions: {
     radialBar: {
       hollow: circle_hollow,
 
       dataLabels: {
         showOn: "always",
-        name: circle_lableTW,
+        name: circle_LableTW,
         value: {
-          offsetY: -15,
-          color: circle3_coler,
+          offsetY: '-15',
+          color: circle3_color,
           fontSize: "24px",
-          show: true
+          show: true,
+          formatter: function () {
+            return '8'
+          }
         }
       }
     }
@@ -80,23 +89,26 @@ var circle3 = {
   labels: ["相似件數"]
 };
 
-var circle4_coler = "#FF0006"
+var circle4_color = "#FF0006"
 var circle4 = {
   chart: circle_chart,
   series: [67],
-  colors: [circle4_coler],
+  colors: [circle4_color],
   plotOptions: {
     radialBar: {
       hollow: circle_hollow,
 
       dataLabels: {
         showOn: "always",
-        name: circle_lableTW,
+        name: circle_LableTW,
         value: {
-          offsetY: -15,
-          color: circle4_coler,
+          offsetY:'-15',
+          color: circle4_color,
           fontSize: "24px",
-          show: true
+          show: true,
+          formatter: function () {
+            return '6%'
+          }
         }
       }
     }
@@ -244,11 +256,11 @@ var houseinfo2_chart1 = {
 var houseinfo2_chart2 = {
   colors: ['#FF0007','#2BA84A','#0050E6',"#FF9C01",'#606060'],
   series: [
-    {name: '社區大樓', data: [30, 32, 36, 34, 40, 42, 45]},
-    {name: '郵政區號', data: [50, 50, 53, 55, 60, 65, 62]}, 
-    {name: '大安區', data: [40, 45, 45, 50, 55, 45,50]},
-    {name: '物件開價', data: [null,null,null,null,null,null,60]},
-    {name: '物件估價', data: [null,null,null,null,null,null,70]}
+    {name: '社區大樓', data: [30, 32, 36, 34, 40, 42, 45],type: 'line'},
+    {name: '郵政區號', data: [50, 50, 53, 55, 60, 65, 62],type: 'line'}, 
+    {name: '大安區', data: [40, 45, 45, 50, 55, 45,50],type: 'line'},
+    {name: '物件開價', data: [null,null,null,null,null,null,60],type: 'line'},
+    {name: '物件估價', data: [null,null,null,null,null,null,70],type: 'line'}
   ],
   chart: {
     sparkline: {
@@ -265,20 +277,22 @@ var houseinfo2_chart2 = {
   },
   stroke: {
       curve: 'straight',  // smooth
-      width: 2
+      width: [2,2,2,2,2,2,0]
   },
-  xaxis: {categories: ['2018Q4','2019Q1','2019Q2','2019Q3','2019Q4','2020Q1','銷售中物件'],},
-  yaxis: {title: {text: '單價(萬)'}}  
+  xaxis: {categories: ['2018Q4','2019Q1','2019Q2','2019Q3','2019Q4','2020Q1','銷售中物件'],
+  tickAmount: 1},
+  yaxis: {title: {text: '單價(萬)'}, tickAmount: 1,}  
 };
 
 // 相似物件價格走勢
 var houseinfo2_chart3 = {
-  colors: ['#2BA84A', '#0050E6','#FF9C01','#606060'],
+  colors: ['#2BA84A', '#0050E6','#FF9C01','#606060','#606060'],
   series: [
     {name: '社區大樓', data: [30, 32, 36, 34, 40, 42, 45]},
-    {name: '郵政區號', data: [50, 50, 53, 55, 60, 65, 62]}, 
+    {name: '郵政區號', data: [50, 50, 53, 55, 60, 65, 65]}, 
     {name: '大安區', data: [40, 45, 45, 50, 55, 45,50]},
-    {name: '物件開價', data: [null,null,null,null,null,null,60]}
+    {name: '物件開價', data: [null,null,null,null,null,null,55]},
+    {name: '', data: [50, 52, 54, 56, 58, 59, 60]}
   ],
   chart: {
     sparkline: {
@@ -290,15 +304,16 @@ var houseinfo2_chart3 = {
     height: 300 ,toolbar: {show: false},
   },
   markers: {
-    size: 8,
-    shape: "circle",    //circle or square
+    size: [8,8,8,8,null],
+    shape: ["circle","circle","circle","circle",null],    //circle or square
   },
   stroke: {
       curve: 'straight',  // smooth
-      width: 0
+      width: [0,0,0,0,1],
+      dashArray: [0,0,0,0,2]
   },
   xaxis: {categories: ['2018Q4','2019Q1','2019Q2','2019Q3','2019Q4','2020Q1','銷售中物件'],},
-  yaxis: {title: {text: '單價(萬)'}}  
+  yaxis: {title: {text: '單價(萬)'},max: 70}  
 };
 
 var chart7 = new ApexCharts(document.querySelector("#houseinfo2_chart1"), houseinfo2_chart1);
@@ -346,28 +361,17 @@ chart10.render();
 
 
 var houseinfoData_chartA2 = {
-  colors: ["#FF9C01"],
+  colors: ['#808080','#808080','#808080','#808080',"#FF9C01"],
   series: [
-    {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}
-  ],
-  chart: {height: 180,toolbar: {show: false},
-  zoom: {
+  {name: "",data: [60,60,60,60,60,60,60],type: 'line'},
+  {name: "",data: [45,45,45,45,45,45,45],type: 'line'},
+  {name: "",data: [30,30,30,30,30,30,30],type: 'line'},
+  {name: "",data: [15,15,15,15,15,15,15],type: 'line'},
+  {name: "市場貸款負擔率",data: [12, 11, 14, 40, 42, 50,20],type: 'line'}],
+  chart: {height: 180, toolbar: {show: false}, zoom: {
     enabled: false,
-  }  
-  },
-  stroke: {width: 3,curve: 'smooth'},
-  fill: {
-    type: 'gradient',
-    gradient: {
-      shade: 'light',
-      gradientToColors: [ '#EA3131'],
-      shadeIntensity: 1,
-      type: 'vertical',
-      opacityFrom: 1,
-      opacityTo: 1,
-      stops: [0,33,34,65, 66,100]
-    },
-  },
+  }},
+  stroke: {width: [1,1,1,1,3],curve: ['straight','straight','straight','straight','smooth'],dashArray: [4, 4,4,4,0]},
   dataLabels: { enabled: false},
   xaxis: {categories: ['台北市','新北市','桃園市','台中市', '台南市', '高雄市']},
   yaxis: {title: {text: '單價(萬)'}}
@@ -377,27 +381,17 @@ chart11.render();
 
 
 var houseinfoData_chartA3 = {
-  colors: ["#FF9C01"],
+  colors: ['#808080','#808080','#808080','#808080',"#FF9C01"],
   series: [
-  {name: "市場貸款平均值",data: [10,40,20,30,40,10,50],type: 'line'}],
-  chart: {height: 180,toolbar: {show: false},
-  zoom: {
+  {name: "",data: [60,60,60,60,60,60,60],type: 'line'},
+  {name: "",data: [45,45,45,45,45,45,45],type: 'line'},
+  {name: "",data: [30,30,30,30,30,30,30],type: 'line'},
+  {name: "",data: [15,15,15,15,15,15,15],type: 'line'},
+  {name: "市場貸款負擔率",data: [12, 11, 14, 40, 42, 50,20],type: 'line'}],
+  chart: {height: 180, toolbar: {show: false}, zoom: {
     enabled: false,
-  }
-  },
-  stroke: {width: 3,curve: 'smooth'},
-  fill: {
-    type: 'gradient',
-    gradient: {
-      shade: 'light',
-      gradientToColors: [ '#EA3131'],
-      shadeIntensity: 1,
-      type: 'vertical',
-      opacityFrom: 1,
-      opacityTo: 1,
-      stops: [0,33,34,65, 66,100]
-    },
-  },
+  }},
+  stroke: {width: [1,1,1,1,3],curve: ['straight','straight','straight','straight','smooth'],dashArray: [4, 4,4,4,0]},
   dataLabels: { enabled: false},
   xaxis: {categories: ['台北市','新北市','桃園市','台中市', '台南市', '高雄市']},
   yaxis: {title: {text: '單價(萬)'}}
@@ -408,7 +402,7 @@ chart12.render();
 
 //------- 彈跳視窗 - 資料  中間 ------------
 var houseinfoData_chartB1 = {
-  colors: ["#FF9C01",'#ABB7BD'],
+  colors: ['#FF9C01','#ABB7BD'],
   series: [
     {data: [50,80,10,85,100]},
     {data: [60,21,70,80,35]}
@@ -418,12 +412,8 @@ var houseinfoData_chartB1 = {
     enabled: false,
   }
   },
-  plotOptions: { bar: { horizontal: false, columnWidth: '55%'},},
-  plotOptions: {
-    bar: {
-        distributed: true
-    }
-},
+  plotOptions: { bar: { horizontal: false, columnWidth: '55%'}
+  },
   dataLabels: {enabled: false},
   stroke: {show: true, width: 2, colors: ['transparent']},
   xaxis: {

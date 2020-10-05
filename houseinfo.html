@@ -61,8 +61,8 @@
                 </div>
               </div>
               <div class="right">
-                <div class="cube_price cube_down"><span class="icon"></span>
-                  <div><span class="num f-green f-en">13.24</span><span class="f-14 f-green f-en">%</span></div>
+                <div class="cube_price cube_up"><span class="icon"></span>
+                  <div><span class="num f-red f-en">3.36</span><span class="f-14 f-red f-en">%</span></div>
                 </div>
               </div>
             </div>
@@ -375,20 +375,20 @@
                 <ul class="info nostyle flex-row">
                   <li class="flex-row ai-center mb-10"><span class="icon icon-door f-24"></span>
                     <p class="house-build-item mx-5">房間
-                      <input class="input-border f-en mx-5" style="width:60px;" type="text" value="3">房，價錢提升50萬 
+                      <input class="input-border f-en mx-5" style="width:60px;" type="text" value="3">房
                     </p>
                   </li>
                   <li class="flex-row ai-center mb-10">
                     <p class="house-build-item mx-5">
                       <div class="form-check">
-                        <label for="check1"><span class="icon icon-balcony f-24"></span> 陽台外推，價錢提升30萬</label>
+                        <label for="check1"><span class="icon icon-balcony f-24"></span> 陽台外推</label>
                         <input id="check1" type="checkbox" name="check1">
                       </div>
                     </p>
                   </li>
                   <li class="flex-row ai-center mb-10"><span class="icon icon-bath f-24"></span>
                     <p class="house-build-item mx-5">衛浴
-                      <input class="input-border f-en mx-5" style="width:60px;" type="text" value="2">間，價錢提升50萬 
+                      <input class="input-border f-en mx-5" style="width:60px;" type="text" value="2">間 
                     </p>
                   </li>
                   <li class="flex-row ai-center mb-10">
@@ -1669,7 +1669,7 @@
           <div class="inner main-scrollbar">
             <div class="paperblock block">
               <div class="chart-boxblock">
-                <div class="page-title"><span>市場貸款負擔率</span></div>
+                <div class="page-title"><span>住宅價格指數</span></div>
                 <div id="houseinfoData-chartA1"></div>
               </div>
               <div class="chart-table pb-20">
@@ -2031,16 +2031,17 @@
               $('.bulid-detail').slideToggle();
           });
       
-          $(window).scroll(function () {
-              if (jQuery(window).width() < 1025 && $(this).scrollTop() > 50) {
-                  $(".houseinfo-head").addClass("fixed");
-                  $(".houseinfo-nav").addClass("fixed");
-              } else {
-                  $(".houseinfo-head").removeClass("fixed");
-                  $(".houseinfo-nav").removeClass("fixed");
-              }
-          });
-      
+          if(jQuery(window).width() < 1025) {
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 50) {
+                      $(".houseinfo-head").addClass("fixed");
+                      $(".houseinfo-nav").addClass("fixed");
+                  } else {
+                      $(".houseinfo-head").removeClass("fixed");
+                      $(".houseinfo-nav").removeClass("fixed");
+                  }
+              });
+          }
           $('.add-btn').click(function(){
               $(this).toggleClass('active');
           });
