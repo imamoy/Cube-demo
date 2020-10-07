@@ -3101,19 +3101,19 @@ header {
         opacity: 1; }
   header .menu-toggle {
     display: block; }
-  header .menu-toggle, header .lang-btn, header .search-btn {
+  header .menu-toggle, header .lang-btn, header .search-btn, header .member-btn {
     width: 20px;
     height: 20px;
     font-size: 20px;
     color: #808080;
     cursor: pointer;
     position: relative; }
-    header .menu-toggle i, header .lang-btn i, header .search-btn i {
+    header .menu-toggle i, header .lang-btn i, header .search-btn i, header .member-btn i {
       position: absolute;
       top: -2px;
       left: 0;
       line-height: 1; }
-      header .menu-toggle i::before, header .lang-btn i::before, header .search-btn i::before {
+      header .menu-toggle i::before, header .lang-btn i::before, header .search-btn i::before, header .member-btn i::before {
         margin: 0; }
   header .login-row a {
     color: #FFF; }
@@ -3121,11 +3121,15 @@ header {
     display: inline-block;
     color: #dedede;
     margin: 0 10px; }
-  header .lang-btn {
+  header .lang-btn, header .member-btn {
     font-size: 22px;
-    margin: 0 30px;
+    margin-left: 20px;
     position: relative; }
-  header .lang-menu {
+  header .member-btn {
+    margin-left: 30px; }
+  header .lang-btn {
+    margin: 0 30px; }
+  header .lang-menu, header .member-nav {
     display: none;
     width: 84px;
     background-color: #fff;
@@ -3139,13 +3143,13 @@ header {
             box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.16);
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-    header .lang-menu li {
+    header .lang-menu li, header .member-nav li {
       margin: 10px 0; }
-    header .lang-menu a {
+    header .lang-menu a, header .member-nav a {
       color: #666;
       -webkit-transition: color 0.25s ease-in-out;
       transition: color 0.25s ease-in-out; }
-      header .lang-menu a:hover {
+      header .lang-menu a:hover, header .member-nav a:hover {
         color: #0050E6; }
   header.gary .nav {
     color: #666; }
@@ -3162,7 +3166,7 @@ header {
         font-size: 18px; }
     header.white .logo {
       background-image: url("../../images/cube/logo-w.svg"); }
-    header.white .menu-toggle, header.white .lang-btn {
+    header.white .menu-toggle, header.white .lang-btn, header.white .member-btn {
       color: #FFF; }
     header.white .login-row a {
       color: #FFF !important; }
@@ -3173,7 +3177,7 @@ header {
       background-color: #fff !important; }
       header.fixed.active .logo {
         background-image: url("../../images/cube/logo.svg"); }
-      header.fixed.active .menu-toggle, header.fixed.active .lang-btn {
+      header.fixed.active .menu-toggle, header.fixed.active .lang-btn, header.fixed.active .member-btn {
         color: #404040; }
   header.hide {
     display: none; }

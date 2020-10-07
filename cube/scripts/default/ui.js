@@ -16,6 +16,12 @@ $(document).ready(function () {
 	$('.lang-btn i').click(function(){
 		$(this).next('.lang-menu').slideToggle();
 	});
+
+	$('.member-btn').click(function () {
+		$('.member-nav').slideToggle();
+		$('.lang-nav').slideUp();
+	});
+	
 	$('.search-btn').click(function(){
 		$(this).next('.search-bar').toggleClass('active');
 	});

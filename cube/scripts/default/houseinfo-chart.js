@@ -286,12 +286,15 @@ var houseinfo2_chart2 = {
 
 // 相似物件價格走勢
 var houseinfo2_chart3 = {
-  colors: ['#2BA84A', '#0050E6','#FF9C01','#606060','#606060'],
+  colors: ['#0050E6', '#0050E6', '#2BA84A','#2BA84A','#FF9C01','#606060','#FF9C01','#606060'],
   series: [
-    {name: '社區大樓', data: [30, 32, 36, 34, 40, 42, 45]},
-    {name: '郵政區號', data: [50, 50, 53, 55, 60, 65, 65]}, 
-    {name: '大安區', data: [40, 45, 45, 50, 55, 45,50]},
-    {name: '物件開價', data: [null,null,null,null,null,null,55]},
+    {name: '', data: [50, 30, 20, 40, 20, 20, null]},
+    {name: '', data: [60, 40, 30, 50, 30, 30, null]},
+    {name: '', data: [70, 60, 50, 60, 50, 50, null]},
+    {name: '', data: [80, 70, 60, 70, 60, 60, null]},
+    {name: '', data: [null, null, null, null, null, null, 70]},
+    {name: '', data: [null, null, null, null, null, null, 60]},
+    {name: '', data: [70, 70, 70, 70, 70, 70, 70]},
     {name: '', data: [50, 52, 54, 56, 58, 59, 60]}
   ],
   chart: {
@@ -304,13 +307,13 @@ var houseinfo2_chart3 = {
     height: 300 ,toolbar: {show: false},
   },
   markers: {
-    size: [8,8,8,8,null],
-    shape: ["circle","circle","circle","circle",null],    //circle or square
+    size: [8,8,8,8,8,8,null,null],
+    shape: ["circle","circle","circle","circle","circle","circle",null,null],    //circle or square
   },
   stroke: {
       curve: 'straight',  // smooth
-      width: [0,0,0,0,1],
-      dashArray: [0,0,0,0,2]
+      width: [0,0,0,0,0,0,1,1],
+      dashArray: [0,0,0,0,0,0,2,2]
   },
   xaxis: {categories: ['2018Q4','2019Q1','2019Q2','2019Q3','2019Q4','2020Q1','銷售中物件'],},
   yaxis: {title: {text: '單價(萬)'},max: 70}  
