@@ -79,16 +79,6 @@ $(document).ready(function () {
 		$('#favorite-tagedit-pop').addClass('active');
 		$('.pop_bg').addClass('active');
 	});
-
-	$('.save-favorite-btn').click(function(){
-		$('#favorite-tagsave-pop').addClass('active');
-		$('.pop_bg').addClass('active');
-	});
-
-	$('#reset').click(function(){
-		$('#reset-pop').addClass('active');
-		$('.pop_bg').addClass('active');
-	});
 	
 	$('.pop_bg').click(function(){
 		$('.pop').removeClass('active');

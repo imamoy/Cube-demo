@@ -3006,7 +3006,7 @@ header.logo-w .logo_cm2cube {
 		header
  @mixin =========================================================================*/
 #header, #header_mini {
-  z-index: 99; }
+  z-index: 0; }
 
 header {
   display: -webkit-box;
