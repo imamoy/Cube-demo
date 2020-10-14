@@ -79,6 +79,11 @@ $(document).ready(function () {
 		$('#favorite-tagedit-pop').addClass('active');
 		$('.pop_bg').addClass('active');
 	});
+
+	$('.tags-edit-btn').click(function(){
+		$('#manage-pop').addClass('active');
+		$('.pop_bg').addClass('active');
+	});
 	
 	$('.pop_bg').click(function(){
 		$('.pop').removeClass('active');
