@@ -489,3 +489,22 @@ var houseinfoData_chartB3 = {
 
 var chart15 = new ApexCharts(document.querySelector("#houseinfoData-chartB3"), houseinfoData_chartB3);
 chart15.render();
+
+var passiveSupported = false;
+try {
+var options = Object.defineProperty({}, "passive", {
+get: function() {
+passiveSupported = true;
+}
+});
+window.addEventListener("test", null, options);
+} catch(err) {}
+function fn() {
+console.log("fn")
+}
+document.addEventListener("mousewheel", fn, passiveSupported ? { passive: true } : false)
+
+
+document.ontouchmove = function(event){
+  event.preventDefault();
+}
