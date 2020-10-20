@@ -59,6 +59,9 @@
   @media screen and (max-width: 1199px) {
     .houseinfo-pie .houseinfo-pie {
       height: 100px; } }
+  @media screen and (max-width: 767px) {
+    .houseinfo-pie {
+      margin-left: 0; } }
 
 .circle-chart {
   width: 90px;
