@@ -14,6 +14,18 @@
     <link rel="stylesheet" type="text/css" href="cube/styles/favorite.css">
   </head>
   <body>
+    <div class="cube-container">
+      <div class="cube-perspective">
+        <div class="cube animate">
+          <div class="chip-1 chip"></div>
+          <div class="chip-2 chip"></div>
+          <div class="chip-3 chip"></div>
+          <div class="chip-4 chip"></div>
+          <div class="chip-5 chip"></div>
+          <div class="chip-6 chip"></div>
+        </div>
+      </div>
+    </div>
     <header class="wow fadeInDown" id="header">
       <div class="logo logo_cm2cube"><a href="index.html"><em class="hidden">CUBE智能找房</em></a></div>
       <div class="right">
@@ -22,6 +34,9 @@
           <ul class="member-nav nostyle">
             <li><a href="">通知</a></li>
             <li><a href="">設定</a></li>
+            <li>
+              <button>登出</button>
+            </li>
           </ul>
         </div>
         <div class="lang-btn"><i class="icon-global"></i>
@@ -1083,6 +1098,48 @@
           </div>
         </form>
       </div>
+    </div>
+    <div class="pop pop_main" id="manage-pop" style="min-width: 25vw;min-height:auto;">
+      <form action="">
+        <div class="pop_mainhead">
+          <div class="pop_title"><span class="title">管理標籤</span></div>
+          <div class="tag-add active">
+            <div class="tag-add-toggle"><i class="icon-plus"></i></div>
+            <div class="tag-add_form">
+              <input type="text" placeholder="新增一個Tag...">
+              <button><i class="icon-plus"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="pop_maininner">
+          <ul class="nostyle tag-rowbox">
+            <li>
+              <div class="tagrow-item"><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+            <li>
+              <div class="tagrow-item"><span>不想爬樓梯</span><span class="num f-en">2</span></div>
+            </li>
+          </ul>
+          <div class="pop-line"></div>
+          <div class="manage-selectControl">
+            <div class="inner"><span>已選取 1 個</span>
+              <div class="btnNav">
+                <div class="tag-editor"><i class="icon icon-pen"></i><span>修改標籤</span></div>
+                <button><i class="icon icon-gabige"></i><span>刪除標籤</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="has-iconInput tag-editor-input">
+            <div class="inner"><i class="icon-tag"></i>
+              <input type="text" placeholder="新增一個Tag...">
+            </div>
+          </div>
+          <div class="house_btnrow d-flex jc-space-between ai-center">
+            <button class="btn btn-fillet40 btn-primary-dp mr-10" style="border-radius:40px!important;">確認</button>
+            <button class="btn btn-fillet40 btn-border-primary ml-10" style="border-radius:40px!important;">取消</button>
+          </div>
+        </div>
+      </form>
     </div>
     <div class="cursor"></div>
     <script src="cube/scripts/default/jquery.min.js"></script>

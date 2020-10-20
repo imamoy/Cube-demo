@@ -112,6 +112,20 @@ $(document).ready(function () {
 		$('.showMewhere-inner').toggleClass('active');
 	});
 	
+	$('#manage-pop').each(function(){
+		$('.tagrow-item').click(function(){
+			$('.manage-selectControl').slideDown();
+		});
+
+		$('.tag-editor').click(function(){
+			$('.tag-editor-input').slideToggle();
+		});
+	});
+
+	setTimeout(function() {
+    	$('.cube-container').hide();
+	}, 1000);
+
 	/* ==========================================================================
 			select
 	==========================================================================*/

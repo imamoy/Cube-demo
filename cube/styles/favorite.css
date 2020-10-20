@@ -131,3 +131,109 @@
       flex-wrap: wrap; }
   .favorite-houseItem > * {
     width: 100%; }
+
+#manage-pop .tag-add, #manage-pop .tag-add_form, #manage-pop .manage-selectControl .inner, #manage-pop .tag-editor-input .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#manage-pop .tag-add {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #DDD;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #0050E6;
+  overflow: hidden; }
+  #manage-pop .tag-add.active {
+    width: auto;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-right: 10px; }
+    #manage-pop .tag-add.active .tag-add_form {
+      width: auto; }
+      #manage-pop .tag-add.active .tag-add_form input, #manage-pop .tag-add.active .tag-add_form button {
+        display: inline-block; }
+    #manage-pop .tag-add.active .tag-add-toggle {
+      display: none; }
+
+#manage-pop .tag-add_form {
+  width: 0;
+  overflow: hidden; }
+  #manage-pop .tag-add_form > * {
+    display: inline-block;
+    float: left; }
+  #manage-pop .tag-add_form input {
+    width: 85%; }
+  #manage-pop .tag-add_form input, #manage-pop .tag-add_form button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #0050E6; }
+
+#manage-pop .tag-add-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: color .25s ease-in-out,background .25s ease-in-out;
+  transition: color .25s ease-in-out,background .25s ease-in-out; }
+  #manage-pop .tag-add-toggle i {
+    margin-top: -2px;
+    font-size: 14px; }
+
+#manage-pop .tag-editor-input {
+  margin-top: 20px; }
+
+#manage-pop .manage-selectControl {
+  display: none;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 20px; }
+  #manage-pop .manage-selectControl .inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #manage-pop .manage-selectControl .btnNav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    #manage-pop .manage-selectControl .btnNav button, #manage-pop .manage-selectControl .btnNav div {
+      cursor: pointer;
+      padding-right: 10px;
+      margin-left: 10px;
+      border: none;
+      font-size: 15px;
+      background-color: transparent;
+      color: #606060;
+      -webkit-transition: color 0.25s ease-in-out;
+      transition: color 0.25s ease-in-out; }
+      #manage-pop .manage-selectControl .btnNav button:first-child, #manage-pop .manage-selectControl .btnNav div:first-child {
+        border-right: 1px solid #DDD; }
+
+#manage-pop .tag-editor-input {
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  #manage-pop .tag-add-toggle:hover {
+    border-color: #0050E6;
+    background-color: #0050E6;
+    color: #FFF; }
+  #manage-pop .btnNav button:hover, #manage-pop .btnNav div:hover {
+    color: #0050E6; } }

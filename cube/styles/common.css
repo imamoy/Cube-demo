@@ -1768,6 +1768,118 @@ input {
       border-color: #0050E6;
       color: #FFF; } }
 
+.cube-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f2f2f2;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999; }
+
+.cube-perspective {
+  width: 60px;
+  height: 60px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 0 0;
+  perspective-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1); }
+  .cube-perspective > div {
+    height: 40px;
+    width: 40px;
+    -webkit-transition: -webkit-transform 2s linear;
+    transition: -webkit-transform 2s linear, transform 2s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+
+.animate {
+  -webkit-animation: spinningH 6s infinite linear;
+  animation: spinningH 6s infinite linear; }
+
+.cube {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .cube * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.cube .chip {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+  opacity: 0.5;
+  display: block;
+  border: solid 2px #1A2658;
+  border-radius: 3px;
+  background-color: #0050E6; }
+
+.cube .chip-1 {
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px); }
+
+.cube .chip-2 {
+  -webkit-transform: rotateY(90deg) translateZ(20px);
+  transform: rotateY(90deg) translateZ(20px); }
+
+.cube .chip-3 {
+  -webkit-transform: rotateY(180deg) translateZ(20px);
+  transform: rotateY(180deg) translateZ(20px); }
+
+.cube .chip-4 {
+  -webkit-transform: rotateY(-90deg) translateZ(20px);
+  transform: rotateY(-90deg) translateZ(20px); }
+
+.cube .chip-5 {
+  -webkit-transform: rotateX(-90deg) translateZ(20px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(20px) rotate(180deg); }
+
+.cube .chip-6 {
+  -webkit-transform: rotateX(90deg) translateZ(20px);
+  transform: rotateX(90deg) translateZ(20px); }
+
+.lesshat-selector {
+  -lh-property: 0; }
+
+@-webkit-keyframes spinningH {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg); } }
+
+@keyframes spinningH {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg); } }
+
+[not-existing] {
+  zoom: 1; }
+
 .under_line {
   position: relative; }
   .under_line::after {
@@ -2162,7 +2274,7 @@ ul.mark-list li {
 .pop {
   max-width: 1200px;
   width: auto;
-  max-height: 80vh;
+  max-height: 92vh;
   background-color: #FFF;
   -webkit-box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
           box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.8);
@@ -3006,7 +3118,7 @@ header.logo-w .logo_cm2cube {
 		header
  @mixin =========================================================================*/
 #header, #header_mini {
-  z-index: 0; }
+  z-index: 1; }
 
 header {
   display: -webkit-box;
@@ -3145,11 +3257,15 @@ header {
             transform: translateX(-50%); }
     header .lang-menu li, header .member-nav li {
       margin: 10px 0; }
-    header .lang-menu a, header .member-nav a {
+    header .lang-menu a, header .lang-menu button, header .member-nav a, header .member-nav button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      font-size: 15px;
       color: #666;
       -webkit-transition: color 0.25s ease-in-out;
       transition: color 0.25s ease-in-out; }
-      header .lang-menu a:hover, header .member-nav a:hover {
+      header .lang-menu a:hover, header .lang-menu button:hover, header .member-nav a:hover, header .member-nav button:hover {
         color: #0050E6; }
   header.gary .nav {
     color: #666; }
@@ -3326,11 +3442,19 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    #header_mini .menu.active .login-row a {
+      cursor: pointer;
+      color: #606060 !important; }
+      #header_mini .menu.active .login-row a:hover {
+        color: #0050E6 !important; }
   #header_mini .menu.active .nav {
     -webkit-transition: left 1s;
     transition: left 1s; }
     #header_mini .menu.active .nav::after {
       left: 100%; }
+
+#header_mini.z-index .login-row {
+  opacity: 1; }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   #header_mini .menu.active {
