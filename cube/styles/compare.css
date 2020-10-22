@@ -22,6 +22,103 @@
 .f-28 {
   font-size: 28px; }
 
+.fw700 {
+  font-weight: 700; }
+
+.fw600 {
+  font-weight: 600; }
+
+.fw400 {
+  font-weight: 400; }
+
+.f-title_big {
+  font-weight: 700; }
+  @media screen and (min-width: 1441px) {
+    .f-title_big {
+      font-size: 56px; } }
+  @media screen and (max-width: 1440px) {
+    .f-title_big {
+      font-size: 49.28px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_big {
+      font-size: 35.55556px; } }
+
+.f-title_l {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_l {
+      font-size: 53.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_l {
+      font-size: 42.66667px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_l {
+      font-size: 35.55556px; } }
+
+.f-title_ml {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_ml {
+      font-size: 49.77778px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_ml {
+      font-size: 20px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_ml {
+      font-size: 24px; } }
+
+.f-title_m {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_m {
+      font-size: 35.55556px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_m {
+      font-size: 32.0px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_m {
+      font-size: 21.33333px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_s {
+    font-size: 32px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_s {
+    font-size: 28.8px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_xs {
+    font-size: 28.8px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_xs {
+    font-size: 18px; } }
+
+.f-subTitle_l {
+  font-style: normal; }
+  @media screen and (min-width: 1200px) {
+    .f-subTitle_l {
+      font-size: 23.11111px; } }
+  @media screen and (max-width: 1199px) {
+    .f-subTitle_l {
+      font-size: 20.8px; } }
+
+.f-subTitle {
+  font-style: normal; }
+  @media screen and (min-width: 992px) {
+    .f-subTitle {
+      font-size: 21.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-subTitle {
+      font-size: 17.77778px; } }
+
+.f-text {
+  font-size: 16px; }
+
+.t-center {
+  text-align: center; }
+
 @media screen and (min-width: 992px) {
   #compare {
     padding-top: 0; } }
@@ -32,13 +129,13 @@
 
 .compare-top {
   background-color: #fff;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #BBBBBB;
   padding: 12px 0 10px;
   position: relative;
   z-index: 51; }
   @media screen and (min-width: 992px) {
     .compare-top {
-      border-top: 1px solid #DDD;
+      border-top: 1px solid #BBBBBB;
       margin-top: 12px; } }
   @media screen and (max-width: 991px) {
     .compare-top {
@@ -275,7 +372,7 @@
 .compare-houseItem {
   background-color: #fff; }
   .compare-houseItem .compare-houseTop, .compare-houseItem .compare-houseBtm > * {
-    border-bottom: 1px solid #DDD; }
+    border-bottom: 1px solid #BBBBBB; }
   .compare-houseItem:nth-child(even) {
     background-color: #f3f8ff; }
   @media screen and (min-width: 992px) {
@@ -364,7 +461,7 @@
   #compare_addpop .house-title {
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #DDD; }
+    border-bottom: 1px solid #BBBBBB; }
     #compare_addpop .house-title .address {
       font-size: 15px;
       font-weight: 400;

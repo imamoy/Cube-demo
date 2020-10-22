@@ -22,6 +22,103 @@
 .f-28 {
   font-size: 28px; }
 
+.fw700 {
+  font-weight: 700; }
+
+.fw600 {
+  font-weight: 600; }
+
+.fw400 {
+  font-weight: 400; }
+
+.f-title_big {
+  font-weight: 700; }
+  @media screen and (min-width: 1441px) {
+    .f-title_big {
+      font-size: 56px; } }
+  @media screen and (max-width: 1440px) {
+    .f-title_big {
+      font-size: 49.28px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_big {
+      font-size: 35.55556px; } }
+
+.f-title_l {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_l {
+      font-size: 53.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_l {
+      font-size: 42.66667px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_l {
+      font-size: 35.55556px; } }
+
+.f-title_ml {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_ml {
+      font-size: 49.77778px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_ml {
+      font-size: 20px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_ml {
+      font-size: 24px; } }
+
+.f-title_m {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_m {
+      font-size: 35.55556px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_m {
+      font-size: 32.0px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_m {
+      font-size: 21.33333px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_s {
+    font-size: 32px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_s {
+    font-size: 28.8px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_xs {
+    font-size: 28.8px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_xs {
+    font-size: 18px; } }
+
+.f-subTitle_l {
+  font-style: normal; }
+  @media screen and (min-width: 1200px) {
+    .f-subTitle_l {
+      font-size: 23.11111px; } }
+  @media screen and (max-width: 1199px) {
+    .f-subTitle_l {
+      font-size: 20.8px; } }
+
+.f-subTitle {
+  font-style: normal; }
+  @media screen and (min-width: 992px) {
+    .f-subTitle {
+      font-size: 21.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-subTitle {
+      font-size: 17.77778px; } }
+
+.f-text {
+  font-size: 16px; }
+
+.t-center {
+  text-align: center; }
+
 .coloritem.gary {
   background-color: #606060; }
 
@@ -151,7 +248,7 @@
         width: 100%; }
         .houseinfo-paper > .left .detail-price > *:first-child {
           border: none;
-          border-bottom: 1px solid #DDD; }
+          border-bottom: 1px solid #BBBBBB; }
     .houseinfo-paper > .right .detail-price {
       margin: 0; }
       .houseinfo-paper > .right .detail-price > * {
@@ -244,7 +341,7 @@
         max-width: none; } }
 
 .paperblock-titleRow {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #BBBBBB;
   padding-bottom: 0;
   margin-bottom: 10px; }
   @media screen and (max-width: 767px) {
@@ -319,7 +416,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #DDD; }
+  border-bottom: 1px solid #BBBBBB; }
 
 .file-nav {
   display: -webkit-box;
@@ -335,7 +432,7 @@
     padding: 0 6px;
     -webkit-transition: color .25s;
     transition: color .25s;
-    border-right: 1px solid #DDD; }
+    border-right: 1px solid #BBBBBB; }
   .file-nav li:last-child .file-btn {
     border: none; }
   .file-nav .icon {
@@ -532,7 +629,7 @@
       flex-wrap: wrap;
   margin: 0 -8px 14px;
   padding: 12px 0;
-  border-bottom: 1px solid #DDD; }
+  border-bottom: 1px solid #BBBBBB; }
   .houseinfo-tab a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -579,7 +676,7 @@
 
 .houseinfo-head.fixed {
   background-color: #fff;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #BBBBBB;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -758,7 +855,7 @@
     width: 50%;
     padding: 5px 10px; }
     .detail-price > *:first-child {
-      border-right: 1px solid #DDD; }
+      border-right: 1px solid #BBBBBB; }
   .detail-price .icon {
     font-size: 36px;
     color: #0050E6;
@@ -868,7 +965,7 @@ table {
     font-weight: 400;
     text-align: left; }
   table tbody td {
-    border-bottom: 1px solid #DDD; }
+    border-bottom: 1px solid #BBBBBB; }
 
 .bulid-detail-toggle {
   cursor: pointer;
@@ -905,7 +1002,7 @@ table {
     cursor: pointer;
     display: inline-block;
     border-radius: 6px;
-    border: 1px solid #DDD;
+    border: 1px solid #BBBBBB;
     padding: 10px;
     min-width: 120px;
     text-align: center;
@@ -972,7 +1069,7 @@ table {
     border-spacing: 0; }
     .houseinfo2_block1_detail table tbody td {
       text-align: center;
-      border: 1px solid rgba(221, 221, 221, 0.5);
+      border: 1px solid rgba(187, 187, 187, 0.5);
       width: 23%; }
       .houseinfo2_block1_detail table tbody td:first-child {
         width: 66px !important;
@@ -1194,7 +1291,7 @@ ul.mark-list li {
         color: #0050E6; }
         .houseinfo-pixed .houseinfo-pixed-btn.border {
           border: none;
-          border-right: 1px solid #DDD; } }
+          border-right: 1px solid #BBBBBB; } }
 
 @media screen and (max-width: 767px) {
   .l-half .l-half_w33, .l-half .l-half_w67 {
@@ -1417,7 +1514,7 @@ ul.mark-list li {
             -ms-flex-order: 2;
                 order: 2;
         width: 50%;
-        border-bottom: 1px solid #DDD; }
+        border-bottom: 1px solid #BBBBBB; }
         .sold-table tbody td:nth-child(3)::before {
           display: none; }
       .sold-table tbody td:nth-child(4) {
@@ -1425,7 +1522,7 @@ ul.mark-list li {
             -ms-flex-order: 2;
                 order: 2;
         width: 50%;
-        border-bottom: 1px solid #DDD; }
+        border-bottom: 1px solid #BBBBBB; }
         .sold-table tbody td:nth-child(4)::before {
           display: none; }
       .sold-table tbody td:nth-child(5) {
@@ -1661,8 +1758,8 @@ ul.mark-list li {
       margin-left: 20px; }
   @media screen and (min-width: 1200px) {
     .houseimg-btnrow .btn:first-child:hover, .houseimg-btnrow .btn:last-child:hover {
-      background-color: #DDD;
-      border-color: #DDD;
+      background-color: #BBBBBB;
+      border-color: #BBBBBB;
       color: #404040; } }
   @media screen and (max-width: 767px) {
     .houseimg-btnrow {
@@ -1921,7 +2018,7 @@ ul.mark-list li {
 
 #housenote .star {
   cursor: pointer;
-  color: #808080;
+  color: #909090;
   -webkit-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out; }
   #housenote .star.active {

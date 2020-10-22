@@ -22,6 +22,103 @@
 .f-28 {
   font-size: 28px; }
 
+.fw700 {
+  font-weight: 700; }
+
+.fw600 {
+  font-weight: 600; }
+
+.fw400 {
+  font-weight: 400; }
+
+.f-title_big {
+  font-weight: 700; }
+  @media screen and (min-width: 1441px) {
+    .f-title_big {
+      font-size: 56px; } }
+  @media screen and (max-width: 1440px) {
+    .f-title_big {
+      font-size: 49.28px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_big {
+      font-size: 35.55556px; } }
+
+.f-title_l {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_l {
+      font-size: 53.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_l {
+      font-size: 42.66667px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_l {
+      font-size: 35.55556px; } }
+
+.f-title_ml {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_ml {
+      font-size: 49.77778px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_ml {
+      font-size: 20px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_ml {
+      font-size: 24px; } }
+
+.f-title_m {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_m {
+      font-size: 35.55556px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_m {
+      font-size: 32.0px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_m {
+      font-size: 21.33333px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_s {
+    font-size: 32px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_s {
+    font-size: 28.8px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_xs {
+    font-size: 28.8px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_xs {
+    font-size: 18px; } }
+
+.f-subTitle_l {
+  font-style: normal; }
+  @media screen and (min-width: 1200px) {
+    .f-subTitle_l {
+      font-size: 23.11111px; } }
+  @media screen and (max-width: 1199px) {
+    .f-subTitle_l {
+      font-size: 20.8px; } }
+
+.f-subTitle {
+  font-style: normal; }
+  @media screen and (min-width: 992px) {
+    .f-subTitle {
+      font-size: 21.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-subTitle {
+      font-size: 17.77778px; } }
+
+.f-text {
+  font-size: 16px; }
+
+.t-center {
+  text-align: center; }
+
 #cube {
   height: 100vh;
   overflow: hidden; }
@@ -341,7 +438,7 @@
         width: 1px;
         height: 16px;
         display: inline-block;
-        background-color: #808080;
+        background-color: #909090;
         position: absolute;
         right: 0;
         bottom: 5px; }
@@ -380,14 +477,14 @@
 .cube-house_sort {
   margin-bottom: 0; }
   .cube-house_sort .form_label {
-    color: #808080;
+    color: #909090;
     font-weight: 300; }
   @media screen and (max-width: 479px) {
     .cube-house_sort {
       margin-top: 10px; } }
 
 .cube-house_item {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #BBBBBB;
   padding: 20px 0; }
   @media screen and (max-width: 991px) {
     .cube-house_item {
@@ -692,7 +789,7 @@
             align-items: center;
     padding: 0 10px; }
     .mark-list ul:first-child {
-      border-right: 1px solid #DDD; }
+      border-right: 1px solid #BBBBBB; }
   .mark-list li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -794,7 +891,7 @@
 .leaflet-touch .leaflet-bar a {
   width: 40px;
   height: 40px;
-  background-color: #404040;
+  background-color: #222222;
   color: #FFF;
   line-height: 35px;
   border-radius: 50% !important;
@@ -804,7 +901,7 @@
     margin-bottom: 10px; }
   @media screen and (min-width: 992px) {
     .leaflet-touch .leaflet-bar a:hover {
-      background-color: #808080; } }
+      background-color: #909090; } }
 
 .mark-list_bar .mark_img {
   height: 28px;
@@ -862,7 +959,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid #DDD;
+  border-top: 1px solid #BBBBBB;
   padding-top: 10px;
   margin-bottom: -10px; }
   @media screen and (max-width: 991px) {
