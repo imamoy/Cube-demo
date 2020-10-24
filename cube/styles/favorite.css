@@ -123,16 +123,11 @@
   .favorite {
     padding-top: 0; } }
 
-@media screen and (max-width: 991px) {
-  .favorite {
-    padding-top: 66px !important; } }
-
 .favorite-top {
   background-color: #fff;
-  border-bottom: 1px solid #BBBBBB;
+  border-bottom: 1px solid #DDD;
   padding: 12px 0 10px;
-  position: relative;
-  z-index: 51; }
+  position: relative; }
   .favorite-top .container-full {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -149,7 +144,7 @@
           flex-wrap: wrap; } }
   @media screen and (min-width: 992px) {
     .favorite-top {
-      border-top: 1px solid #BBBBBB;
+      border-top: 1px solid #DDD;
       margin-top: 12px; } }
   @media screen and (max-width: 991px) {
     .favorite-top {
@@ -241,7 +236,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #BBBBBB;
+  border: 1px solid #DDD;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -301,7 +296,7 @@
 
 #manage-pop .manage-selectControl {
   display: none;
-  border-bottom: 1px solid #BBBBBB;
+  border-bottom: 1px solid #DDD;
   padding-bottom: 20px; }
   #manage-pop .manage-selectControl .inner {
     -webkit-box-pack: justify;
@@ -322,7 +317,7 @@
       -webkit-transition: color 0.25s ease-in-out;
       transition: color 0.25s ease-in-out; }
       #manage-pop .manage-selectControl .btnNav button:first-child, #manage-pop .manage-selectControl .btnNav div:first-child {
-        border-right: 1px solid #BBBBBB; }
+        border-right: 1px solid #DDD; }
 
 #manage-pop .tag-editor-input {
   display: none; }

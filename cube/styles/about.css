@@ -343,7 +343,7 @@
         display: block;
         width: 70px;
         height: 1px;
-        background-color: #BBBBBB;
+        background-color: #DDD;
         position: absolute;
         top: calc((180px - 1px) / 2);
         right: -50px; }
@@ -370,7 +370,7 @@
               align-items: center;
       padding-bottom: 14px;
       margin-bottom: 14px;
-      border-bottom: 1px solid #BBBBBB; }
+      border-bottom: 1px solid #DDD; }
       .why-us .l-iconGrid_item:last-child {
         border: none; }
     .why-us .l-iconGrid_icon {
@@ -404,7 +404,7 @@
     display: block;
     width: 120vw;
     height: 1px;
-    background-color: #BBBBBB;
+    background-color: #DDD;
     position: absolute;
     bottom: -25px;
     left: -60vw;

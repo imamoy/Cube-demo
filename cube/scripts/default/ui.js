@@ -14,14 +14,13 @@ $(document).ready(function () {
 	});
 
 	$('#header-web').each(function () {
-		$(this).css("visibility", "visible");
-		$(".menu-toggle").click(function () {
+		$(".menu-web-toggle").click(function () {
 			$(this).toggleClass('active');
-			$(this).next(".menu").toggleClass('active');
+			$(this).next(".menu-web").toggleClass('active');
 		});
 
 		if (jQuery(window).width() < 991) {
-			$('.sub-toggle').click(function () {
+			$('.sub-web-toggle').click(function () {
 				$(this).find('.sub-nav').slideToggle();
 			});
 		}
