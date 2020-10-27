@@ -5310,6 +5310,23 @@ a.main-color {
         width: 50%;
         height: auto; } }
 
+.cutover {
+  margin: 0; }
+
+.cutover-in {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .cutover-in.show {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s 0.1s, visibility 0.5s 0.1s;
+    transition: opacity 0.5s 0.1s, visibility 0.5s 0.1s; }
+
 @media screen and (max-width: 600px) {
   .phone_cutover {
     margin: 0; }
