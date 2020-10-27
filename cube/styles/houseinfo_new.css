@@ -192,7 +192,6 @@
   margin: 15px 40px 0;
   padding: 2.5%;
   font-size: 16px;
-  overflow: hidden;
   margin-top: 100px; }
   .houseinfo-paper > .left {
     width: 27%;
@@ -219,7 +218,6 @@
     .houseinfo-paper {
       position: fixed;
       overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
       width: calc(100% - 80px);
       height: 90vh; }
       .houseinfo-paper > .left {
