@@ -722,12 +722,12 @@
 
 .houseinfo-scrollbar {
   height: calc(90vh - 200px);
-  overflow-x: hidden;
-  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
   @media screen and (min-width: 1441px) {
     .houseinfo-scrollbar {
-      height: calc(90vh - 220px); }
+      height: calc(90vh - 220px);
+      overflow-x: hidden;
+      overflow-y: auto; }
       .houseinfo-scrollbar > * {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
@@ -827,13 +827,15 @@
     .detail-btn {
       margin-top: 5px; } }
 
-.detail-inner {
-  overflow-y: hidden;
-  overflow-x: hidden; }
-  @media screen and (max-width: 1199px) {
-    .detail-inner {
-      height: auto;
-      display: none; } }
+@media screen and (min-width: 1441px) {
+  .detail-inner {
+    overflow-y: hidden;
+    overflow-x: hidden; } }
+
+@media screen and (max-width: 1199px) {
+  .detail-inner {
+    height: auto;
+    display: none; } }
 
 .detail-price {
   display: -webkit-box;
@@ -1041,7 +1043,8 @@ table {
       width: 100%; } }
   @media screen and (max-width: 991px) {
     .table-box .table-box, form .table-box {
-      overflow-x: auto; } }
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; } }
 
 .houseinfo2_block1_detail-toggle {
   cursor: pointer;
@@ -1409,12 +1412,6 @@ ul.mark-list li {
     margin-top: -10px;
     padding-bottom: 10px;
     margin-bottom: 0; }
-  .houseinfo-dataSection .inner {
-    width: 100%;
-    height: 85vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch; }
   .houseinfo-dataSection .section-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1446,6 +1443,13 @@ ul.mark-list li {
       margin-bottom: 0 !important; }
     .houseinfo-dataSection .paperblock {
       margin: 0 0 30px; } }
+  @media screen and (min-width: 1200px) {
+    .houseinfo-dataSection .inner {
+      width: 100%;
+      height: 85vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; } }
   @media screen and (max-width: 1199px) {
     .houseinfo-dataSection {
       width: 100%;
@@ -1453,9 +1457,6 @@ ul.mark-list li {
       .houseinfo-dataSection .chart-boxblock .page-title {
         position: static;
         margin-bottom: 10px; }
-      .houseinfo-dataSection .inner {
-        height: auto;
-        overflow-y: visible; }
       .houseinfo-dataSection .section-top {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
