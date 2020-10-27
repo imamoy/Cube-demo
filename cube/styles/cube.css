@@ -265,7 +265,8 @@
 
 .cube_search_form {
   height: calc(100% - 46px);
-  overflow-y: auto; }
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
   @media screen and (max-width: 991px) {
     .cube_search_form {
       display: -webkit-box;
@@ -316,7 +317,8 @@
     height: calc(100% - 156px);
     background-color: #fff;
     overflow-x: hidden;
-    overflow-y: auto; }
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
   #cube-house.l-pageFill_right .cube_house_close {
     display: none; }
   @media screen and (min-width: 992px) {
@@ -409,7 +411,8 @@
         padding: 14px 16px 20px; }
       #cube-house.l-pageFill_right .btm {
         height: calc(100% - 130px);
-        overflow-y: auto; } }
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; } }
 
 .cube-house_nav {
   display: -webkit-box;
@@ -999,6 +1002,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 #cube_lists {
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   padding-top: 80px;
   padding-bottom: 60px;
@@ -1034,7 +1038,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
           justify-content: space-between;
   padding: 120px 1.8% 20px;
   background-color: rgba(239, 239, 239, 0.5);
-  overflow-y: auto; }
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
   @media screen and (min-width: 1441px) {
     #cube-list {
       padding: 120px 2.6% 20px; } }

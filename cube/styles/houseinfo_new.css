@@ -219,6 +219,7 @@
     .houseinfo-paper {
       position: fixed;
       overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
       width: calc(100% - 80px);
       height: 90vh; }
       .houseinfo-paper > .left {
@@ -724,7 +725,8 @@
 .houseinfo-scrollbar {
   height: calc(90vh - 200px);
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
   @media screen and (min-width: 1441px) {
     .houseinfo-scrollbar {
       height: calc(90vh - 220px); }
@@ -1353,6 +1355,7 @@ ul.mark-list li {
     .houseinfo-dataInfo {
       display: block;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       padding: 20px; }
       .houseinfo-dataInfo .container {
         padding: 0; }
@@ -1412,7 +1415,8 @@ ul.mark-list li {
     width: 100%;
     height: 85vh;
     overflow-x: hidden;
-    overflow-y: auto; }
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
   .houseinfo-dataSection .section-top {
     display: -webkit-box;
     display: -ms-flexbox;

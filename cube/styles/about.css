@@ -279,7 +279,8 @@
       width: 65%; }
       .team-hover .inner {
         max-height: 58vh;
-        overflow-y: scroll; } }
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; } }
   @media screen and (max-width: 767px) {
     .team-hover {
       width: 80%;
