@@ -301,11 +301,13 @@
       margin: 100px 10px 0; }
       .houseinfo-paper > .left, .houseinfo-paper > .right {
         width: 100%; }
-      .houseinfo-paper > .left .detail-price {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; }
+      .houseinfo-paper > .left {
+        height: auto; }
+        .houseinfo-paper > .left .detail-price {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; }
       .houseinfo-paper > .right {
         padding-bottom: 100px; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
