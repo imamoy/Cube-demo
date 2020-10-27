@@ -271,38 +271,35 @@ img {
   .pad-hide {
     display: none !important; } }
 
-.main-scrollbar::-webkit-scrollbar {
-  width: 5px; }
-
-.main-scrollbar::-webkit-scrollbar-track {
-  -webkit-box-shadow: 0 0 0 0;
-  border-radius: 5px; }
-
-.main-scrollbar::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: transparent;
-  -webkit-box-shadow: 0 0 0 0; }
-  .main-scrollbar::-webkit-scrollbar-thumb:window-inactive {
-    background: transparent; }
-
-.main-scrollbar:hover::-webkit-scrollbar-thumb {
-  background: #DEDEDE; }
-  .main-scrollbar:hover::-webkit-scrollbar-thumb:window-inactive {
+@media screen and (min-width: 1200px) {
+  .main-scrollbar::-webkit-scrollbar {
+    width: 5px; }
+  .main-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 0 0;
+    border-radius: 5px; }
+  .main-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: transparent;
+    -webkit-box-shadow: 0 0 0 0; }
+    .main-scrollbar::-webkit-scrollbar-thumb:window-inactive {
+      background: transparent; }
+  .main-scrollbar:hover::-webkit-scrollbar-thumb {
     background: #DEDEDE; }
+    .main-scrollbar:hover::-webkit-scrollbar-thumb:window-inactive {
+      background: #DEDEDE; } }
 
-.pop::-webkit-scrollbar {
-  width: 5px; }
-
-.pop::-webkit-scrollbar-track {
-  -webkit-box-shadow: 0 0 0 0;
-  border-radius: 5px; }
-
-.pop::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background: #FFF;
-  -webkit-box-shadow: 0 0 0 0; }
-  .pop::-webkit-scrollbar-thumb:window-inactive {
-    background: #FFF; }
+@media screen and (min-width: 1200px) {
+  .pop::-webkit-scrollbar {
+    width: 5px; }
+  .pop::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 0 0;
+    border-radius: 5px; }
+  .pop::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #FFF;
+    -webkit-box-shadow: 0 0 0 0; }
+    .pop::-webkit-scrollbar-thumb:window-inactive {
+      background: #FFF; } }
 
 .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical, .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical {
   right: -20px !important; }
