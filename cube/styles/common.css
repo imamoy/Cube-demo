@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .f-en {
   font-family: "Helvetica Neue", Helvetica, sans-serif; }
 
@@ -1442,6 +1443,85 @@ img {
   .btn-nostyle:hover {
     color: #0050E6; } }
 
+.switch-button {
+  background: #c5c5c5;
+  border-radius: 45px;
+  overflow: hidden;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff;
+  position: relative; }
+  .switch-button:before {
+    content: "商辦";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 3;
+    pointer-events: none; }
+
+.switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2; }
+  .switch-button-checkbox:checked + .switch-button-label:before {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 300ms linear;
+    transition: -webkit-transform 300ms linear;
+    transition: transform 300ms linear;
+    transition: transform 300ms linear, -webkit-transform 300ms linear; }
+  .switch-button-checkbox + .switch-button-label {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: none; }
+    .switch-button-checkbox + .switch-button-label::before {
+      content: "";
+      background: #0050E6;
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 45px;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transition: -webkit-transform 300ms;
+      transition: -webkit-transform 300ms;
+      transition: transform 300ms;
+      transition: transform 300ms, -webkit-transform 300ms; }
+
+.switch-button-label-span {
+  position: relative;
+  width: 50%;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  z-index: 10; }
+
 .form-row {
   margin-bottom: 30px;
   position: relative; }
@@ -1624,9 +1704,9 @@ input {
   margin-left: 11px; }
 
 .form-check {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

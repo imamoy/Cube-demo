@@ -252,6 +252,51 @@ var houseinfo2_chart1 = {
   }
 };
 
+
+var houseinfo2_chart1a = {
+  colors: ['#808080'],
+  series: [
+    {
+      data: [45, 50, 50, 60]
+    }
+  ],
+  
+  chart: {
+    id: 'vuechart-example',
+    zoom: {
+      enabled: false,
+    },
+    sparkline: {
+        enabled: false,
+    },
+    height: 300 ,toolbar: {show: false},
+  },
+  markers: {
+    size: 8,
+    shape: "circle",    //circle or square
+  },
+  stroke: {
+      curve: 'straight',  // smooth
+      width: 2,
+      dashArray: 2
+  },
+  xaxis: {
+    categories: ['1000','1150','1300','1500']
+  },
+  yaxis: {title: {text: '單價(萬)'}},
+  design: {
+    theme: {
+      monochrome: {
+        enabled: true,
+        color: '#255aee',
+        shadeTo: 'light',
+        shadeIntensity: 0.65
+      }
+    }
+  }
+};
+
+
 // 買房單價表現走勢圖
 var houseinfo2_chart2 = {
   colors: ['#FF0007','#2BA84A','#0050E6',"#FF9C01",'#606060'],
@@ -325,7 +370,8 @@ var chart8 = new ApexCharts(document.querySelector("#houseinfo2_chart2_y1"), hou
 chart8.render();
 var chart9 = new ApexCharts(document.querySelector("#similar_chart_y1"), houseinfo2_chart3);
 chart9.render();
-
+var chart10 = new ApexCharts(document.querySelector("#houseinfo2_chart1a"), houseinfo2_chart1a);
+chart10.render();
 
 
 

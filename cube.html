@@ -66,6 +66,13 @@
         <form class="cube_search">
           <div class="cube_search_form main-scrollbar">
             <div class="form-row _h">
+              <label class="form_label">房屋類型</label>
+              <div class="switch-button" id="house_office_switch">
+                <input class="switch-button-checkbox" id="house_office" type="checkbox">
+                <label class="switch-button-label" for="#house_office"><span class="switch-button-label-span">住宅</span></label>
+              </div>
+            </div>
+            <div class="form-row _h office_hide">
               <label class="form_label">房屋用途</label>
               <div class="checkbox_btn_row">
                 <div class="checkbox_btn">
@@ -86,7 +93,7 @@
                 </div>
               </div>
             </div>
-            <div class="form-row _h rooms">
+            <div class="form-row _h rooms office_hide">
               <label class="form_label">填寫房數</label>
               <div class="mb-10">
                 <div class="form_radiobox">
@@ -1125,6 +1132,21 @@
               $('.map_area').removeClass('active');
           });
           $('.rooms input:radio:checked').val();
+      
+      
+          $('#house_office_switch').click(function(){
+              if($("#house_office").prop("checked")) {
+                  $("#house_office").each(function() {
+                      $(this).prop("checked", true);
+                      $('.office_hide').hide();
+                  });
+              } else {
+                  $("#house_office").each(function() {
+                      $(this).prop("checked", false);
+                      $('.office_hide').show();
+                  });           
+              }
+          });
       });
       
     </script>

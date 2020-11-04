@@ -193,7 +193,9 @@
       #cube_left.close {
         left: -100%; }
       #cube_left .cube_search_form {
-        padding-bottom: 40px; } }
+        padding-bottom: 40px; }
+      #cube_left .form-row._h {
+        margin-bottom: 20px; } }
   @media screen and (max-width: 1199px) {
     #cube_left {
       z-index: 9999; } }

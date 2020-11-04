@@ -139,6 +139,42 @@
     border-color: rgba(0, 80, 230, 0.3) !important; }
   #index .pure_select_underline.ping {
     width: 300px; }
+  #index .search-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden; }
+    #index .search-nav li {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      #index .search-nav li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: #F2F2F2;
+        color: #606060;
+        padding: 6px 0; }
+        #index .search-nav li a i {
+          font-size: 36px;
+          margin-right: 10px; }
+      #index .search-nav li.active a {
+        background-color: #0050E6;
+        color: #fff; }
   @media screen and (min-width: 1441px) {
     #index .search-input {
       width: 235px;
@@ -149,7 +185,11 @@
     #index .houseYear {
       margin-left: 124px; }
     #index .inputprice {
-      margin-left: 297px; } }
+      margin-left: 297px; }
+    #index .houseYear2 {
+      margin-left: 224px; }
+    #index .inputprice2 {
+      margin-left: 260px; } }
   @media screen and (max-width: 1440px) {
     #index .input-select .label {
       font-size: 14px;
