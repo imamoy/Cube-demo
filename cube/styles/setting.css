@@ -1,0 +1,253 @@
+.f-en {
+  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+
+.f-12 {
+  font-size: 12px; }
+
+.f-14 {
+  font-size: 14px; }
+
+.f-18 {
+  font-size: 18px; }
+
+.f-20 {
+  font-size: 20px; }
+
+.f-22 {
+  font-size: 22px; }
+
+.f-24 {
+  font-size: 24px; }
+
+.f-28 {
+  font-size: 28px; }
+
+.fw700 {
+  font-weight: 700; }
+
+.fw600 {
+  font-weight: 600; }
+
+.fw400 {
+  font-weight: 400; }
+
+.f-title_big {
+  font-weight: 700; }
+  @media screen and (min-width: 1441px) {
+    .f-title_big {
+      font-size: 56px; } }
+  @media screen and (max-width: 1440px) {
+    .f-title_big {
+      font-size: 49.28px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_big {
+      font-size: 35.55556px; } }
+
+.f-title_l {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_l {
+      font-size: 53.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_l {
+      font-size: 42.66667px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_l {
+      font-size: 35.55556px; } }
+
+.f-title_ml {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_ml {
+      font-size: 49.77778px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_ml {
+      font-size: 20px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_ml {
+      font-size: 24px; } }
+
+.f-title_m {
+  font-weight: 700; }
+  @media screen and (min-width: 992px) {
+    .f-title_m {
+      font-size: 35.55556px; } }
+  @media screen and (max-width: 991px) {
+    .f-title_m {
+      font-size: 32.0px; } }
+  @media screen and (max-width: 600px) {
+    .f-title_m {
+      font-size: 21.33333px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_s {
+    font-size: 32px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_s {
+    font-size: 28.8px; } }
+
+@media screen and (min-width: 992px) {
+  .f-title_xs {
+    font-size: 28.8px; } }
+
+@media screen and (max-width: 991px) {
+  .f-title_xs {
+    font-size: 18px; } }
+
+.f-subTitle_l {
+  font-style: normal; }
+  @media screen and (min-width: 1200px) {
+    .f-subTitle_l {
+      font-size: 23.11111px; } }
+  @media screen and (max-width: 1199px) {
+    .f-subTitle_l {
+      font-size: 20.8px; } }
+
+.f-subTitle {
+  font-style: normal; }
+  @media screen and (min-width: 992px) {
+    .f-subTitle {
+      font-size: 21.33333px; } }
+  @media screen and (max-width: 991px) {
+    .f-subTitle {
+      font-size: 17.77778px; } }
+
+.f-text {
+  font-size: 16px; }
+
+.t-center {
+  text-align: center; }
+
+#setting {
+  position: relative;
+  border-top: 1px solid #DDD;
+  padding-top: 40px; }
+  #setting .back-btn {
+    position: absolute;
+    top: 40px;
+    left: 45px; }
+  @media screen and (min-width: 992px) {
+    #setting {
+      height: calc(100vh - 88px);
+      overflow: hidden; } }
+  @media screen and (max-width: 991px) {
+    #setting {
+      border: none;
+      padding-top: 0; }
+      #setting .back-btn {
+        display: none; } }
+
+.setting-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 80px; }
+  .setting-inner .setting-nav {
+    padding: 5px 0; }
+    .setting-inner .setting-nav li {
+      margin-bottom: 20px; }
+      .setting-inner .setting-nav li a {
+        color: #606060; }
+      .setting-inner .setting-nav li.active a {
+        color: #0050E6; }
+    .setting-inner .setting-nav .icon {
+      margin-right: 5px; }
+    .setting-inner .setting-nav .icon-lock {
+      font-size: 20px; }
+      .setting-inner .setting-nav .icon-lock::before {
+        margin-left: 1px;
+        margin-right: 2px; }
+  .setting-inner .form-box {
+    margin: 0 -10px;
+    width: calc(100% + 20px); }
+  .setting-inner .form-row {
+    padding: 0 10px;
+    margin-bottom: 20px; }
+  @media screen and (min-width: 992px) {
+    .setting-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .setting-inner .setting-nav {
+        width: 25%; }
+        .setting-inner .setting-nav li:not(.active):hover a {
+          color: #222222; }
+      .setting-inner .setting-items {
+        width: calc(100% - 25%);
+        height: 86vh;
+        overflow-y: auto;
+        padding-bottom: 80px;
+        padding-right: 10px; } }
+  @media screen and (min-width: 768px) {
+    .setting-inner .form-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .setting-inner .form-row {
+      width: 50%; }
+      .setting-inner .form-row.w-100 {
+        width: 100%; } }
+  @media screen and (max-width: 991px) {
+    .setting-inner {
+      padding: 0 30px 80px; }
+      .setting-inner .setting-nav {
+        border-bottom: 1px solid #DDD;
+        margin-bottom: 20px;
+        position: fixed;
+        background-color: #fff;
+        width: calc(100vw - 60px); }
+        .setting-inner .setting-nav ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        .setting-inner .setting-nav li {
+          -webkit-box-flex: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
+          padding: 10px 0;
+          margin-bottom: 0; }
+      .setting-inner .setting-items {
+        padding-top: 80px; } }
+  @media screen and (max-width: 767px) {
+    .setting-inner {
+      padding: 0 20px 80px; }
+      .setting-inner .setting-nav {
+        width: calc(100vw - 40px);
+        top: 56px;
+        z-index: 1; } }
+
+.approve-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #DDD;
+  color: #222222;
+  padding: 14px 0; }
+  .approve-row:last-child {
+    border: none; }
+  .approve-row .icon {
+    margin-right: 5px; }
+  .approve-row .btn-sm {
+    width: 90px;
+    height: 36px; }
+
+hr {
+  opacity: .3; }
+
+.setting-result.finish {
+  color: #0050E6; }
+
+.setting-result button {
+  height: 40px; }

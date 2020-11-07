@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CUBE AI</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/setting.css">
+  </head>
+  <body>
+    <div class="cube-container">
+      <div class="cube-perspective">
+        <div class="cube animate">
+          <div class="chip-1 chip"></div>
+          <div class="chip-2 chip"></div>
+          <div class="chip-3 chip"></div>
+          <div class="chip-4 chip"></div>
+          <div class="chip-5 chip"></div>
+          <div class="chip-6 chip"></div>
+        </div>
+      </div>
+    </div>
+    <header class="wow fadeInDown" id="header">
+      <div class="logo logo_cm2cube"><a href="index.html"><em class="hidden">CUBE智能找房</em></a></div>
+      <div class="right">
+        <div class="login-row mobile-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+        <div class="member-btn"><span class="icon"><i class="icon-user"></i></span>
+          <ul class="member-nav nostyle">
+            <li><a href="">通知</a></li>
+            <li><a href="setting.html">設定</a></li>
+            <li>
+              <button>登出</button>
+            </li>
+          </ul>
+        </div>
+        <div class="lang-btn"><i class="icon-global"></i>
+          <ul class="nostyle lang-menu">
+            <li><a href="">繁體中文</a></li>
+            <li><a href="">English</a></li>
+          </ul>
+        </div>
+        <div class="menu-toggle"><i class="icon-menu"></i></div>
+        <div class="menu">
+          <div class="menu-close"><i class="icon-cancel"></i></div>
+          <ul class="nav">
+                        <li><a class="animsition-link" href="index.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-ai-house"></i></span><span class="nav_item">智能搜房</span></a></li>
+                        <li><a class="animsition-link" href="cube.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-house-map"></i></span><span class="nav_item">地圖找房</span></a></li>
+                        <li><a class="animsition-link" href="favorite.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的收藏</span></a></li>
+                        <li><a class="animsition-link" href="report.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的報告</span></a></li>
+            <li>
+              <div class="login-row pc-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+            </li>
+          </ul><a class="goWeb" href="home.html"><span>房快AI</span><i class="icon-click"></i></a>
+        </div>
+      </div>
+    </header>
+    <main class="pageFill" id="setting"><a class="back-btn" href="javascript:history.back()"><i class="icon-arrow-left"></i></a>
+      <div class="setting-inner"> 
+        <div class="setting-nav">
+          <ul class="nostyle cutover">
+            <li class="active"><a href="#account"><i class="icon icon-user"></i><span>帳號資訊</span></a></li>
+            <li><a href="#password"><i class="icon icon-lock"></i><span>更改密碼</span></a></li>
+          </ul>
+        </div>
+        <div class="setting-items main-scrollbar">
+          <div class="cutover-in show" id="account">
+            <h2 class="setting-title f-28 mb-20">帳號資訊</h2>
+            <form>
+              <div class="form-box">
+                <div class="form-row _h">
+                  <label class="form_label" for="#last-name">名字</label>
+                  <input class="main-inputBorder" id="last-name" type="text" value="大明" readonly>
+                </div>
+                <div class="form-row _h">
+                  <label class="form_label" for="#first-name">姓氏</label>
+                  <input class="main-inputBorder" id="first-name" type="text" value="姓氏" readonly>
+                </div>
+                <div class="form-row _h">
+                  <label class="form_label" for="#mail">電子郵件</label>
+                  <input class="main-inputBorder" id="mail" type="mail" value="ming@cm2.io" readonly>
+                </div>
+                <div class="form-row _h">
+                  <label class="form_label" for="#phone-num">電話號碼</label>
+                  <input class="main-inputBorder" id="phone-num" type="text" value="0978999999" readonly>
+                </div>
+                <div class="form-row _h">
+                  <label class="form_label" for="#mail">居住地區</label>
+                  <div class="pure_select_border">
+                    <select id="year">
+                      <option value="台北市">台北市</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row _h">
+                  <label class="form_label" for="#Postal-code">郵遞區號</label>
+                  <input class="main-inputBorder" id="Postal-code" type="text" value="">
+                </div>
+                <div class="form-row _h w-100">
+                  <label class="form_label" for="#address">地址</label>
+                  <input class="main-inputBorder" id="address" type="mail" value="">
+                </div>
+              </div>
+              <hr class="my-10">
+              <h4 class="f-20 mt-20 mb-10">帳號認證</h4>
+              <ul class="nostyle">
+                <li class="w-100 approve-row">
+                  <div><i class="icon icon icon-mail"></i><span>電子信箱認證</span></div>
+                  <div class="setting-result finish"><!--- 認證完成 ---><i class="icon icon-check"></i><span>認證完成 </span></div>
+                </li>
+              </ul><br>
+              <input class="search-btn btn btn-dp" type="button" value="保存">
+            </form>
+          </div>
+          <div class="cutover-in" id="password">
+            <h2 class="setting-title f-28 mb-20">更改密碼</h2>
+            <form>
+              <div class="form-box">
+                <div class="form-row _h w-100">
+                  <label class="form_label" for="#now-password">當前密碼</label>
+                  <input class="main-inputBorder" id="now-password" type="password">
+                </div>
+                <div class="form-row _h w-100">
+                  <label class="form_label" for="#new-password">新密碼</label>
+                  <input class="main-inputBorder" id="new-password" type="password">
+                </div>
+                <div class="form-row _h w-100">
+                  <label class="form_label" for="#confirm-password">電子郵件</label>
+                  <input class="main-inputBorder" id="confirm-password" type="password">
+                </div>
+                <div class="form-row _h w-100 mt-10">
+                  <input class="search-btn btn btn-dp" type="button" value="更改">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="cursor"></div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="cube/scripts/plugins/jquery-ui.min.js"></script>
+    <script src="cube/scripts/default/compare.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop" id="sign_in">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text d-flex">
+          <h2 class="title">歡迎使用</h2><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-10" type="email" placeholder="電子郵件" autocomplete="on">
+        <input class="main-inputBorder my-10" type="password" placeholder="密碼" autocomplete="on">
+        <div class="t-center my-10"><span class="forgetpassword_toggle">忘記密碼</span></div>
+        <input class="btn main_Rbtn blue-btn" type="button" value="登入">
+        <p class="my-20 t-center">或</p>
+        <button class="facebook_login"><span class="icon mr-10"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 帳號登入</span></button>
+        <button class="google_login"><span class="icon mr-10"><img src="images/cube/google.png" alt=""></span><span>使用 Google 帳號登入</span></button>
+      </form>
+      <div class="t-center"><span>還沒有帳號嗎？</span>
+        <button class="sign_up_toggle">註冊</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="sign_up">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text"><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+          <h2 class="title">歡迎您・立即註冊！</h2>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">帳號<span class="t-red ml-5">*</span></label>
+            <input type="text" placeholder="請輸入您的帳號" autocomplete="off">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">密碼<span class="t-red ml-5">*</span></label>
+            <input type="password" placeholder="請輸入您的密碼" autocomplete="off">
+          </div>
+        </div>
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">E-mail<span class="t-red ml-5">*</span></label>
+            <input type="email" placeholder="請輸入您的E-mail" autocomplete="off">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">電話</label>
+            <input type="text" placeholder="請輸入您的電話" autocomplete="off">
+          </div>
+        </div>
+        <div class="form-row _h">
+          <label class="form_label">選擇會員身份
+            <div class="pure_select_border">
+              <select id="Identity">
+                <option value="選擇會員身份">選擇會員身份</option>
+                <option value="買家">買家</option>
+                <option value="賣家(屋主或代理人)">賣家(屋主或代理人)</option>
+                <option value="房仲(房產經紀人)">房仲(房產經紀人)</option>
+                <option value="仲介公司">仲介公司</option>
+                <option value="建商">建商</option>
+              </select>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="text_and_line">或使用社群媒體註冊</div>
+      <div class="form-row _w">
+        <button class="facebook_login"><span class="icon"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 註冊</span></button>
+        <button class="google_login"><span class="icon"><img src="images/cube/google.png" alt=""></span><span>使用 Google 註冊</span></button>
+      </div>
+      <div class="t-center"><span class="mb10" style="font-size:14px;">若建立帳戶，即表示我同意 CUBE AI 的 網站條款、隱私權政策 與 授權條款。</span></div>
+      <div class="t-center mt-10"><span>還沒有帳號嗎？</span>
+        <button class="sign_in_toggle">登入</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="forgetpassword">
+      <div class="pop_head">
+        <div class="text d-flex mb-20">
+          <h2 class="title">忘記密碼</h2>
+        </div>
+        <p>請輸入電子郵件</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-20" type="email" placeholder="電子郵件">
+        <input class="btn main_Rbtn blue-btn" type="button" value="確認">
+      </form>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop_bg"></div>
+  </body>
+</html>
