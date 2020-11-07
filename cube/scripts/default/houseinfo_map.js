@@ -220,7 +220,7 @@ $(function() {
                   index: index
                };
                return result; 
-           },
+           }
         //    'event': { // 叢集起始事件
         //       'clusterclick': function(s) {
         //          // get marker and reset the cube-house content

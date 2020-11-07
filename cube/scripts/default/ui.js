@@ -203,6 +203,8 @@ $(document).ready(function () {
 
 	});
 
+	
+
 	$("a.anchor").on('click', function (event) {
 
 		if (this.hash !== "") {

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?87445841');
-  src: url('../font/fontello.eot?87445841#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?87445841') format('woff2'),
-       url('../font/fontello.woff?87445841') format('woff'),
-       url('../font/fontello.ttf?87445841') format('truetype'),
-       url('../font/fontello.svg?87445841#fontello') format('svg');
+  src: url('../font/fontello.eot?31388005');
+  src: url('../font/fontello.eot?31388005#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?31388005') format('woff2'),
+       url('../font/fontello.woff?31388005') format('woff'),
+       url('../font/fontello.ttf?31388005') format('truetype'),
+       url('../font/fontello.svg?31388005#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?87445841#fontello') format('svg');
+    src: url('../font/fontello.svg?31388005#fontello') format('svg');
   }
 }
 */
@@ -55,54 +55,56 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-circle_plus:before { content: '\e800'; } /* '' */
-.icon-menu:before { content: '\e801'; } /* '' */
-.icon-location_house:before { content: '\e802'; } /* '' */
-.icon-circle_less:before { content: '\e803'; } /* '' */
-.icon-magnifier:before { content: '\e804'; } /* '' */
-.icon-list:before { content: '\e805'; } /* '' */
+.icon-plus-2:before { content: '\2b'; } /* '+' */
+.icon-minus-1:before { content: '\25c2'; } /* '◂' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-dot-3:before { content: '\e78d'; } /* '' */
 .icon-down-dir:before { content: '\e806'; } /* '' */
 .icon-left-dir:before { content: '\e807'; } /* '' */
 .icon-right-dir:before { content: '\e808'; } /* '' */
 .icon-up-dir:before { content: '\e809'; } /* '' */
-.icon-dot-3:before { content: '\e80a'; } /* '' */
-.icon-link-ball:before { content: '\e80b'; } /* '' */
-.icon-house-door:before { content: '\e80c'; } /* '' */
-.icon-house-map:before { content: '\e80d'; } /* '' */
-.icon-line-wave:before { content: '\e80e'; } /* '' */
-.icon-arrow-up:before { content: '\e80f'; } /* '' */
-.icon-arrow-left:before { content: '\e810'; } /* '' */
-.icon-arrow-right:before { content: '\e811'; } /* '' */
-.icon-arrow-down:before { content: '\e812'; } /* '' */
-.icon-dotted:before { content: '\e813'; } /* '' */
-.icon-ai-house:before { content: '\e814'; } /* '' */
-.icon-wall:before { content: '\e815'; } /* '' */
-.icon-door:before { content: '\e816'; } /* '' */
-.icon-beeline:before { content: '\e817'; } /* '' */
-.icon-star:before { content: '\e818'; } /* '' */
-.icon-sale:before { content: '\e819'; } /* '' */
-.icon-bag:before { content: '\e81a'; } /* '' */
-.icon-balcony:before { content: '\e81b'; } /* '' */
-.icon-house_one:before { content: '\e81c'; } /* '' */
-.icon-rent:before { content: '\e81d'; } /* '' */
-.icon-mrt:before { content: '\e81e'; } /* '' */
-.icon-bus:before { content: '\e81f'; } /* '' */
-.icon-moneypaper:before { content: '\e820'; } /* '' */
-.icon-hand_house:before { content: '\e821'; } /* '' */
-.icon-rent-1:before { content: '\e822'; } /* '' */
+.icon-circle_plus:before { content: '\e80a'; } /* '' */
+.icon-menu:before { content: '\e80b'; } /* '' */
+.icon-location_house:before { content: '\e80c'; } /* '' */
+.icon-circle_less:before { content: '\e80d'; } /* '' */
+.icon-list:before { content: '\e80e'; } /* '' */
+.icon-magnifier:before { content: '\e80f'; } /* '' */
+.icon-house-map:before { content: '\e810'; } /* '' */
+.icon-house-door:before { content: '\e811'; } /* '' */
+.icon-link-ball:before { content: '\e818'; } /* '' */
+.icon-line-wave:before { content: '\e819'; } /* '' */
 .icon-resize-full:before { content: '\e823'; } /* '' */
-.icon-global:before { content: '\e824'; } /* '' */
-.icon-bath:before { content: '\e825'; } /* '' */
-.icon-filter:before { content: '\e826'; } /* '' */
-.icon-buliding:before { content: '\e829'; } /* '' */
-.icon-buy:before { content: '\e82a'; } /* '' */
-.icon-locationmap:before { content: '\e82b'; } /* '' */
-.icon-search-house:before { content: '\e82c'; } /* '' */
-.icon-minus-1:before { content: '\e82d'; } /* '' */
-.icon-plus-2:before { content: '\e82e'; } /* '' */
-.icon-user:before { content: '\e845'; } /* '' */
+.icon-arrow-up:before { content: '\e82c'; } /* '' */
+.icon-arrow-left:before { content: '\e82d'; } /* '' */
+.icon-arrow-right:before { content: '\e82e'; } /* '' */
+.icon-arrow-down:before { content: '\e82f'; } /* '' */
+.icon-dotted:before { content: '\e830'; } /* '' */
+.icon-ai-house:before { content: '\e831'; } /* '' */
+.icon-wall:before { content: '\e832'; } /* '' */
+.icon-door:before { content: '\e833'; } /* '' */
+.icon-beeline:before { content: '\e834'; } /* '' */
+.icon-bag:before { content: '\e835'; } /* '' */
+.icon-bus:before { content: '\e836'; } /* '' */
+.icon-mrt:before { content: '\e837'; } /* '' */
+.icon-rent:before { content: '\e838'; } /* '' */
+.icon-balcony:before { content: '\e839'; } /* '' */
+.icon-sale:before { content: '\e83a'; } /* '' */
+.icon-house_one:before { content: '\e83b'; } /* '' */
+.icon-moneypaper:before { content: '\e83c'; } /* '' */
+.icon-hand_house:before { content: '\e83d'; } /* '' */
+.icon-buliding:before { content: '\e83e'; } /* '' */
+.icon-buy:before { content: '\e83f'; } /* '' */
+.icon-locationmap:before { content: '\e840'; } /* '' */
+.icon-search-house:before { content: '\e841'; } /* '' */
+.icon-rent-1:before { content: '\e842'; } /* '' */
+.icon-global:before { content: '\e843'; } /* '' */
+.icon-bath:before { content: '\e844'; } /* '' */
+.icon-filter:before { content: '\e845'; } /* '' */
+.icon-user:before { content: '\e846'; } /* '' */
+.icon-star-1:before { content: '\e847'; } /* '' */
 .icon-mapbook:before { content: '\e850'; } /* '' */
 .icon-bed:before { content: '\e851'; } /* '' */
+.icon-chair:before { content: '\e85c'; } /* '' */
 .icon-land:before { content: '\e866'; } /* '' */
 .icon-company:before { content: '\e868'; } /* '' */
 .icon-factory:before { content: '\e869'; } /* '' */

@@ -132,9 +132,9 @@ html, body {
   color: #222222;
   line-height: normal;
   font-family: 'Noto Sans TC','Helvetica', sans-serif;
-  letter-spacing: 0.3px;
-    letter-spacing-margin: 0;
-    letter-spacing-padding: 0;
+  letter-spacing: .3px;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden; }
   @media screen and (max-width: 600px) {
     html, body {
@@ -1712,6 +1712,12 @@ input {
           align-items: center;
   font-size: 16px; }
   .form-check label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     white-space: nowrap;
     margin-right: 10px; }
   .form-check input {
@@ -2137,7 +2143,7 @@ input {
 .star {
   margin-right: 5px; }
   .star::before {
-    content: '\e818';
+    content: '\2605';
     font-family: "fontello";
     font-size: 22px; }
 
@@ -3861,7 +3867,9 @@ header:not(#header-web) {
     header:not(#header-web) .menu-close:hover {
       color: #0050E6 !important; }
     header:not(#header-web) .menu .nav a:hover {
-      color: #0050E6 !important; } }
+      color: #0050E6 !important; }
+    header:not(#header-web).nobg {
+      background-color: transparent !important; } }
   @media screen and (max-width: 1199px) {
     header:not(#header-web) .menu .nav {
       -webkit-box-align: center;

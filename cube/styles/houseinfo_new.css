@@ -198,6 +198,9 @@
     position: relative; }
     .houseinfo-paper > .right .top-head {
       background-color: #fff; }
+    .houseinfo-paper > .right .detail-price {
+      height: auto;
+      opacity: 1; }
   @media screen and (min-width: 1441px) {
     .houseinfo-paper > .left {
       width: 23% !important; }
@@ -241,6 +244,9 @@
   @media screen and (min-width: 1200px) {
     .houseinfo-paper .paperblock {
       margin: 30px; } }
+  @media screen and (min-width: 1441px) {
+    .houseinfo-paper .paperblock {
+      margin: 30px 38px; } }
   @media screen and (max-width: 1440px) {
     .houseinfo-paper > .left .detail-price {
       -webkit-box-orient: vertical;
@@ -334,7 +340,51 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+      .houseinfo-paper > .right .detail-price {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .houseinfo-paper > .right .detail-price .left, .houseinfo-paper > .right .detail-price .right {
+          width: 100%;
+          padding: 0;
+          margin: 0 0 5px;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          border: none; }
+          .houseinfo-paper > .right .detail-price .left .icon, .houseinfo-paper > .right .detail-price .right .icon {
+            font-size: 30px; }
+          .houseinfo-paper > .right .detail-price .left .text, .houseinfo-paper > .right .detail-price .right .text {
+            font-size: 14px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .houseinfo-paper > .right .detail-price .left .text > *, .houseinfo-paper > .right .detail-price .right .text > * {
+              margin-bottom: 0; }
+              .houseinfo-paper > .right .detail-price .left .text > *:first-child, .houseinfo-paper > .right .detail-price .right .text > *:first-child {
+                padding: 0 !important; }
+                .houseinfo-paper > .right .detail-price .left .text > *:first-child.fixed-width, .houseinfo-paper > .right .detail-price .right .text > *:first-child.fixed-width {
+                  width: 140px;
+                  padding-right: 6px; }
+                  .houseinfo-paper > .right .detail-price .left .text > *:first-child.fixed-width .f-gary-lg, .houseinfo-paper > .right .detail-price .right .text > *:first-child.fixed-width .f-gary-lg {
+                    display: block; }
+              .houseinfo-paper > .right .detail-price .left .text > *:last-child, .houseinfo-paper > .right .detail-price .right .text > *:last-child {
+                padding-left: 6px; }
+            .houseinfo-paper > .right .detail-price .left .text .f-20, .houseinfo-paper > .right .detail-price .right .text .f-20 {
+              margin: 0 2px; }
+            .houseinfo-paper > .right .detail-price .left .text .input-border, .houseinfo-paper > .right .detail-price .right .text .input-border {
+              font-size: 16px;
+              margin: 0 2px;
+              padding: 0;
+              width: 56px !important; } }
   @media screen and (max-width: 767px) {
     .houseinfo-paper {
       font-size: 15px; }
@@ -402,11 +452,21 @@
 .page-title .page-title_icon {
   font-size: 40px; }
 
-@media screen and (max-width: 767px) {
-  .page-title .page-title_icon {
-    font-size: 32px; }
+@media screen and (max-width: 1440px) {
   .page-title .page-title_title {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .page-title .page-title_icon {
+    font-size: 36px; } }
+
+@media screen and (max-width: 767px) {
+  .page-title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px; }
+    .page-title .page-title_icon {
+      font-size: 26px; }
+    .page-title .page-title_title {
+      font-size: 18px; } }
 
 .top-head > div {
   display: -webkit-box;
@@ -420,13 +480,38 @@
           justify-content: space-between;
   border-bottom: 1px solid #DDD; }
 
+.file-toggleBox {
+  position: relative; }
+  .file-toggleBox:hover .file-toggleNav {
+    display: block; }
+
+.file-toggleNav {
+  display: none;
+  position: absolute;
+  left: 0; }
+  .file-toggleNav .file-btn {
+    border: none !important;
+    border-bottom: 1px solid #DDD !important; }
+    .file-toggleNav .file-btn:last-child {
+      border: none; }
+
 .file-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none; }
-  .file-nav .file-btn {
+  .file-nav .file-btn, .file-nav .file-toggle {
     cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
     height: 40px;
     border: none;
     background-color: #F3F3F3;
@@ -435,6 +520,10 @@
     -webkit-transition: color .25s;
     transition: color .25s;
     border-right: 1px solid #DDD; }
+    .file-nav .file-btn i::before, .file-nav .file-toggle i::before {
+      margin: 0; }
+    .file-nav .file-btn i.icon.icon-save-as, .file-nav .file-toggle i.icon.icon-save-as {
+      padding-left: 5px; }
   .file-nav li:last-child .file-btn {
     border: none; }
   .file-nav .icon {
@@ -936,6 +1025,8 @@
     .houseinfo-inner {
       padding: 30px 0;
       margin-top: 20px; }
+      .houseinfo-inner .paperblock {
+        margin-bottom: 30px; }
       .houseinfo-inner .block {
         padding: 20px 24px; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -951,10 +1042,17 @@
       .houseinfo-inner .block {
         padding: 10px;
         margin-bottom: 20px; }
+        .houseinfo-inner .block > .d-flex {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
       .houseinfo-inner .l-inline-label .label {
         font-size: 14px; }
       .houseinfo-inner input, .houseinfo-inner .pure_select_border select {
-        font-size: 14px; } }
+        font-size: 14px; }
+      .houseinfo-inner .paperblock {
+        -webkit-box-shadow: 0 5px 20px #cad7fd;
+                box-shadow: 0 5px 20px #cad7fd;
+        margin-bottom: 20px; } }
 
 .other-housepage > div {
   font-weight: 500; }
@@ -1022,7 +1120,8 @@ table {
       color: #FFF; }
   @media screen and (max-width: 1440px) {
     .check-inner .check-btn {
-      margin: 6px 9px; } }
+      margin: 6px 6px;
+      padding: 6px; } }
   @media screen and (min-width: 1200px) {
     .check-inner .check-btn:hover {
       background-color: rgba(0, 80, 230, 0.2); } }
@@ -1042,9 +1141,11 @@ table {
     .table-box table, form table {
       width: 100%; } }
   @media screen and (max-width: 991px) {
-    .table-box .table-box, form .table-box {
+    .table-box, form {
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch; } }
+      -webkit-overflow-scrolling: touch; }
+      .table-box .w100, form .w100 {
+        width: 160% !important; } }
 
 .houseinfo2_block1_detail-toggle {
   cursor: pointer;
@@ -1276,7 +1377,7 @@ ul.mark-list li {
         color: #FFF; } }
     @media screen and (max-width: 1440px) {
       .houseinfo-pixed .houseinfo-pixed-btn {
-        right: 264px;
+        right: 240px;
         font-size: 15px;
         padding: 0 3px; }
         .houseinfo-pixed .houseinfo-pixed-btn i {
@@ -1295,7 +1396,8 @@ ul.mark-list li {
         border-radius: 0;
         margin-bottom: 0;
         background-color: #ffffff;
-        color: #0050E6; }
+        color: #0050E6;
+        padding: 0 5px; }
         .houseinfo-pixed .houseinfo-pixed-btn.border {
           border: none;
           border-right: 1px solid #DDD; } }
@@ -1556,7 +1658,82 @@ ul.mark-list li {
         width: 33%;
         -webkit-box-flex: inherit;
             -ms-flex-positive: inherit;
-                flex-grow: inherit; } }
+                flex-grow: inherit; }
+  .sold-table_office_block {
+    background-color: #EFEFEF !important; }
+  .sold-table_office tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 14px;
+    position: relative;
+    background-color: #fff; }
+  .sold-table_office tbody td {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 8px;
+    border: none; }
+    .sold-table_office tbody td:nth-child(1) {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      padding: 8px 8px 0; }
+      .sold-table_office tbody td:nth-child(1)::before {
+        display: none; }
+    .sold-table_office tbody td:nth-child(2) {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      width: 50%;
+      border-bottom: 1px solid #DDD; }
+      .sold-table_office tbody td:nth-child(2)::before {
+        display: none; }
+    .sold-table_office tbody td:nth-child(3) {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      width: 50%;
+      border-bottom: 1px solid #DDD; }
+      .sold-table_office tbody td:nth-child(3)::before {
+        display: none; }
+    .sold-table_office tbody td:nth-child(4) {
+      -webkit-box-ordinal-group: 6;
+          -ms-flex-order: 5;
+              order: 5; }
+    .sold-table_office tbody td:nth-child(5) {
+      -webkit-box-ordinal-group: 7;
+          -ms-flex-order: 6;
+              order: 6; }
+    .sold-table_office tbody td:nth-child(6) {
+      -webkit-box-ordinal-group: 8;
+          -ms-flex-order: 7;
+              order: 7; }
+    .sold-table_office tbody td:nth-child(7) {
+      -webkit-box-ordinal-group: 9;
+          -ms-flex-order: 8;
+              order: 8; }
+    .sold-table_office tbody td:nth-child(8) {
+      -webkit-box-ordinal-group: 10;
+          -ms-flex-order: 9;
+              order: 9; }
+    .sold-table_office tbody td:nth-child(4), .sold-table_office tbody td:nth-child(5), .sold-table_office tbody td:nth-child(6) {
+      padding-bottom: 0; }
+    .sold-table_office tbody td:nth-child(4), .sold-table_office tbody td:nth-child(5), .sold-table_office tbody td:nth-child(6), .sold-table_office tbody td:nth-child(7), .sold-table_office tbody td:nth-child(8) {
+      width: 33%;
+      -webkit-box-flex: inherit;
+          -ms-flex-positive: inherit;
+              flex-grow: inherit; } }
 
 @media screen and (max-width: 1199px) {
   .pad-warp {
@@ -1968,11 +2145,6 @@ ul.mark-list li {
   border-radius: 5px;
   top: 5px !important; }
 
-@media screen and (min-width: 1441px) {
-  .houseinfo-databtn {
-    top: 157px !important;
-    right: 280px !important; } }
-
 @media screen and (min-width: 1200px) {
   .houseinfo-databtn {
     display: -webkit-box !important;
@@ -1987,7 +2159,7 @@ ul.mark-list li {
     width: auto !important;
     height: 40px !important;
     border: none !important;
-    top: 138px;
+    top: 126px;
     right: 283px;
     border-radius: 0 !important;
     position: fixed;
@@ -1999,6 +2171,11 @@ ul.mark-list li {
       font-size: 15px !important; }
     .houseinfo-databtn:hover {
       color: #FFF !important; } }
+
+@media screen and (min-width: 1441px) {
+  .houseinfo-databtn {
+    top: 157px !important;
+    right: 280px !important; } }
 
 @media screen and (max-width: 1199px) {
   .houseinfo-databtn {
@@ -2034,3 +2211,6 @@ ul.mark-list li {
 @media screen and (min-width: 1200px) {
   #houseInfo6 > * {
     margin: 20px 30px; } }
+
+.houseinfo-map .gm-fullscreen-control, .houseinfo-map .gmnoprint {
+  display: none !important; }
