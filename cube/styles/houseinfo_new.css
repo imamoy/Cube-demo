@@ -494,6 +494,9 @@
     border-bottom: 1px solid #DDD !important; }
     .file-toggleNav .file-btn:last-child {
       border: none; }
+  @media screen and (max-width: 767px) {
+    .file-toggleNav .file-toggleNav {
+      bottom: 100%; } }
 
 .file-nav {
   display: -webkit-box;
@@ -524,6 +527,8 @@
       margin: 0; }
     .file-nav .file-btn i.icon.icon-save-as, .file-nav .file-toggle i.icon.icon-save-as {
       padding-left: 5px; }
+    .file-nav .file-btn i.icon-export, .file-nav .file-toggle i.icon-export {
+      font-size: 20px !important; }
   .file-nav li:last-child .file-btn {
     border: none; }
   .file-nav .icon {
@@ -547,7 +552,7 @@
       bottom: 0;
       z-index: 99;
       left: 0; }
-      .file-nav .file-btn {
+      .file-nav .file-btn, .file-nav .file-toggle {
         width: calc(100vw / 7);
         height: 50px;
         display: -webkit-box;
@@ -1127,7 +1132,7 @@ table {
       background-color: rgba(0, 80, 230, 0.2); } }
   @media screen and (max-width: 767px) {
     .check-inner {
-      margin-top: 0; }
+      margin: 0 -5px; }
       .check-inner .check-btn {
         font-size: 15px;
         width: calc(33% - 10px);
@@ -1323,6 +1328,10 @@ ul.mark-list li {
       margin: 10px -20px 0;
       width: calc(100% + 40px);
       padding: 15px; } }
+  @media screen and (max-width: 767px) {
+    .block-unpading {
+      width: calc(100% + 20px);
+      margin: 10px -10px 0; } }
 
 .houseinfo-pixed {
   display: -webkit-box;
@@ -2001,6 +2010,8 @@ ul.mark-list li {
       cursor: pointer;
       font-size: 20px;
       color: #808080 !important; }
+    .houseimg-item .control.active {
+      display: none; }
   @media screen and (max-width: 1199px) {
     .houseimg-item {
       width: calc(50% - 21px); } }
@@ -2012,6 +2023,46 @@ ul.mark-list li {
 
 .houseimg-item-delete {
   margin-left: 10px; }
+
+.edit-houseimg-name {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-top: 10px; }
+  .edit-houseimg-name .edit-check, .edit-houseimg-name .edit-close {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: #808080;
+    margin: 0 5px;
+    -webkit-transition: color .25s;
+    transition: color .25s; }
+  .edit-houseimg-name .edit-check {
+    padding-top: 8px; }
+  .edit-houseimg-name input {
+    text-align: left;
+    width: calc(100% - 50px);
+    margin-right: 5px; }
+  .edit-houseimg-name.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  @media screen and (min-width: 992px) {
+    .edit-houseimg-name .edit-check:hover {
+      color: #018E5A; }
+    .edit-houseimg-name .edit-close:hover {
+      color: #222222; } }
 
 .upload-img {
   max-width: 400px;

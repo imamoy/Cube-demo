@@ -33,7 +33,7 @@
         <div class="member-btn"><span class="icon"><i class="icon-user"></i></span>
           <ul class="member-nav nostyle">
             <li><a href="">通知</a></li>
-            <li><a href="">設定</a></li>
+            <li><a href="setting.html">設定</a></li>
             <li>
               <button>登出</button>
             </li>
@@ -167,14 +167,18 @@
               <li><a href="#houseInfo6"> <i class="icon f-20 icon-picture mr-5"></i><span><span class="mobile-hide">物件</span>照片</span></a></li>
             </ul>
             <ul class="file-nav">
-              <li>
-                <div class="file-btn" id="save"><i class="icon icon-save"></i></div>
-              </li>
-              <li>
-                <div class="file-btn" id="save-as"><i class="icon icon-save-as"></i></div>
+              <li class="file-toggleBox">
+                <div class="file-toggle"><i class="icon icon-save"></i></div>
+                <div class="file-toggleNav">
+                  <div class="file-btn" id="save"><i class="icon icon-save"></i></div>
+                  <div class="file-btn" id="save-as"><i class="icon icon-save-as"></i></div>
+                </div>
               </li>
               <li>
                 <div class="file-btn" id="reset"><i class="icon icon-file-reset"></i></div>
+              </li>
+              <li>
+                <div class="file-btn"><i class="icon icon-export"></i></div>
               </li>
               <li>
                 <div class="file-btn" id="open"><i class="icon icon-openfile"></i></div>
@@ -1680,37 +1684,58 @@
                 <div class="houseimg-item">
                   <div class="img"><img src="images/cube/pic/house-p1.jpg" alt="your image"></div>
                   <div class="control">
-                    <form class="name-row">
-                      <input type="text" placeholder="新增描述 ...">
-                      <input type="submit" value="">
-                    </form>
+                    <div class="name-row">
+                      <div class="name">客廳照片</div>
+                    </div>
                     <div class="flex-row">
+                      <div class="houseimg-item-edit"><i class="icon-pen"></i></div>
                       <div class="houseimg-item-delete"><i class="icon-gabige"></i></div>
                     </div>
+                  </div>
+                  <div class="edit-houseimg-name">
+                    <form class="name-form">
+                      <input type="text" placeholder="新增描述 ...">
+                      <button class="edit-check active-btn" type="submit"><i class="icon-check"></i></button>
+                    </form>
+                    <div class="edit-close active-btn"><i class="icon-cancel"></i></div>
                   </div>
                 </div>
                 <div class="houseimg-item">
                   <div class="img"><img src="images/cube/pic/house-p2.jpg" alt="your image"></div>
                   <div class="control">
-                    <form class="name-row">
-                      <input type="text" placeholder="新增描述 ...">
-                      <input type="submit" value="">
-                    </form>
+                    <div class="name-row">
+                      <div class="name">客廳照片</div>
+                    </div>
                     <div class="flex-row">
+                      <div class="houseimg-item-edit"><i class="icon-pen"></i></div>
                       <div class="houseimg-item-delete"><i class="icon-gabige"></i></div>
                     </div>
+                  </div>
+                  <div class="edit-houseimg-name">
+                    <form class="name-form">
+                      <input type="text" placeholder="新增描述 ...">
+                      <button class="edit-check active-btn" type="submit"><i class="icon-check"></i></button>
+                    </form>
+                    <div class="edit-close active-btn"><i class="icon-cancel"></i></div>
                   </div>
                 </div>
                 <div class="houseimg-item">
                   <div class="img"><img src="images/cube/pic/house-p3.jpg" alt="your image"></div>
                   <div class="control">
-                    <form class="name-row">
-                      <input type="text" placeholder="新增描述 ...">
-                      <input type="submit" value="">
-                    </form>
+                    <div class="name-row">
+                      <div class="name">客廳照片</div>
+                    </div>
                     <div class="flex-row">
+                      <div class="houseimg-item-edit"><i class="icon-pen"></i></div>
                       <div class="houseimg-item-delete"><i class="icon-gabige"></i></div>
                     </div>
+                  </div>
+                  <div class="edit-houseimg-name">
+                    <form class="name-form">
+                      <input type="text" placeholder="新增描述 ...">
+                      <button class="edit-check active-btn" type="submit"><i class="icon-check"></i></button>
+                    </form>
+                    <div class="edit-close active-btn"><i class="icon-cancel"></i></div>
                   </div>
                 </div>
               </div>
@@ -1728,6 +1753,13 @@
                       <div class="houseimg-item-edit"><i class="icon-pen"></i></div>
                       <div class="houseimg-item-delete"><i class="icon-gabige"></i></div>
                     </div>
+                  </div>
+                  <div class="edit-houseimg-name">
+                    <form class="name-form">
+                      <input type="text" placeholder="新增描述 ...">
+                      <button class="edit-check active-btn" type="submit"><i class="icon-check"></i></button>
+                    </form>
+                    <div class="edit-close active-btn"><i class="icon-cancel"></i></div>
                   </div>
                 </div>
               </div>
@@ -2249,6 +2281,16 @@
           $('#reset').click(function(){
               $('#reset-pop').addClass('active');
               $('.pop_bg').addClass('active');
+          });
+      
+          $('.houseimg-item-edit').click(function(){
+              $(this).parents('.control').addClass('active');
+              $(this).parents('.control').next('.edit-houseimg-name').addClass('active');
+          });
+      
+          $('.edit-houseimg-name .active-btn').click(function(){
+              $(this).parents('.edit-houseimg-name').removeClass('active');
+              $(this).parents('.edit-houseimg-name').prev('.control').removeClass('active');
           });
       });
       

@@ -1866,8 +1866,18 @@ input {
   padding: 6px 10px; }
   .has-iconInput i {
     margin-right: 10px; }
-  .has-iconInput input {
+  .has-iconInput input, .has-iconInput .submit {
     border: none; }
+  .has-iconInput .submit {
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    color: #808080;
+    -webkit-transition: color .25s;
+    transition: color .25s; }
+  @media screen and (min-width: 992px) {
+    .has-iconInput .submit:hover {
+      color: #0050E6; } }
 
 .checkbox_btn_row {
   display: -webkit-box !important;
@@ -1993,6 +2003,14 @@ input {
       background-color: #0050E6;
       border-color: #0050E6;
       color: #FFF; } }
+
+.main-inputBorder {
+  height: 40px;
+  padding: 10px; }
+  .main-inputBorder:-moz-read-only {
+    background-color: rgba(221, 221, 221, 0.5); }
+  .main-inputBorder:read-only {
+    background-color: rgba(221, 221, 221, 0.5); }
 
 .cube-container {
   position: fixed;
@@ -2989,7 +3007,7 @@ ul.mark-list li {
       margin-right: 5px; }
       .tag-rowbox .tagrow-item .icon::before {
         font-family: "fontello";
-        content: '\e883'; }
+        content: '\e890'; }
     .tag-rowbox .tagrow-item .num {
       font-weight: 500;
       margin-left: 10px; }
@@ -3003,7 +3021,7 @@ ul.mark-list li {
       background-color: #0050E6;
       color: #FFF; }
       .tag-rowbox .tagrow-item.active .icon::before {
-        content: '\e884'; }
+        content: '\e890 '; }
   .tag-rowbox .tag-btn {
     cursor: pointer;
     display: -webkit-inline-box;
@@ -3678,7 +3696,7 @@ header.logo-w .logo_cm2cube {
 		header
  @mixin =========================================================================*/
 #header, #header_mini {
-  z-index: 1; }
+  z-index: 2; }
 
 #header + main:not(.noHeaderBg) {
   margin-top: 88px; }
@@ -3893,6 +3911,8 @@ header:not(#header-web) {
     header:not(#header-web).z-index .logo {
       background-image: url("../../images/cube/logo-w.svg"); } }
   @media screen and (max-width: 767px) {
+    header:not(#header-web) .logo {
+      width: 60%; }
     header:not(#header-web) .menu.active {
       width: 100%;
       padding: 5% 0; }
@@ -3916,7 +3936,9 @@ header:not(#header-web) {
               align-items: center; }
       header:not(#header-web) .menu .login-row span {
         margin: 0 30px !important;
-        color: #606060; } }
+        color: #606060; }
+    header:not(#header-web) .menu .lang-btn {
+      margin: 0 20px; } }
 
 @media screen and (min-width: 500px) and (max-width: 900px) and (max-height: 500px) {
   header .menu.active {
