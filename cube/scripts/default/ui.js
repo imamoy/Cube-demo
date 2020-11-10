@@ -1,13 +1,13 @@
 $(document).ready(function () {
 
 	/* header =========*/
-	$(".menu-toggle").click(function() {
+	$(".menu-toggle").click(function () {
 		$(this).toggleClass('active');
 		$(this).next(".menu").addClass('active');
 		$('header').addClass('z-index');
 		$('header').addClass('logo-w');
 	});
-	$('.menu-close').click(function(){
+	$('.menu-close').click(function () {
 		$(this).parent('.menu').removeClass('active');
 		$('header').removeClass('z-index');
 		$('header').removeClass('logo-w');
@@ -35,7 +35,7 @@ $(document).ready(function () {
 	});
 
 
-	$('.lang-btn i').click(function(){
+	$('.lang-btn i').click(function () {
 		$(this).next('.lang-menu').slideToggle();
 	});
 
@@ -48,12 +48,12 @@ $(document).ready(function () {
 		$('.member-nav').slideToggle();
 		$('.lang-nav').slideUp();
 	});
-	
-	$('.search-btn').click(function(){
+
+	$('.search-btn').click(function () {
 		$(this).next('.search-bar').toggleClass('active');
 	});
 
-	if (jQuery(window).width() > 992){
+	if (jQuery(window).width() > 992) {
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 100) {
 				$("header").addClass("active");
@@ -63,21 +63,21 @@ $(document).ready(function () {
 		});
 	}
 
-	$('.sign_up_toggle').click(function(){
+	$('.sign_up_toggle').click(function () {
 		$('#sign_up').addClass('active');
 		$('#sign_in').removeClass('active');
 		$('#forgetpassword').removeClass('active');
 		$('#welcome').removeClass('active');
 		$('.pop_bg').addClass('active');
 	});
-	$('.sign_in_toggle').click(function(){
+	$('.sign_in_toggle').click(function () {
 		$('#sign_in').addClass('active');
 		$('#sign_up').removeClass('active');
 		$('#forgetpassword').removeClass('active');
 		$('#welcome').removeClass('active');
 		$('.pop_bg').addClass('active');
 	});
-	$('.forgetpassword_toggle').click(function(){
+	$('.forgetpassword_toggle').click(function () {
 		$('#forgetpassword').addClass('active');
 		$('#sign_in').removeClass('active');
 		$('#sign_up').removeClass('active');
@@ -85,72 +85,72 @@ $(document).ready(function () {
 		$('.pop_bg').addClass('active');
 	});
 
-	$('.pop_close').click(function(){
+	$('.pop_close').click(function () {
 		$('.pop_bg').removeClass('active');
 		$('.pop').removeClass('active');
 	});
 
 
-	$('.tag-btn').click(function(){
+	$('.tag-btn').click(function () {
 		$('.tag-btn-inner').slideToggle();
 	});
 
-	$('.tagrow-item').click(function(){
+	$('.tagrow-item').click(function () {
 		$(this).toggleClass('active');
 	});
-	$('.tagrow-item .tag-cancel').click(function(){
+	$('.tagrow-item .tag-cancel').click(function () {
 		$(this).parent('.tagrow-item').remove();
 	});
-	
-	$('.edit-favorite-btn').click(function(){
+
+	$('.edit-favorite-btn').click(function () {
 		$('#favorite-tagedit-pop').addClass('active');
 		$('.pop_bg').addClass('active');
 	});
 
-	$('.tags-edit-btn').click(function(){
+	$('.tags-edit-btn').click(function () {
 		$('#manage-pop').addClass('active');
 		$('.pop_bg').addClass('active');
 	});
-	
-	$('.pop_bg').click(function(){
+
+	$('.pop_bg').click(function () {
 		$('.pop').removeClass('active');
 		$('.pop_bg').removeClass('active');
 	});
-	$('.detail-btn').click(function(){
+	$('.detail-btn').click(function () {
 		$(this).toggleClass('active');
 		$(this).next('.detail-price').toggleClass('active');
 	});
-	$('.detail-btn').click(function(){
+	$('.detail-btn').click(function () {
 		$(this).toggleClass('active');
 		$(this).next('.detail-inner').slideToggle();
 	});
 
-	$('.houseinfo-databtn').each(function(){
-		$(this).click(function(){
+	$('.houseinfo-databtn').each(function () {
+		$(this).click(function () {
 			$('.houseinfo-dataInfo').addClass('active');
 		});
 	});
-	
-	$('.houseinfo-dataInfo .close').click(function(){
+
+	$('.houseinfo-dataInfo .close').click(function () {
 		$('.houseinfo-dataInfo').removeClass('active');
 	});
 
-	$('#showMewhere').click(function(){
+	$('#showMewhere').click(function () {
 		$('.showMewhere-inner').toggleClass('active');
 	});
-	
-	$('#manage-pop').each(function(){
-		$('.tagrow-item').click(function(){
+
+	$('#manage-pop').each(function () {
+		$('.tagrow-item').click(function () {
 			$('.manage-selectControl').slideDown();
 		});
 
-		$('.tag-editor').click(function(){
+		$('.tag-editor').click(function () {
 			$('.tag-editor-input').slideToggle();
 		});
 	});
 
-	setTimeout(function() {
-    	$('.cube-container').hide();
+	setTimeout(function () {
+		$('.cube-container').hide();
 	}, 1000);
 
 	/* ==========================================================================
@@ -203,8 +203,6 @@ $(document).ready(function () {
 
 	});
 
-	
-
 	$("a.anchor").on('click', function (event) {
 
 		if (this.hash !== "") {
@@ -221,7 +219,6 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
-
 
 
 	/* ==========================================================================
@@ -258,4 +255,19 @@ function readURL(input) {
 
 		reader.readAsDataURL(input.files[0]);
 	}
+}
+
+
+var passiveSupported = false;
+try {
+	var options = Object.defineProperty({}, "passive", {
+		get: function () {
+			passiveSupported = true;
+		}
+	});
+	window.addEventListener("test", null, options);
+} catch (err) {}
+
+function fn() {
+	console.log("fn")
 }

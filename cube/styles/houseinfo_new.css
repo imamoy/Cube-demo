@@ -495,7 +495,7 @@
     .file-toggleNav .file-btn:last-child {
       border: none; }
   @media screen and (max-width: 767px) {
-    .file-toggleNav .file-toggleNav {
+    .file-toggleNav {
       bottom: 100%; } }
 
 .file-nav {
