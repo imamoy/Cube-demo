@@ -1,7 +1,11 @@
 // circle_chart 共用變數
 var circle_chart = {
-	width: 138,
-	height: 138,
+	height: 140,
+	plotOptions: {
+		pie: {
+		  size: 140
+		}
+	},
 	type: "radialBar",
 	zoom: {
 		enabled: false
@@ -141,7 +145,7 @@ new ApexCharts(document.querySelector("#circle-chart4"), circle4).render();
 //------- 估值概觀 ------------------------------------------------------------------------
 
 // 最近12個月相似交易 (智能鄰舍)
-var chart_last_12months = { 	
+var chart_last_12months = {
 	colors: ["#FF9C01", '#0050E6', '#606060'],
 	series: [
 		{
@@ -342,23 +346,29 @@ var Office_price_trend = {
 	dataLabels: {
 		enabled: false
 	},
-	colors: ["#255aee", "#FF9C01"],
+	colors: ['#808080','#255aee','#FF9C01'],
 	series: [
 		{
-			name: "總價開價",
+			name: "物件估價",
 			data: [45, 50, 50, 60]
 		},
 		{
-			name: "租金價格",
-			data: [1300, 1500, 2350, 5000]
+			name: "租金預估",
+			data: [1300, 1500, 1800, 2400]
+		},
+		{
+			name: "物件開價",
+			data: [55]
 		}
 	],
-	stroke: {
-		width: [4, 4]
-	},
 	markers: {
 		size: 8,
 		shape: "circle", //circle or square
+	},
+	stroke: {
+		curve: 'straight', // smooth
+		width: [2,2,0],
+		dashArray: [2,2,0]
 	},
 	xaxis: {
 		categories: ['現在', '1年後', '2年後', '3年後']
@@ -370,13 +380,13 @@ var Office_price_trend = {
 			},
 			labels: {
 				style: {
-					colors: "#255aee"
+					colors: "#808080"
 				}
 			},
 			title: {
 				text: '單價(萬)',
 				style: {
-					color: "#255aee"
+					color: "#808080"
 				}
 			}
 		},
@@ -387,13 +397,13 @@ var Office_price_trend = {
 			},
 			labels: {
 				style: {
-					colors: "#FF9C01"
+					colors: "#255aee"
 				}
 			},
 			title: {
 				text: '單價(元)',
 				style: {
-					color: "#FF9C01"
+					color: "#255aee"
 				}
 			}
 		}
@@ -475,7 +485,7 @@ var Buy_house_unit_price = {
 };
 
 
-// 相似物件價格走勢  Price_trend_of_similar 
+// 相似物件價格走勢  Price_trend_of_similar
 var Price_trend_of_similar = {
 	colors: ['#0050E6', '#0050E6', '#2BA84A', '#2BA84A', '#FF9C01', '#606060', '#FF9C01', '#606060'],
 	series: [
@@ -539,7 +549,7 @@ var Price_trend_of_similar = {
 new ApexCharts(document.querySelector("#houseinfo2_chart1"), House_price_trend ).render();
 new ApexCharts(document.querySelector("#houseinfo2_chart2_y1"), Buy_house_unit_price ).render();
 new ApexCharts(document.querySelector("#similar_chart_y1"), Price_trend_of_similar ).render();
-new ApexCharts(document.querySelector("#houseinfo2_office_chart1"), Office_price_trend ).render();
+new ApexCharts(document.querySelector("#houseinfo2_office_chart"), Office_price_trend ).render();
 
 
 

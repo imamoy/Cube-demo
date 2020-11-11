@@ -114,7 +114,7 @@
                   <div class="setting-result finish"><!--- 認證完成 ---><i class="icon icon-check"></i><span>認證完成 </span></div>
                 </li>
               </ul><br>
-              <input class="search-btn btn btn-dp" type="button" value="保存">
+              <input class="setting_btn search-btn btn btn-dp" type="button" value="保存">
             </form>
           </div>
           <div class="cutover-in" id="password">
@@ -134,7 +134,7 @@
                   <input class="main-inputBorder" id="confirm-password" type="password">
                 </div>
                 <div class="form-row _h w-100 mt-10">
-                  <input class="search-btn btn btn-dp" type="button" value="更改">
+                  <input class="setting_btn search-btn btn btn-dp" type="button" value="更改">
                 </div>
               </div>
             </form>
@@ -142,6 +142,17 @@
         </div>
       </div>
     </main>
+    <!-- setting_btn click can open pop-->
+    <div class="setting_pop" id="setting_feeback">
+      <div class="top"><span class="close"><i class="icon-close"></i></span></div>
+      <div class="middle">
+        <div class="flex-row ai-center mb-30">您已完成設定，謝謝</div>
+        <div class="btn-row">
+          <div class="btn btn-primary-dp">確認</div>
+        </div>
+      </div>
+    </div>
+    <div class="pop_bg"></div>
     <div class="cursor"></div>
     <script src="cube/scripts/default/jquery.min.js"></script>
     <script src="cube/scripts/plugins/jquery-ui.min.js"></script>
@@ -238,5 +249,23 @@
       <div class="pop_close"><i class="icon-cancel"></i></div>
     </div>
     <div class="pop_bg"></div>
+    <script>
+      $('#setting').each(function () {
+          $('.setting_btn').click(function () {
+              $('#setting_feeback').show();
+              $('.pop_bg').addClass('active');
+          });
+          $('.pop_bg').click(function () {
+              $('#setting_feeback').hide();
+              $('.pop_bg').removeClass('active');
+          });
+          $('#setting_feeback .close,#setting_feeback .btn').click(function () {
+              $('#setting_feeback').hide();
+              $('.pop_bg').removeClass('active');
+          });
+      });
+      
+      
+    </script>
   </body>
 </html>

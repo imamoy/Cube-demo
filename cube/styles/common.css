@@ -569,6 +569,9 @@ img {
 .ml-auto {
   margin-left: auto; }
 
+.ml-0 {
+  margin-left: 0 !important; }
+
 .ml-5 {
   margin-left: 5px !important; }
 
@@ -2158,6 +2161,9 @@ input {
 .house_price .price {
   color: #FF0000; }
 
+.border-0 {
+  border: none !important; }
+
 .star {
   margin-right: 5px; }
   .star::before {
@@ -3128,6 +3134,7 @@ ul.mark-list li {
       color: #808080; } }
 
 .rwd-table {
+  width: 100%;
   margin: auto;
   min-width: 300px;
   max-width: 100%;
