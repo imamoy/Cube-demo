@@ -149,7 +149,7 @@ $(document).ready(function () {
 		});
 	});
 
-	setTimeout(function () {
+	setInterval(function() {
 		$('.cube-container').hide();
 	}, 1000);
 
