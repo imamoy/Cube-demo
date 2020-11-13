@@ -1,15 +1,20 @@
 // RWD 共用變數
-var rwe_no_animation = [{
-	breakpoint: 991,
-	chart: {
-		animations: {
-			enabled: false
-		},
-		dynamicAnimation: {
-			enabled: true
+var rwd_noMotion = [
+	{
+		breakpoint: 991,
+		chart: {
+			animations: {
+				enabled: false,
+				animateGradually: {
+					enabled: false
+				},
+				dynamicAnimation: {
+					enabled: false
+				}
+			}
 		}
 	}
-}]
+]
 
 // circle_chart 共用變數
 var circle_chart = {
@@ -63,7 +68,7 @@ var circle1 = {
 	},
 	stroke: circle_stroke,
 	labels: ["準確指數"],
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 var circle2_color = "#FF9D0E"
@@ -91,7 +96,7 @@ var circle2 = {
 	},
 	stroke: circle_stroke,
 	labels: ["中性市場"],
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 var circle3_color = "#0050E6"
@@ -119,7 +124,7 @@ var circle3 = {
 	},
 	stroke: circle_stroke,
 	labels: ["相似件數"],
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 var circle4_color = "#FF0006"
@@ -147,7 +152,7 @@ var circle4 = {
 	},
 	stroke: circle_stroke,
 	labels: ["12月預測"],
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 
@@ -221,7 +226,7 @@ var chart_last_12months = {
 	tooltip: {
 		enabled: false
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfo1_chart1"), chart_last_12months).render();
@@ -291,7 +296,7 @@ var chart_500m_last_12months = {
 			}
 		}
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfo1_chart2"), chart_500m_last_12months).render();
@@ -349,7 +354,7 @@ var House_price_trend = {
 			}
 		}
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 
@@ -439,7 +444,7 @@ var Office_price_trend = {
 		horizontalAlign: "left",
 		offsetX: 40
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 
@@ -503,7 +508,7 @@ var Buy_house_unit_price = {
 		},
 		tickAmount: 1
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 
@@ -566,7 +571,7 @@ var Price_trend_of_similar = {
 		},
 		max: 70
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfo2_chart1"), House_price_trend ).render();
@@ -620,7 +625,7 @@ var Residential_price_index = {
 			text: '單價(萬)'
 		}
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 new ApexCharts(document.querySelector("#houseinfoData-chartA1"), Residential_price_index).render();
 
@@ -680,7 +685,7 @@ var City_loan_burden = {
 			text: '單價(萬)'
 		}
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfoData-chartA2"), City_loan_burden).render();
@@ -741,7 +746,7 @@ var House_price_income_ratio = {
 			text: '單價(萬)'
 		}
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfoData-chartA3"), House_price_income_ratio).render();
@@ -799,7 +804,7 @@ var Market_loan_burden = {
 	tooltip: {
 		enabled: false
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfoData-chartB1"), Market_loan_burden).render();
@@ -856,7 +861,7 @@ var Parking_market = {
 	tooltip: {
 		enabled: false
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfoData-chartB2"), Parking_market).render();
@@ -914,7 +919,7 @@ var Regional_house = {
 	tooltip: {
 		enabled: false
 	},
-	responsive: rwe_no_animation
+	responsive: rwd_noMotion
 };
 
 new ApexCharts(document.querySelector("#houseinfoData-chartB3"), Regional_house).render();
