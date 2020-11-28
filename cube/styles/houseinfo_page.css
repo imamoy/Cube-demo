@@ -30,8 +30,9 @@
     position: relative; }
   .houseinfo-paper.scroll > .left {
     height: 0;
-    overflow: hidden; }
+    overflow-y: hidden; }
   .houseinfo-paper.scroll > .right {
+    overflow-y: hidden;
     margin-top: 60px; }
   .houseinfo-paper.scroll .top-head {
     height: 0; }
