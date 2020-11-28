@@ -230,8 +230,13 @@
     #houseinfo-report_inner .note a {
       margin-left: 5px; }
   @media screen and (max-width: 1199px) {
-    #houseinfo-report_inner .container {
-      padding: 0; } }
+    #houseinfo-report_inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #houseinfo-report_inner .container {
+        padding: 0; } }
 
 .houseinfo-dataSection {
   width: calc(100% / 3); }
