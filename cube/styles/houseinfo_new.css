@@ -839,6 +839,7 @@
         opacity: 1; } }
 
 .houseinfo-inner {
+  height: 100%;
   padding: 30px 0 40px; }
   .houseinfo-inner .paperblock {
     background-color: #fff;
@@ -886,10 +887,16 @@
     padding-left: 30px; }
   .houseinfo-inner .detail-price .icon i::before {
     margin-left: 0; }
+  .houseinfo-inner .cutover-in.show {
+    height: 100%; }
+  .houseinfo-inner iframe {
+    width: 100%;
+    height: 100%; }
   @media screen and (min-width: 1681px) {
     .houseinfo-inner {
-      margin-top: 20px;
-      margin-right: -40px; } }
+      margin-top: 50px;
+      margin-right: -40px;
+      padding: 30px 42px 40px; } }
   @media screen and (max-width: 1680px) {
     .houseinfo-inner {
       margin-top: 30px;
