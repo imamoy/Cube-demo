@@ -19,6 +19,10 @@ $(document).ready(function () {
 			$(this).next(".menu-web").toggleClass('active');
 		});
 
+		$('.goNews').click(function(){
+			$('.menu-web').removeClass('active');
+		});
+
 		if (jQuery(window).width() < 991) {
 			$('.sub-web-toggle').click(function () {
 				$(this).find('.sub-nav').slideToggle();
