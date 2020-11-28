@@ -60,7 +60,7 @@
         overflow-y: auto;
         padding-bottom: 80px;
         padding-right: 10px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     .setting-inner .form-box {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -95,7 +95,7 @@
           margin-bottom: 0; }
       .setting-inner .setting-items {
         padding-top: 80px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .setting-inner {
       padding: 0 20px 80px; }
       .setting-inner .setting-nav {

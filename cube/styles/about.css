@@ -160,7 +160,7 @@
         max-height: 58vh;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .team-hover {
       width: 80%;
       -webkit-box-orient: vertical;
@@ -231,7 +231,7 @@
         right: -50px; }
       .why-us .l-iconGrid_item:last-child::after {
         display: none; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .why-us .l-iconGrid_item {
       margin-bottom: 40px; } }
   @media screen and (max-width: 479px) {
@@ -315,10 +315,10 @@
     margin: 50px 0; }
     #vision .text p {
       width: 92% !important; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     #vision .pic {
       width: 50%; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     #vision .text {
       margin: 20px 0 0; }
       #vision .text p {

@@ -120,23 +120,9 @@ $(document).ready(function () {
 		$('.pop').removeClass('active');
 		$('.pop_bg').removeClass('active');
 	});
-	$('.detail-btn').click(function () {
-		$(this).toggleClass('active');
-		$(this).next('.detail-price').toggleClass('active');
-	});
-	$('.detail-btn').click(function () {
-		$(this).toggleClass('active');
-		$(this).next('.detail-inner').slideToggle();
-	});
 
-	$('.houseinfo-databtn').each(function () {
-		$(this).click(function () {
-			$('.houseinfo-dataInfo').addClass('active');
-		});
-	});
-
-	$('.houseinfo-dataInfo .close').click(function () {
-		$('.houseinfo-dataInfo').removeClass('active');
+	$('.add-btn').click(function(){
+		$(this).toggleClass('active');
 	});
 
 	$('#showMewhere').click(function () {

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CUBE AI</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/houseinfo_common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/houseinfo_iframe.css">
+  </head>
+  <body>
+    <div class="houseinfo-iframe houseinfo-iframe_b main-scrollbar">
+      <section class="paperblock">
+        <div class="block">
+          <div class="title flex-row ai-center jc-space-between">
+            <div class="page-title">
+              <div class="page-title_icon"><i class="icon-link-ball"></i></div>
+              <h3 class="page-title_title"><span>房價走勢預估圖</span></h3>
+            </div>
+            <ul class="mark-list nostyle">
+              <li><span class="color coloritem orange-2" style="border-radius:50%;"></span><span class="name">物件開價</span></li>
+              <li><span class="color coloritem gary" style="border-radius:50%;"></span><span class="name">物件估價</span></li>
+              <li><span class="color coloritem blue-3" style="border-radius:50%;"></span><span class="name">租金預估</span></li>
+            </ul>
+          </div>
+          <div class="chart-box" id="houseinfo2_office_chart"></div>
+          <div class="houseinfo2_block1_detail-toggle mb-10"><span>收合推估</span><i class="icon-down-dir"></i></div>
+          <div class="houseinfo2_block1_detail">
+            <form action="">
+              <div class="table-box">
+                <table>
+                  <thead>
+                    <tr>
+                      <th style="background: #FFF;color:#606060;"> 
+                        <div class="label t-center"></div>
+                      </th>
+                      <th style="background: #FFF;color:#606060;">
+                        <div class="label t-center">現在</div>
+                      </th>
+                      <th style="background: #FFF;color:#606060;">
+                        <div class="label t-center">1年後</div>
+                      </th>
+                      <th style="background: #FFF;color:#606060;">
+                        <div class="label t-center">2年後</div>
+                      </th>
+                      <th style="background: #FFF;color:#606060;">
+                        <div class="label t-center">3年後</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="label">人口遷移</span></td>
+                      <td><span class="f-en f-blue">+5.3%</span></td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="label">房貸利率</span></td>
+                      <td><span class="f-en f-blue">1.8%</span></td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="1.8"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="label">GDP增長</span></td>
+                      <td><span class="f-en f-blue">2.3%</span></td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="label">股票指數</span></td>
+                      <td><span class="f-en f-blue">+3.5%</span></td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-num">
+                          <input class="f-en mx-5" type="number" value="5.4"><span class="f-en f-blue">%</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="search-box_row mt-20 text-right">
+                <input class="btn btn-primary-dp ml-auto" type="submit" value="立即估算" style="min-width:240px;height:50px;">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="paperblock block">
+        <div class="d-flex ai-center jc-space-between">
+          <div class="page-title">
+            <div class="page-title_icon"><i class="icon-link-ball"></i></div>
+            <h3 class="page-title_title"><span>買房單價表現走勢圖</span></h3>
+          </div>
+          <ul class="flex-row nostyle btn_nav">
+            <li class="active"><a class="btn-item" href="#buy_chart1">1年</a></li>
+            <li><a class="btn-item" href="#buy_chart2">2年</a></li>
+            <li><a class="btn-item" href="#buy_chart3">3年</a></li>
+            <li><a class="btn-item" href="#buy_chart4">4年</a></li>
+            <li><a class="btn-item" href="#buy_chart5">5年</a></li>
+          </ul>
+        </div>
+        <ul class="mark-list nostyle t-center">
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#FF0007;"></span><span class="name">社區大樓</span></li>
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#2BA84A;"></span><span class="name">郵政區號</span></li>
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#0050E6;"></span><span class="name">大安區</span></li>
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#FF9C01;"></span><span class="name">物件開價</span></li>
+          <li><span class="color coloritem gary" style="border-radius:50%;"></span><span class="name">物件估價</span></li>
+        </ul>
+        <div class="info">
+          <div id="buy_chart1">
+            <div class="chart-box">
+              <div class="chart-box" id="houseinfo2_chart2_y1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="paperblock block">
+        <div class="d-flex ai-center jc-space-between">
+          <div class="page-title">
+            <div class="page-title_icon"><i class="icon-link-ball"></i></div>
+            <h3 class="page-title_title"><span>相似物件價格走勢</span></h3>
+          </div>
+          <ul class="flex-row nostyle btn_nav">
+            <li class="active"><a class="btn-item" href="#similar_chart1">1年</a></li>
+            <li><a class="btn-item" href="#similar_chart2">2年</a></li>
+            <li><a class="btn-item" href="#similar_chart3">3年</a></li>
+            <li><a class="btn-item" href="#similar_chart4">4年</a></li>
+            <li><a class="btn-item" href="#similar_chart5">5年</a></li>
+          </ul>
+        </div>
+        <ul class="mark-list nostyle t-center">
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#2BA84A;"></span><span class="name">500公尺內</span></li>
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#0050E6;"></span><span class="name">智能鄰舍</span></li>
+          <li><span class="color coloritem" style="border-radius:50%;background-color:#FF9C01;"></span><span class="name">物件開價</span></li>
+          <li><span class="color coloritem gary" style="border-radius:50%;"></span><span class="name">物件估價</span></li>
+        </ul>
+        <div class="info">
+          <div id="similar_chart1">
+            <div class="chart-box">
+              <div class="chart-box" id="similar_chart_y1"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="cube/scripts/default/houseinfo_b_chart.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop_bg"></div>
+    <script>
+      $('.detail-toggle').click(function(){
+          $(this).toggleClass('active');
+          $(this).next('.detail-toggle_detail').slideToggle();
+      });
+      
+    </script>
+  </body>
+</html>

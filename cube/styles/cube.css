@@ -268,7 +268,7 @@
         top: -20px;
         right: 10px;
         padding-right: 2px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     #cube-house.l-pageFill_right .btm {
       padding-left: 14px;
       padding-right: 10px; }
@@ -491,7 +491,7 @@
         color: #909090; }
     .map_area #cube_nav li.active a {
       color: #0050E6; }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    @media screen and (min-width: 767px) and (max-width: 991px) {
       .map_area #cube_nav {
         left: 85px !important;
         height: 50px; }
@@ -639,7 +639,7 @@
   width: 50px;
   height: 50px;
   z-index: 50; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .mark-toggle {
       width: 40px;
       height: 40px; } }
@@ -764,7 +764,7 @@
   top: auto;
   bottom: 60px;
   left: 30px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .leaflet-top {
       bottom: 20px;
       left: 10px; } }
@@ -962,6 +962,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         padding-bottom: 0;
         margin-bottom: 0 !important;
         border: none !important; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     #cube-list {
       padding: 60px 10px 20px; } }

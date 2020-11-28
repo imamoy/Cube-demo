@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CUBE AI</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/houseinfo_common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/houseinfo_iframe.css">
+  </head>
+  <body>
+    <div id="houseinfo-report_inner">
+      <section class="houseinfo-dataSection">
+        <div class="container">
+          <div class="page-title">
+            <div class="page-title_icon"><i class="icon-chartbar"></i></div>
+            <h3 class="page-title_title"><span>市場負擔能力</span></h3>
+          </div>
+          <div class="inner main-scrollbar">
+            <div class="paperblock block">
+              <div class="chart-boxblock">
+                <div class="page-title"><span>住宅價格指數</span></div>
+                <div id="houseinfoData-chartA1"></div>
+              </div>
+              <div class="chart-table pb-20">
+                <table class="w100">
+                  <thead>
+                    <tr>
+                      <td style="width:50%;background-color: #FFFBF2;text-align:center!important;border:1px solid #dedede;">
+                        <div class="f-12 f-gary-lg">CURRENT AVG. PRICE</div>
+                        <div class="f-14">20% above LTA</div>
+                      </td>
+                      <td style="width:50%;background-color: #FFF;text-align:center!important;border:1px solid #dedede;"> 
+                        <div class="f-12 f-gary-lg">WHAT THIS MEANS</div><span class="f-14">Prices above the LTA are more risky</span>
+                      </td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+            <div class="paperblock block">
+              <div class="chart-boxblock">
+                <div class="page-title"><span>城市貸款負擔率</span></div>
+                <div id="houseinfoData-chartA2"></div>
+              </div>
+            </div>
+            <div class="paperblock block">
+              <div class="chart-boxblock">
+                <div class="page-title"><span>房價所得比</span></div>
+                <div id="houseinfoData-chartA3"></div>
+              </div>
+              <div class="chart-table pb-20">
+                <table class="w100">
+                  <thead>
+                    <tr>
+                      <td style="width:50%;background-color: #FFFBF2;text-align:center!important;border:1px solid #dedede;">
+                        <div class="f-12 f-gary-lg">STANDARD DEVIATIONS</div>
+                        <div class="f-14">0.19 above LTA</div>
+                      </td>
+                      <td style="width:50%;background-color: #FFF;text-align:center!important;border:1px solid #dedede;"> 
+                        <div class="f-12 f-gary-lg">WHAT THIS MEANS</div><span class="f-14">Average Risk</span>
+                      </td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="houseinfo-dataSection">
+        <div class="container">
+          <div class="section-top">
+            <div class="page-title">
+              <div class="page-title_icon"><i class="icon-chartbar"></i></div>
+              <h3 class="page-title_title mb-0"><span>郵政區域市場能力</span></h3>
+            </div>
+            <div class="note"><span>郵政區號 40052</span>
+              <div class="main-color" id="showMewhere"><span>看我在哪裡</span><i class="icon-click"></i>
+                <div class="showMewhere-inner">台北市松山區民生東路五段100號</div>
+              </div>
+            </div>
+          </div>
+          <div class="inner main-scrollbar">
+            <div class="paperblock block">
+              <div class="title flex-row ai-center jc-space-between">
+                <div class="page-title"><span>市場貸款負擔率</span></div>
+                <ul class="mark-list nostyle">
+                  <li><span class="color coloritem orange-2"></span><span class="name">含車位</span></li>
+                  <li><span class="color coloritem gary"></span><span class="name">不含車位</span></li>
+                </ul>
+              </div>
+              <div class="chart-boxblock">
+                <div id="houseinfoData-chartB1"></div>
+              </div>
+            </div>
+            <div class="paperblock block">
+              <div class="chart-boxblock">
+                <div class="page-title"><span>停車位市場走勢</span></div>
+                <div id="houseinfoData-chartB2"></div>
+              </div>
+            </div>
+            <div class="paperblock block">
+              <div class="chart-boxblock">
+                <div class="page-title"><span>區域房間數</span></div>
+                <div id="houseinfoData-chartB3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="houseinfo-dataSection">
+        <div class="container">
+          <div class="page-title">
+            <div class="page-title_icon"><i class="icon-chartbar"></i></div>
+            <h3 class="page-title_title"><span>環境街景</span></h3>
+          </div>
+          <div class="inner main-scrollbar">
+            <div class="paperblock block">
+              <div class="page-title">社區環境</div>
+              <div class="map-streetview"></div><br>
+              <div class="page-title">社區資訊</div>
+              <div class="l-half">
+                <div class="l-half_w55">
+                  <div class="l-inline-label"><span class="label">地址</span><a class="main-color" href="" target="_blank">羅斯福路一段67號</a></div>
+                  <div class="l-inline-label"><span class="label">總戶數</span><span class="main-color">80戶</span></div>
+                  <div class="l-inline-label"><span class="label">屋齡</span><span class="main-color">23年</span></div>
+                  <div class="l-inline-label"><span class="label">總樓高</span><span class="main-color">12</span></div>
+                  <div class="l-inline-label"><span class="label">公設比</span><span class="main-color">34.0%~39.0%</span></div>
+                  <div class="l-inline-label"><span class="label">車位類型</span><span class="main-color">升降平面</span></div>
+                  <div class="l-inline-label"><span class="label">車位數量</span><span class="main-color">36</span></div>
+                </div>
+                <div class="l-half_w55">
+                  <div class="l-inline-label"><span class="label">基地面積</span><span class="main-color">251坪</span></div>
+                  <div class="l-inline-label"><span class="label">土地使用分區</span><span class="main-color">住4,商2</span></div>
+                  <div class="l-inline-label"><span class="label">建案規劃</span><span class="main-color">套房,住宅</span></div>
+                  <div class="l-inline-label"><span class="label">構造種類</span><span class="main-color">RC</span></div>
+                  <div class="l-inline-label"><span class="label">建設公司</span><span class="main-color">漢大建設</span></div>
+                  <div class="l-inline-label"><span class="label">營造公司</span><span class="main-color">福連營造</span></div>
+                  <div class="l-inline-label"><span class="label">建築設計</span><span class="main-color">鍾美惠</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="cube/scripts/default/houseinfo_report_chart.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop_bg"></div>
+    <script></script>
+  </body>
+</html>

@@ -41,7 +41,7 @@
             -ms-flex-order: 3;
                 order: 3;
         margin: 10px 0; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .favorite-top {
       padding: 5px 0; }
       .favorite-top .favorite-title .title {
@@ -85,7 +85,7 @@
       margin-left: 0; }
     .favorite-title .title {
       font-size: 28px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .favorite-title .icon {
       width: 32px; }
     .favorite-title .title {

@@ -47,7 +47,7 @@ main#houseInfo.underHeader {
   @media screen and (max-width: 1199px) {
     main#houseInfo.underHeader {
       padding-top: 65px !important; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     main#houseInfo.underHeader {
       padding-top: 56px !important; }
       main#houseInfo.underHeader #house-diagram {
@@ -94,7 +94,7 @@ main#houseInfo.underHeader {
             border-color: #0050E6; }
             .houseInfo_head__Nav ul li.active a {
               color: #0050E6; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     .houseInfo_head__Nav .phone {
       display: none; }
     .houseInfo_head__Nav li a {
@@ -111,7 +111,7 @@ main#houseInfo.underHeader {
         font-size: 30px !important;
         margin-right: 10px !important;
         margin-bottom: 0; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseInfo_head__Nav .notebook {
       display: none; } }
 
@@ -223,7 +223,7 @@ main#houseInfo.underHeader {
       padding-top: 0; }
     #houseInfo_head .form-check label {
       margin-right: 3px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     #houseInfo_head div#housePings {
       width: 100%;
       display: -webkit-box;
@@ -275,7 +275,7 @@ main#houseInfo.underHeader {
     #houseInfo_head .pic {
       width: calc(100% + 92px);
       margin: 0 -46px 20px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     #houseInfo_head .title {
       font-size: 28px; }
     #houseInfo_head .address {
@@ -458,7 +458,7 @@ main#houseInfo.underHeader {
       width: 50px; }
     .house-build-search ul {
       width: calc(100% - 50px); } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .house-build-search {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -555,7 +555,7 @@ main#houseInfo.underHeader {
         padding-top: 20px; }
     #house-ai .info {
       margin-top: 10px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     #house-ai .item:last-child .btn {
       margin-top: 20px; }
     #house-ai .info .left, #house-ai .info .right {
@@ -780,7 +780,7 @@ main#houseInfo.underHeader {
       .house-ai_search .btn {
         width: auto;
         margin: 0 !important; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .house-ai_search {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1465,7 +1465,7 @@ main#houseInfo.underHeader {
   .mt-40 {
     margin-top: 28px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   #housePings {
     display: none; }
   .houseInfoPhone_cutover {

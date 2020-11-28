@@ -160,7 +160,7 @@
           flex-wrap: wrap;
       margin-top: 40px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   #web .l-half:first-child .text {
     padding: 0; }
     #web .l-half:first-child .text p {

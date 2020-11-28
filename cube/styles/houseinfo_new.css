@@ -148,7 +148,7 @@
                       flex-grow: 1; }
               .houseinfo-paper > .right .top-head .houseinfo-nav li:last-child {
                 margin-right: 0; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     .houseinfo-paper {
       position: relative; }
       .houseinfo-paper > .right {
@@ -187,7 +187,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     .houseinfo-paper > .left .total-price {
       margin-top: 10px; }
       .houseinfo-paper > .left .total-price .left {
@@ -249,7 +249,7 @@
               margin: 0 2px;
               padding: 0;
               width: 56px !important; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-paper {
       font-size: 15px; }
       .houseinfo-paper input.btn {
@@ -260,7 +260,7 @@
   border-bottom: 1px solid #DDD;
   padding-bottom: 0;
   margin-bottom: 10px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .paperblock-titleRow {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -281,7 +281,7 @@
     padding-top: 40px; }
   .chart-boxblock .apexcharts-legend {
     top: -6px !important; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .chart-boxblock .page-title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -305,7 +305,7 @@
   margin: 0 0 5px;
   padding: 0;
   border: none; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .house-build-result {
       width: 100%; } }
 
@@ -322,7 +322,7 @@
   .page-title .page-title_icon {
     font-size: 36px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .page-title {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -358,7 +358,7 @@
     border-bottom: 1px solid #DDD !important; }
     .file-toggleNav .file-btn:last-child {
       border: none; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .file-toggleNav {
       bottom: 100%; } }
 
@@ -405,12 +405,12 @@
       position: absolute;
       right: 0;
       top: 0; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     .file-nav {
       position: absolute;
       right: 0;
       top: 0; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .file-nav {
       position: fixed;
       bottom: 0;
@@ -484,7 +484,7 @@
       margin-top: 20px; }
       .houseinfo-nav.fixed {
         margin-top: 0; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     .houseinfo-nav {
       margin-top: 20px; }
       .houseinfo-nav.fixed {
@@ -496,7 +496,7 @@
         padding: 5px 0 8px; }
         .houseinfo-nav.fixed li {
           text-align: center; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-nav {
       width: 100%;
       display: -webkit-box;
@@ -569,7 +569,7 @@
       width: 100%;
       position: static;
       height: auto; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .house-build-search li {
       width: 100%; } }
 
@@ -666,7 +666,7 @@
   .houseinfo-head .title {
     width: calc(100% - 145px); } }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
   .houseinfo-head .title {
     width: calc(100% - 145px); } }
 
@@ -674,7 +674,7 @@
   .houseinfo-head.fixed {
     padding: 10px 30px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .houseinfo-head.fixed {
     padding: 10px 20px; } }
 
@@ -737,7 +737,7 @@
     .houseinfo-price {
       margin-top: 15px;
       margin-bottom: 0; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-price .cube_price {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -916,10 +916,10 @@
     .houseinfo-inner {
       margin-top: 0px;
       padding: 0 !important; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
     .houseinfo-inner {
       margin-top: 10px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-inner {
       margin-top: 0; }
       .houseinfo-inner .block {
@@ -967,7 +967,7 @@ table {
   margin: 20px -40px 0;
   width: calc(100% + 80px);
   padding: 30px 40px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .bulid-detail {
       margin-top: 0;
       margin: 20px -20px 0;
@@ -978,7 +978,7 @@ table {
   width: 100%;
   height: 260px;
   background-color: #ccc; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-map {
       height: 180px; } }
 
@@ -1008,7 +1008,7 @@ table {
   @media screen and (min-width: 1200px) {
     .check-inner .check-btn:hover {
       background-color: rgba(0, 80, 230, 0.2); } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .check-inner {
       margin: 0 -5px; }
       .check-inner .check-btn {
@@ -1190,7 +1190,7 @@ ul.mark-list li {
   background-color: #797979;
   color: #FFF; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .filetab_nav .item {
     padding: 5px 8px; }
     .filetab_nav .item .num {
@@ -1211,7 +1211,7 @@ ul.mark-list li {
       margin: 10px -20px 0;
       width: calc(100% + 40px);
       padding: 15px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .block-unpading {
       width: calc(100% + 20px);
       margin: 10px -10px 0; } }
@@ -1274,7 +1274,7 @@ ul.mark-list li {
         .houseinfo-pixed .houseinfo-pixed-btn i {
           font-size: 15px;
           margin-right: 5px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-pixed {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1293,13 +1293,13 @@ ul.mark-list li {
           border: none;
           border-right: 1px solid #DDD; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .l-half .l-half_w33, .l-half .l-half_w67 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .w50 {
     width: 100%; } }
 
@@ -1459,7 +1459,7 @@ ul.mark-list li {
           width: 100%;
           margin-bottom: 10px !important; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .houseinfo-transaction .d-flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -1637,7 +1637,7 @@ ul.mark-list li {
     .myFinalPrice input {
       min-width: 160px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .myFinalPrice {
     margin-right: 0; }
     .myFinalPrice input {
@@ -1712,7 +1712,7 @@ ul.mark-list li {
       .sold-chart-inner .sold-chart-item:last-child .sold-chart-item_circle {
         background-color: #808080; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .sold-chart-item_circle {
     bottom: 2px !important; } }
 
@@ -1809,7 +1809,7 @@ ul.mark-list li {
 
 #saveasfile-pop, #openfile-pop, #upload-pop {
   min-height: auto; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     #saveasfile-pop .houseinfo-head .d-flex, #openfile-pop .houseinfo-head .d-flex, #upload-pop .houseinfo-head .d-flex {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1836,7 +1836,7 @@ ul.mark-list li {
       background-color: #DDD;
       border-color: #DDD;
       color: #404040; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseimg-btnrow {
       font-size: 15px; }
       .houseimg-btnrow .btn {
@@ -1853,7 +1853,7 @@ ul.mark-list li {
 .houseimg-itemRow {
   margin: 0 -10px;
   width: calc(100% + 20px); }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseimg-itemRow {
       margin: 0;
       width: 100%; } }
@@ -1897,7 +1897,7 @@ ul.mark-list li {
   @media screen and (max-width: 1199px) {
     .houseimg-item {
       width: calc(50% - 21px); } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseimg-item {
       max-width: none;
       width: 100%;
@@ -2064,7 +2064,7 @@ ul.mark-list li {
     .add-btn input:checked + div span:last-child {
       -webkit-transform: rotateY(0deg);
               transform: rotateY(0deg); }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .add-btn input + div span {
       top: 30%; }
       .add-btn input + div span i {
@@ -2128,7 +2128,7 @@ ul.mark-list li {
       .houseinfo-databtn i {
         display: none !important;
         margin: 0; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 766px) {
     .houseinfo-databtn {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
