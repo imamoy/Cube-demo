@@ -29,8 +29,7 @@
     margin-left: 420px;
     position: relative; }
   .houseinfo-paper.scroll > .left {
-    height: 0;
-    overflow-y: hidden; }
+    padding-top: 25px; }
   .houseinfo-paper.scroll > .right {
     overflow-y: hidden;
     margin-top: 60px; }
