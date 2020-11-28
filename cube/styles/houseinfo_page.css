@@ -24,13 +24,17 @@
     .houseinfo-paper > .left .price_note {
       font-size: 13px;
       margin-left: 5px; }
-    .houseinfo-paper > .left.small {
-      height: 140px;
-      overflow: hidden; }
   .houseinfo-paper > .right {
     width: calc(100% - 420px);
     margin-left: 420px;
     position: relative; }
+  .houseinfo-paper.scroll > .left {
+    height: 0;
+    overflow: hidden; }
+  .houseinfo-paper.scroll > .right {
+    margin-top: 60px; }
+  .houseinfo-paper.scroll .top-head {
+    height: 0; }
   @media screen and (min-width: 1200px) {
     .houseinfo-paper {
       position: fixed;

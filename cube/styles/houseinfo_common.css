@@ -60,6 +60,9 @@
   width: 90px;
   height: 100px;
   margin: 0 auto; }
+  @media screen and (max-width: 766px) {
+    .circle-chart {
+      width: 87px; } }
 
 .houseinfo-pie {
   height: 115px; }
@@ -186,8 +189,7 @@ table {
       padding: 30px 20px; } }
   @media screen and (max-width: 766px) {
     .houseinfo-iframe {
-      font-size: 15px;
-      padding: 30px 0; }
+      font-size: 15px; }
       .houseinfo-iframe .l-inline-label .label {
         font-size: 14px; }
       .houseinfo-iframe input, .houseinfo-iframe .pure_select_border select {
@@ -195,6 +197,9 @@ table {
       .houseinfo-iframe input.btn {
         width: 100%;
         max-width: none; } }
+  @media screen and (max-width: 600px) {
+    .houseinfo-iframe {
+      padding: 30px 0; } }
 
 .houseimg-item {
   max-width: 320px;

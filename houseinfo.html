@@ -1893,14 +1893,14 @@
           });
           if(jQuery(window).width() < 1025) {
               $(window).scroll(function () {
-                  if ($(this).scrollTop() > 80) {
+                  if ($(this).scrollTop() > 50) {
                       $(".houseinfo-head").addClass("fixed");
                       $(".houseinfo-nav").addClass("fixed");
-                      $(".houseinfo-paper > .left").addClass("small");
+                      $(".houseinfo-paper").addClass("scroll");
                   } else {
                       $(".houseinfo-head").removeClass("fixed");
                       $(".houseinfo-nav").removeClass("fixed");
-                      $(".houseinfo-paper > .left").removeClass("small");
+                      $(".houseinfo-paper").removeClass("scroll");
                   }
               });
           }
