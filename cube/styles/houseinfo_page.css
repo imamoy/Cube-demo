@@ -84,7 +84,7 @@
               -ms-flex-direction: row;
                   flex-direction: row; }
       .houseinfo-paper > .right {
-        height: 100vh;
+        height: calc(100vh - 106px);
         padding-bottom: 50px;
         margin-left: 0; } }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
