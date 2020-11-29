@@ -173,10 +173,10 @@
         </div>
         <div class="houseinfo-inner">
           <div class="cutover-in show" id="houseInfo1">
-            <iframe src="houseinfo-iframe_a2.html" frameborder="0" scrolling="auto"></iframe>
+            <iframe src="houseinfo-iframe_a2.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
           </div>
           <div class="cutover-in" id="houseInfo2">
-            <iframe src="houseinfo-iframe_b2.html" frameborder="0" scrolling="auto"></iframe>
+            <iframe src="houseinfo-iframe_b2.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
           </div>
           <div class="cutover-in" id="houseInfo3">
             <div class="houseinfo-iframe main-scrollbar">
@@ -1598,8 +1598,8 @@
         </form>
       </div>
     </div>
-    <div id="houseinfo-report">
-      <iframe src="houseinfo-report.html" width="100%" height="100%" frameborder="0"></iframe>
+    <div class="main-scrollbar" id="houseinfo-report">
+      <iframe src="houseinfo-report.html" width="100%" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
       <div class="close"><i class="icon-cancel"></i></div>
     </div>
     <div class="pop pop_main" id="upload-pop">
@@ -1782,6 +1782,9 @@
     </div>
     <div class="pop_bg"></div>
     <script>
+      function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
       $('#houseinfo').each(function(){
           $(this).prev('#header').addClass('gary');
           $(this).prev('#header').addClass('fixed');

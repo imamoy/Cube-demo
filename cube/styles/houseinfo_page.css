@@ -1231,6 +1231,7 @@
   padding: 30px 20px;
   opacity: 0;
   visibility: hidden;
+  overflow-y: auto;
   -webkit-transition: bottom 0.25s ease-in-out;
   transition: bottom 0.25s ease-in-out; }
   #houseinfo-report .close {
