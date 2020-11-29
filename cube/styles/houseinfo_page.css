@@ -30,8 +30,6 @@
     width: calc(100% - 420px);
     margin-left: 420px;
     position: relative; }
-  .houseinfo-paper.scroll > .left {
-    padding-top: 25px; }
   .houseinfo-paper.scroll > .right {
     margin-top: 60px; }
   .houseinfo-paper.scroll .top-head {

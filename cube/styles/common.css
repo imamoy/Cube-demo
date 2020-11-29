@@ -1473,7 +1473,7 @@ img {
               transform: rotateY(0deg); }
   @media screen and (max-width: 766px) {
     .add-btn input + div span {
-      top: 30%; }
+      top: 15%; }
       .add-btn input + div span i {
         margin-top: 0; } }
 
