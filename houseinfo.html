@@ -60,7 +60,7 @@
         </div>
       </div>
     </header>
-    <main class="houseinfo-paper" id="houseinfo">
+    <main class="houseinfo-paper main-scrollbar" id="houseinfo">
       <div class="left">
         <div class="houseinfo-head">
           <h2 class="title mb-10">一品金華－民生東路五段電梯大樓15樓</h2>
@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-          <iframe src="houseinfo-iframe_circle.html" width="100%" height="115" frameborder="0" scrolling="no"></iframe>
+          <iframe src="houseinfo-iframe_circle.html" width="100%" height="115" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
           <div class="houseinfo-tab"><a href="">#不想爬樓梯</a><a href="">#附車位</a><a href="">#大陽台</a><a href="">#三房兩廳</a>
             <button class="houseinfo-tabtoggle"><i class="icon-dot-3"></i></button>
             <div class="houseinfo-tabhide"><a href="">#不想爬樓梯</a><a href="">#附車位</a><a href="">#大陽台</a><a href="">#三房兩廳</a><a href="">#不想爬樓梯</a><a href="">#附車位</a><a href="">#大陽台</a><a href="">#三房兩廳</a></div>
@@ -171,10 +171,10 @@
         </div>
         <div class="houseinfo-inner">
           <div class="cutover-in show" id="houseInfo1">
-            <iframe src="houseinfo-iframe_a.html" frameborder="0" scrolling="auto"></iframe>
+            <iframe src="houseinfo-iframe_a.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
           </div>
           <div class="cutover-in" id="houseInfo2">
-            <iframe src="houseinfo-iframe_b.html" frameborder="0" scrolling="auto"></iframe>
+            <iframe src="houseinfo-iframe_b.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
           </div>
           <div class="cutover-in" id="houseInfo3">
             <div class="houseinfo-iframe main-scrollbar">
@@ -1880,6 +1880,9 @@
     </div>
     <div class="pop_bg"></div>
     <script>
+      function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
       $('#houseinfo').each(function(){
           $(this).prev('#header').addClass('gary');
           $(this).prev('#header').addClass('fixed');
@@ -1892,9 +1895,17 @@
               $(this).next('.file-toggleNav').slideToggle();
           });
           if(jQuery(window).width() < 1025) {
-              $(".houseinfo-head").addClass("fixed");
-              $(".houseinfo-nav").addClass("fixed");
-              $(".houseinfo-paper").addClass("scroll");
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 80) {
+                      $(".houseinfo-head").addClass("fixed");
+                      $(".houseinfo-nav").addClass("fixed");
+                      $(".houseinfo-paper").addClass("scroll");
+                  } else {
+                      $(".houseinfo-head").removeClass("fixed");
+                      $(".houseinfo-nav").removeClass("fixed");
+                      $(".houseinfo-paper").removeClass("scroll");
+                  }
+              });
           }
           $('#save-as').click(function(){
               $('#saveasfile-pop').addClass('active');

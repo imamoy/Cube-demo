@@ -152,8 +152,6 @@ table {
         opacity: 1; } }
 
 .houseinfo-iframe {
-  height: 100%;
-  overflow-y: auto;
   padding: 30px 45px 30px 30px; }
   .houseinfo-iframe input, .houseinfo-iframe .pure_select_border select {
     width: auto;
