@@ -179,15 +179,10 @@ table {
       font-size: 16px;
       margin-right: 10px;
       white-space: nowrap; }
-  @media screen and (max-width: 1199px) {
-    .houseinfo-iframe {
-      padding: 30px 25px; } }
-  @media screen and (max-width: 991px) {
-    .houseinfo-iframe {
-      padding: 30px 20px; } }
   @media screen and (max-width: 766px) {
     .houseinfo-iframe {
-      font-size: 15px; }
+      font-size: 15px;
+      padding: 40px 20px; }
       .houseinfo-iframe .l-inline-label .label {
         font-size: 14px; }
       .houseinfo-iframe input, .houseinfo-iframe .pure_select_border select {
@@ -727,3 +722,20 @@ ul.mark-list li {
       -webkit-box-flex: inherit;
           -ms-flex-positive: inherit;
               flex-grow: inherit; } }
+
+.visitor .visitor-hide {
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  .visitor + .houseinfo-pixed #houseinfo-report_btn {
+    right: 85px; } }
+
+@media screen and (min-width: 1681px) {
+  .visitor + .houseinfo-pixed #houseinfo-report_btn {
+    right: 115px; } }
+
+@media screen and (max-width: 766px) {
+  .visitor + .houseinfo-pixed {
+    width: 100%; }
+    .visitor + .houseinfo-pixed .houseinfo-pixed-btn {
+      width: calc(100% / 4); } }
