@@ -270,7 +270,8 @@
 #houseinfo-report_inner {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  overflow-y: auto; }
   #houseinfo-report_inner .page-title .page-title_icon {
     font-size: 32px; }
   #houseinfo-report_inner .page-title .page-title_title {
@@ -293,6 +294,7 @@
   .houseinfo-dataSection .container {
     padding: 0 20px; }
     .houseinfo-dataSection .container .page-title {
+      min-width: 75%;
       margin-bottom: 24px !important; }
   .houseinfo-dataSection .paperblock {
     background-color: #fff;
@@ -372,3 +374,8 @@
         .houseinfo-dataSection .section-top .page-title {
           width: 100%;
           margin-bottom: 10px !important; } }
+  @media screen and (max-width: 766px) {
+    .houseinfo-dataSection {
+      margin-bottom: 30px; }
+      .houseinfo-dataSection .map-streetview {
+        max-height: 200px; } }

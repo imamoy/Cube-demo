@@ -15,6 +15,42 @@
     width: 100%;
     height: auto; }
 
+.arrow-block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .arrow-block .arrow {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    -webkit-transition: color .25s;
+    transition: color .25s; }
+    .arrow-block .arrow:not(.disabled) {
+      cursor: pointer;
+      color: #606060; }
+      .arrow-block .arrow:not(.disabled):hover {
+        color: #0050E6; }
+    .arrow-block .arrow.disabled {
+      color: #DDD; }
+  .arrow-block .line {
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    margin: 2px 10px 0;
+    background-color: #DDD; }
+
 .mark-list {
   padding: 10px; }
   .mark-list .color {
@@ -259,7 +295,7 @@ table {
   margin-bottom: 40px; }
   @media screen and (min-width: 1200px) {
     .paperblock {
-      margin: 30px; } }
+      margin: 10px 10px 30px; } }
   @media screen and (max-width: 766px) {
     .paperblock {
       -webkit-box-shadow: 0 5px 20px #cad7fd;
@@ -332,22 +368,24 @@ ul.mark-list li {
       width: 80px; }
     ul.mark-list li .sold-chart-item_line span {
       width: 62px;
-      white-space: nowrap; }
+      white-space: nowrap;
+      position: static; }
       ul.mark-list li .sold-chart-item_line span:first-child {
         text-align: right; }
   ul.mark-list li .sold-chart-item_circle {
     width: 15px;
     height: 15px;
-    left: 50%;
-    -webkit-transform: translateX(-24%);
-            transform: translateX(-24%);
     right: auto;
-    bottom: 4px; }
+    bottom: 2px; }
     ul.mark-list li .sold-chart-item_circle span {
       width: 65px;
       margin-left: 0;
       text-align: center;
       white-space: nowrap; }
+    ul.mark-list li .sold-chart-item_circle.legend {
+      left: 50%;
+      -webkit-transform: translateX(-24%);
+              transform: translateX(-24%); }
   @media screen and (max-width: 1199px) {
     ul.mark-list li .sold-chart-item {
       width: 90vw;
@@ -485,9 +523,14 @@ ul.mark-list li {
   margin: 0 31px 0; }
   .sold-chart-inner .sold-chart-item {
     position: absolute;
-    padding-top: 18px;
+    padding: 9px 0;
     font-size: 14px;
     font-weight: 300; }
+    .sold-chart-inner .sold-chart-item .sold-chart-item_line {
+      width: calc(100% - 54px);
+      min-width: 14px;
+      padding: 7px 0;
+      margin: 0 10px; }
     .sold-chart-inner .sold-chart-item:first-child {
       top: 0;
       color: #0050E6; }
@@ -510,6 +553,14 @@ ul.mark-list li {
       .sold-chart-inner .sold-chart-item:last-child .sold-chart-item_circle {
         background-color: #808080; }
 
+.sold-chart-item > * {
+  float: left; }
+
+@media screen and (max-width: 1440px) {
+  .sold-chart-item span {
+    font-size: 14px;
+    font-weight: 400; } }
+
 .sold-chart-item_line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,38 +575,27 @@ ul.mark-list li {
     height: 1px;
     border-bottom: 1px dashed #FFF;
     background-color: #fff !important;
-    margin: 0 10px; }
-  @media screen and (max-width: 1440px) {
-    .sold-chart-item_line span {
-      font-size: 14px;
-      font-weight: 400; } }
+    margin: 0 5px; }
 
 .sold-chart-item_circle {
   width: 18px;
   height: 18px;
   border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  margin: 0 auto; }
+  bottom: 0px; }
   .sold-chart-item_circle span {
     position: absolute;
     width: 20px;
-    top: -24px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    margin-left: 2px; }
+    top: -20px;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important; }
   @media screen and (max-width: 1440px) {
     .sold-chart-item_circle {
       width: 14px;
-      height: 14px;
-      bottom: 2px; }
-      .sold-chart-item_circle span {
-        font-size: 14px;
-        font-weight: 400;
-        margin-left: 1px; } }
+      height: 14px; } }
   @media screen and (max-width: 991px) {
     .sold-chart-item_circle {
       width: 10px;
@@ -563,7 +603,7 @@ ul.mark-list li {
       bottom: 6px; } }
   @media screen and (max-width: 766px) {
     .sold-chart-item_circle {
-      bottom: 2px !important; } }
+      bottom: 4px; } }
 
 @media screen and (max-width: 601px) {
   .sold-table {
