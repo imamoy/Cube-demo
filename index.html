@@ -76,9 +76,9 @@
             <div class="btm">
               <div class="cutover-in show" id="search-house">
                 <form action="houseinfo.html">
-                  <div class="search-box_row">
-                    <div class="input-select select_under-line map" id="house-location">
-                      <label class="label"><span class="icon"><i class="icon-locationmap"></i></span><span class="name">搜尋地址</span></label>
+                  <div class="search-box_row address-row">
+                    <label class="label"><span class="icon"><i class="icon-locationmap"></i></span><span class="name">搜尋地址</span></label>
+                    <div class="input-select select_under-line has-select-col">
                       <div class="pure_select_underline">
                         <select>
                           <option value="台北市">台北市</option>
@@ -89,50 +89,56 @@
                           <option value="信義區">信義區</option>
                         </select>
                       </div>
-                      <div class="search-input">
-                        <input class="main-input" type="text" placeholder="標的 / 社區名 / 地址">
-                      </div>
+                    </div>
+                    <div class="input-select">
+                      <input class="main-input" type="text" placeholder="標的 / 社區名 / 地址">
                     </div>
                   </div>
-                  <div class="search-box_row floor_row">
+                  <div class="search-box_row floor-row">
                     <div class="input-select select_under-line">
-                      <label class="label ml-34"><span class="name">坪數</span></label>
+                      <label class="label"><span class="name">坪數</span></label>
                       <div class="pure_select_underline ping">
-                        <select>
+                        <select class="ping-select">
                           <option value="建坪60坪 主建物40坪 附屬建物20坪">建坪 60坪 | 主 40坪 | 附屬 20坪</option>
-                          <option value="找不到">找不到</option>
+                          <option value="其他">其他</option>
                         </select>
                       </div>
                     </div>
                     <div class="input-select select_under-line"> 
-                      <label class="label ml-34"><span class="name">樓層</span></label>
-                      <div class="input-unit floor">
+                      <label class="label"><span class="name">樓層</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">樓</span>
                       </div>
-                      <label class="label ml-34"><span class="name">總樓層</span></label>
-                      <div class="input-unit floor">
+                    </div>
+                    <div class="input-select select_under-line"> 
+                      <label class="label"><span class="name">總樓層</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">樓</span>
                       </div>
                     </div>
                   </div>
-                  <div class="search-box_row floor_row floor-hide">
+                  <div class="search-box_row ping-row ping-other-detail">
                     <div class="input-select select_under-line">
-                      <label class="label ml-34"><span class="name">建坪</span></label>
-                      <div class="input-unit floor">
+                      <label class="label"><span class="name">建坪</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
                       </div>
-                      <label class="label ml-34">  <span class="name">主建物</span></label>
-                      <div class="input-unit floor">
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label">  <span class="name">主建物</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
                       </div>
-                      <label class="label ml-34"><span class="name">附屬建物</span></label>
-                      <div class="input-unit floor">
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">附屬建物</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
                       </div>
                     </div>
                   </div>
-                  <div class="search-box_row floor_row">
-                    <div class="input-select select_under-line w80 ml-34" id="pattern">
+                  <div class="search-box_row structure-row">
+                    <div class="input-select select_under-line has-select-col structure">
                       <label class="label"><span class="name">格局</span></label>
                       <div class="pure_select_underline">
                         <select>
@@ -151,11 +157,13 @@
                       </div>
                     </div>
                     <div class="input-select select_under-line">
-                      <label class="label houseYear"><span class="name">屋齡</span></label>
-                      <div class="input-unit floor">
+                      <label class="label"><span class="name">屋齡</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">年</span>
                       </div>
-                      <label class="label ml-30" id="car"><span class="name">車位</span></label>
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">車位</span></label>
                       <div class="pure_select_underline">
                         <select>
                           <option value="0">0</option>
@@ -163,19 +171,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="search-box_row not-flexgrow other">
-                    <div class="form-check ml-34">
-                      <label for="check1">管理系統</label>
-                      <input id="check1" type="checkbox" name="">
-                    </div>
-                    <div class="input-select select_under-line inputprice">
-                      <label class="label"><span class="name">開價</span></label>
-                      <div class="search-input">
-                        <input class="main-input" type="text" placeholder="">
+                  <div class="search-box_row price-row">
+                    <div class="input-select select_under-line">
+                      <div class="form-check">
+                        <label for="check1">管理系統</label>
+                        <input id="check1" type="checkbox" name="">
                       </div>
                     </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">開價</span></label>
+                      <input class="main-input" type="text" placeholder="">
+                    </div>
                   </div>
-                  <div class="search-box_row search-box_btm mt-30">
+                  <div class="search-box_row search-box_btm mt-20">
                     <div class="search-btn_box">
                       <input class="search-btn btn btn-dp" type="submit" value="搜出好房">
                       <div class="btn">清除重填</div>
@@ -185,9 +193,9 @@
               </div>
               <div class="cutover-in" id="search-office">
                 <form action="houseinfo-office.html">
-                  <div class="search-box_row">
-                    <div class="input-select select_under-line map" id="house-location">
-                      <label class="label"><span class="icon"><i class="icon-locationmap"></i></span><span class="name">搜尋地址</span></label>
+                  <div class="search-box_row address-row">
+                    <label class="label"><span class="icon"><i class="icon-locationmap"></i></span><span class="name">搜尋地址</span></label>
+                    <div class="input-select select_under-line has-select-col">
                       <div class="pure_select_underline">
                         <select>
                           <option value="台北市">台北市</option>
@@ -198,59 +206,69 @@
                           <option value="信義區">信義區</option>
                         </select>
                       </div>
-                      <div class="search-input">
-                        <input class="main-input" type="text" placeholder="標的 / 社區名 / 地址">
-                      </div>
+                    </div>
+                    <div class="input-select">
+                      <input class="main-input" type="text" placeholder="標的 / 社區名 / 地址">
                     </div>
                   </div>
-                  <div class="search-box_row floor_row">
+                  <div class="search-box_row floor-row">
                     <div class="input-select select_under-line">
-                      <label class="label ml-34"><span class="name">坪數</span></label>
-                      <div class="pure_select_underline ping">
-                        <select>
+                      <label class="label"><span class="name">坪數</span></label>
+                      <div class="pure_select_underline">
+                        <select class="ping-select">
                           <option value="建坪60坪 主建物40坪 附屬建物20坪">建坪 60坪 | 主 40坪 | 附屬 20坪</option>
-                          <option value="找不到">找不到</option>
+                          <option value="其他" name="order">其他</option>
                         </select>
                       </div>
                     </div>
                     <div class="input-select select_under-line"> 
-                      <label class="label ml-34"><span class="name">樓層</span></label>
-                      <div class="input-unit floor">
+                      <label class="label"><span class="name">樓層</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">樓</span>
                       </div>
-                      <label class="label ml-34"><span class="name">總樓層</span></label>
-                      <div class="input-unit floor">
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">總樓層</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">樓</span>
                       </div>
                     </div>
                   </div>
-                  <div class="search-box_row floor_row floor-hide">
+                  <div class="search-box_row ping-row ping-other-detail">
                     <div class="input-select select_under-line">
-                      <label class="label ml-34"><span class="name">建坪</span></label>
-                      <div class="input-unit floor">
+                      <label class="label"><span class="name">建坪</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
                       </div>
-                      <label class="label ml-34"><span class="name">主建物</span></label>
-                      <div class="input-unit floor">
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">主建物</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
                       </div>
-                      <label class="label ml-34"><span class="name">附屬建物</span></label>
-                      <div class="input-unit floor">
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">附屬建物</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">坪</span>
                       </div>
                     </div>
                   </div>
-                  <div class="search-box_row floor_row">
-                    <div class="form-check ml-34">
-                      <label for="check1a">辦公家具</label>
-                      <input id="check1a" type="checkbox" name="">
+                  <div class="search-box_row structure-row">
+                    <div class="input-select select_under-line">
+                      <div class="form-check">
+                        <label for="check1a">辦公家具</label>
+                        <input id="check1a" type="checkbox" name="">
+                      </div>
                     </div>
                     <div class="input-select select_under-line">
-                      <label class="label houseYear2"><span class="name">屋齡</span></label>
-                      <div class="input-unit floor">
+                      <label class="label"><span class="name">屋齡</span></label>
+                      <div class="input-unit">
                         <input class="main-input" type="text" maxlength="3"><span class="unit">年</span>
                       </div>
-                      <label class="label ml-30" id="car"><span class="name">車位</span></label>
+                    </div>
+                    <div class="input-select select_under-line">
+                      <label class="label"><span class="name">車位</span></label>
                       <div class="pure_select_underline">
                         <select>
                           <option value="0">0</option>
@@ -258,19 +276,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="search-box_row not-flexgrow other">
-                    <div class="form-check ml-34">
-                      <label for="check1b">管理系統</label>
-                      <input id="check1b" type="checkbox" name="">
+                  <div class="search-box_row price-row">
+                    <div class="input-select select_under-line">
+                      <div class="form-check">
+                        <label for="check1b">管理系統</label>
+                        <input id="check1b" type="checkbox" name="">
+                      </div>
                     </div>
                     <div class="input-select select_under-line inputprice2">
                       <label class="label"><span class="name">開價</span></label>
-                      <div class="search-input">
-                        <input class="main-input" type="text" placeholder="">
-                      </div>
+                      <input class="main-input" type="text" placeholder="">
                     </div>
                   </div>
-                  <div class="search-box_row search-box_btm mt-30">
+                  <div class="search-box_row search-box_btm mt-20">
                     <div class="search-btn_box">
                       <input class="search-btn btn btn-dp" type="submit" value="搜出好房">
                       <div class="btn">清除重填</div>

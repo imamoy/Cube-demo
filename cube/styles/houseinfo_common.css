@@ -688,7 +688,15 @@ ul.mark-list li {
             -ms-flex-positive: inherit;
                 flex-grow: inherit; }
   .sold-table_office_block {
-    background-color: #EFEFEF !important; }
+    background-color: #EFEFEF !important; } }
+  @media screen and (max-width: 601px) and (max-width: 766px) {
+    .sold-table_office_block {
+      padding-bottom: 40px; }
+      .sold-table_office_block .history-block .arrow-block {
+        top: auto;
+        bottom: -28px; } }
+
+@media screen and (max-width: 601px) {
   .sold-table_office tbody tr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -779,3 +787,25 @@ ul.mark-list li {
     width: 100%; }
     .visitor + .houseinfo-pixed .houseinfo-pixed-btn {
       width: calc(100% / 4); } }
+
+.history-block {
+  position: relative; }
+  .history-block .arrow-block {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .history-block .history-block-select-row {
+    margin-right: 100px; }
+
+@media screen and (max-width: 766px) {
+  .block-unpading .history-block .history-block-select-row {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    margin-right: 0; }
+  .block-unpading .history-block .arrow-block {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 10px;
+    left: 0; } }
