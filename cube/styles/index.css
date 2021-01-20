@@ -83,7 +83,6 @@
   @media screen and (max-width: 600px) {
     #index {
       padding-top: 85px;
-      padding-bottom: 5vh;
       height: 100vh; }
       #index .search-nav li a {
         padding: 10px; }
@@ -122,9 +121,12 @@
     .home-inner p {
       font-size: 16px; } }
   @media screen and (max-width: 320px) {
-    .home-inner .title {
-      font-size: 30px;
-      margin-bottom: 0; } }
+    .home-inner {
+      position: fixed;
+      bottom: 8vh; }
+      .home-inner .title {
+        font-size: 30px;
+        margin-bottom: 0; } }
 
 .search-box {
   width: 760px;
