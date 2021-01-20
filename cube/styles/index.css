@@ -118,7 +118,9 @@
   @media screen and (max-width: 600px) {
     .home-inner {
       position: fixed;
-      bottom: 4vh; }
+      top: 54%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
       .home-inner .title {
         font-size: 36px;
         margin-bottom: 6px; }
