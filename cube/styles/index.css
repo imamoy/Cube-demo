@@ -323,8 +323,7 @@
     .address-row > *:first-child {
       -webkit-box-flex: 110px;
           -ms-flex: 110px;
-              flex: 110px;
-      margin-left: 12px; }
+              flex: 110px; }
     .address-row > *:nth-child(2) {
       -webkit-box-flex: 37%;
           -ms-flex: 37%;

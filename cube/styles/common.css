@@ -58,7 +58,7 @@ a {
 input:focus {
   outline: none; }
 
-button, input, select, input[type='submit'], input[type='button'] {
+button, input[type='text'], select, input[type='submit'], input[type='button'] {
   -webkit-appearance: none;
     -webkit-appearance--moz-appearance: none;
     -webkit-appearance-appearance: none; }
