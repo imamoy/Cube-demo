@@ -82,6 +82,7 @@
         padding-right: 16px; } }
   @media screen and (max-width: 600px) {
     #index {
+      height: 100%;
       padding-top: 0;
       padding-bottom: 0;
       min-height: auto; }
