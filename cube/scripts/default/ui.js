@@ -1,3 +1,8 @@
+let height = window.innerHeight;
+window.addEventListener('resize', () => {
+  height = window.innerHeight;
+});
+
 $(document).ready(function () {
 
 	/* header =========*/
