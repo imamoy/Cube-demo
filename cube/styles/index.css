@@ -232,7 +232,9 @@
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       .search-box_row .input-select {
-        margin: 6px 12px; } }
+        margin: 6px 12px; }
+      .search-box_row > .label {
+        margin-left: 12px; } }
 
 .input-unit {
   display: -webkit-inline-box;
