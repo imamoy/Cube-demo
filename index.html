@@ -409,13 +409,13 @@
           $('body').css('overflow','hidden');
           $('html').css('overflow','hidden');
       
-          //- $(window).scroll(function () {
-          //-     if (jQuery(window).width() < 991 && $(this).scrollTop() > 100) {
-          //-         $("header").addClass("active");
-          //-     } else {
-          //-         $("header").removeClass("active");
-          //-     }
-          //- });
+          $(window).scroll(function () {
+              if (jQuery(window).width() < 991 && $(this).scrollTop() > 100) {
+                  $("header").removeClass("active");
+              } else {
+                  $("header").removeClass("active");
+              }
+          });
       });
     </script>
   </body>
