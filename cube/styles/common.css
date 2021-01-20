@@ -59,8 +59,8 @@ input:focus {
   outline: none; }
 
 button,
-input[type="text"],
 select,
+input[type="text"],
 input[type='submit'],
 input[type='button'] {
   -webkit-appearance: none;
