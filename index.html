@@ -413,7 +413,10 @@
           let windowHeight = window.screen.availHeight;
       
           if (jQuery(window).width() < 767) {
+              $('body').css('height', windowHeight);
+              $('body').css('max-height', windowHeight);
               $('#index').css('height', windowHeight);
+              $('#index').css('max-height', windowHeight);
           }   
       });
     </script>
