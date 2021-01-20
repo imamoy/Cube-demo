@@ -16,13 +16,12 @@
     height: 34px;
     font-size: 1rem;
     font-family: 'Noto Sans TC','Helvetica', sans-serif;
-    text-align: center;
+    line-height: 34px;
     margin: 0; }
   #index .pure_select_underline select {
     height: 34px;
     font-size: 1rem;
-    font-family: 'Noto Sans TC','Helvetica', sans-serif;
-    text-align-last: center; }
+    font-family: 'Noto Sans TC','Helvetica', sans-serif; }
   #index input.main-input::after {
     display: none !important; }
   #index .select_under-line .select-styled, #index .main-input, #index .pure_select_underline select {
@@ -94,10 +93,11 @@
           margin-right: 4px; }
       #index .main-input {
         height: 30px;
-        margin: 0;
-        padding-bottom: 1px; }
+        line-height: 30px;
+        margin: 0; }
       #index .pure_select_underline select {
-        height: 30px; } }
+        height: 30px;
+        line-height: 30px; } }
 
 .home-inner {
   text-align: center;
@@ -150,6 +150,8 @@
     .search-box {
       margin-top: 3vh; }
       .search-box .btm {
+        max-height: 62vh;
+        overflow-y: auto;
         padding: 10px 8px 12px; } }
 
 .search-box_nav {
@@ -314,9 +316,7 @@
       -webkit-box-flex: 53%;
           -ms-flex: 53%;
               flex: 53%;
-      margin-left: 8px; }
-    .address-row .main-input {
-      text-align: left !important; } }
+      margin-left: 8px; } }
   @media screen and (max-width: 600px) {
     .address-row > *:first-child {
       -webkit-box-flex: 12%;
