@@ -83,7 +83,7 @@
   @media screen and (max-width: 600px) {
     #index {
       padding-top: 85px;
-      height: 90vh;
+      height: 100vh;
       min-height: auto; }
       #index .search-nav li a {
         padding: 10px; }
