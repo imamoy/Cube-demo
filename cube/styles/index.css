@@ -124,7 +124,7 @@
   @media screen and (max-width: 320px) {
     .home-inner {
       position: fixed;
-      bottom: 8vh; }
+      bottom: 7vh; }
       .home-inner .title {
         font-size: 30px;
         margin-bottom: 0; } }
