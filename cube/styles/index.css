@@ -324,7 +324,7 @@
       -webkit-box-flex: 110px;
           -ms-flex: 110px;
               flex: 110px;
-      margin-left: 0;
+      margin-left: 12px;
       text-align: left; }
     .address-row > *:nth-child(2) {
       -webkit-box-flex: 37%;

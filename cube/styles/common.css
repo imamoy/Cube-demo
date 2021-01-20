@@ -3971,6 +3971,10 @@ header:not(#header-web) {
         color: #404040; }
   header:not(#header-web).hide {
     display: none; }
+  header:not(#header-web).white.fixed.active {
+    background-color: transparent !important; }
+    header:not(#header-web).white.fixed.active .menu-toggle, header:not(#header-web).white.fixed.active .lang-btn, header:not(#header-web).white.fixed.active .member-btn {
+      color: #fff !important; }
   @media screen and (min-width: 992px) {
     header:not(#header-web) .menu-close:hover {
       color: #0050E6 !important; }

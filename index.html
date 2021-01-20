@@ -406,16 +406,9 @@
               $('.advanced-inner').slideToggle();
           });
       
-          //- $('body').css('overflow','hidden');
-          //- $('html').css('overflow','hidden');
+          $('body').css('overflow','hidden');
+          $('html').css('overflow','hidden');
       
-          $(window).scroll(function () {
-              if (jQuery(window).width() < 991 && $(this).scrollTop() > 100) {
-                  $("header").removeClass("active");
-              } else {
-                  $("header").removeClass("active");
-              }
-          });
       });
     </script>
   </body>
