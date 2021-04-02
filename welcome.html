@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>CUBE AI</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="images/cube/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="cube/styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/plugins/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/common.css">
+    <link rel="stylesheet" type="text/css" href="cube/styles/welcome.css">
+  </head>
+  <body>
+    <header class="wow fadeInDown" id="header">
+      <div class="logo logo_cm2cube"><a href="index.html"><em class="hidden">CUBE智能找房</em></a></div>
+      <div class="right">
+        <div class="login-row mobile-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+        <div class="member-btn"><span class="icon"><i class="icon-user"></i></span>
+          <ul class="member-nav nostyle">
+            <li><a href="">通知</a></li>
+            <li><a href="setting.html">設定</a></li>
+            <li>
+              <button>登出</button>
+            </li>
+          </ul>
+        </div>
+        <div class="lang-btn"><i class="icon-global"></i>
+          <ul class="nostyle lang-menu">
+            <li><a href="">繁體中文</a></li>
+            <li><a href="">English</a></li>
+          </ul>
+        </div>
+        <div class="menu-toggle"><i class="icon-menu"></i></div>
+        <div class="menu">
+          <div class="menu-close"><i class="icon-cancel"></i></div>
+          <ul class="nav">
+                        <li><a class="animsition-link" href="index.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-ai-house"></i></span><span class="nav_item">智能搜房</span></a></li>
+                        <li><a class="animsition-link" href="cube.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-house-map"></i></span><span class="nav_item">地圖找房</span></a></li>
+                        <li><a class="animsition-link" href="favorite.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的收藏</span></a></li>
+                        <li><a class="animsition-link" href="report.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000"><span class="nav_item-icon"><i class="icon-hand_house"></i></span><span class="nav_item">我的報告</span></a></li>
+            <li>
+              <div class="login-row pc-hide"><a class="sign_in_toggle">登入</a><span style="display: inline-block;margin: 0 10px;">|</span><a class="sign_up_toggle">註冊</a></div>
+            </li>
+          </ul><a class="goWeb" href="home.html"><span>房快AI</span><i class="icon-click"></i></a>
+        </div>
+      </div>
+    </header>
+    <main class="pageFill noHeaderBg" id="welcome">
+      <div class="welcome-wrapper">
+        <div class="container">
+          <h1 class="welcome-title">Welcome! <br>讓AI小幫手協助您</h1>
+          <div class="welcome-inner">
+            <div class="welcome-item">
+              <div class="has_toggle">
+                <div class="welcome-item_icon"><img src="images/cube/welcome-1.svg"></div>
+                <div class="welcome-item_text">找 APPLE 物件</div>
+              </div>
+              <div class="toggle-inner"><span class="toggle-innerClose"><i class="icon-cancel"></i></span>
+                <form>
+                  <div class="l-half">
+                    <div class="l-half_w50 px-20">
+                      <div class="form-row _h range-slider">
+                        <div class="form_label" id="confidence">
+                          <label for="amount">估價信心</label>
+                          <div class="form-value">
+                            <div class="form-value_num" id="confidence_amount"></div>
+                          </div>
+                        </div>
+                        <div id="confidence_range"></div>
+                      </div>
+                    </div>
+                    <div class="l-half_w50 px-20">
+                      <div class="form-row _h range-slider">
+                        <div class="form_label" id="totalPrice">
+                          <label for="amount">總價</label>
+                          <div class="form-value">
+                            <div class="form-value_num" id="totalPrice_amount"></div><span class="form-value_unit">萬</span>
+                          </div>
+                        </div>
+                        <div id="totalPrice_range"></div>
+                      </div>
+                    </div>
+                    <div class="search-box_row">
+                      <div class="search-btn_box">
+                        <input class="search-btn btn btn-primary-dp" type="submit" value="搜出好房">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="welcome-item">
+              <div class="has_toggle">
+                <div class="welcome-item_icon"><img src="images/cube/welcome-2.svg"></div>
+                <div class="welcome-item_text">預測房價</div>
+              </div>
+              <div class="toggle-inner"><span class="toggle-innerClose"><i class="icon-cancel"></i></span>
+                <form>
+                  <div class="l-half">
+                    <div class="l-half_w50 px-20">
+                      <div class="form-row _h range-slider">
+                        <div class="form_label" id="confidence2">
+                          <label for="amount">估價信心</label>
+                          <div class="form-value">
+                            <div class="form-value_num" id="confidence_amount2"></div>
+                          </div>
+                        </div>
+                        <div id="confidence_range2"></div>
+                      </div>
+                    </div>
+                    <div class="l-half_w50 px-20">
+                      <div class="form-row _h range-slider">
+                        <div class="form_label" id="totalPrice2">
+                          <label for="amount">總價</label>
+                          <div class="form-value">
+                            <div class="form-value_num" id="totalPrice_amount2"></div><span class="form-value_unit">萬</span>
+                          </div>
+                        </div>
+                        <div id="totalPrice_range2"></div>
+                      </div>
+                    </div>
+                    <div class="search-box_row">
+                      <div class="search-btn_box">
+                        <input class="search-btn btn btn-primary-dp" type="submit" value="搜出好房">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="welcome-item">
+              <div class="has_toggle">
+                <div class="welcome-item_icon"><img src="images/cube/welcome-3.svg"></div>
+                <div class="welcome-item_text">追蹤表現</div>
+              </div>
+              <div class="toggle-inner px-0"><span class="toggle-innerClose"><i class="icon-cancel"></i></span>
+                <div class="l-half">
+                  <div class="l-half_w33 px-20"><a class="iconTitle" href=""><i class="icon-like"></i><span>我的收藏</span></a></div>
+                  <div class="l-half_w33 px-20"><a class="iconTitle" href=""><i class="icon-report"></i><span>我的報告</span></a></div>
+                  <div class="l-half_w33 px-20"><a class="iconTitle" href=""><i class="icon-hand_house"></i><span>我的投資</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="welcome-item"><a href=""> 
+                <div class="welcome-item_icon"><img src="images/cube/welcome-4.svg"></div>
+                <div class="welcome-item_text">我的合約</div></a></div>
+            <div class="welcome-item"><a href=""> 
+                <div class="welcome-item_icon"><img src="images/cube/welcome-5.svg"></div>
+                <div class="welcome-item_text">我的錢包</div></a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="cursor"></div>
+    <script src="cube/scripts/default/jquery.min.js"></script>
+    <script src="cube/scripts/plugins/nouislider.min.js"></script>
+    <script src="cube/scripts/default/welcome_range.js"></script>
+    <script src="cube/scripts/default/ui.js"></script>
+    <div class="pop" id="sign_in">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text d-flex">
+          <h2 class="title">歡迎使用</h2><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-10" type="email" placeholder="電子郵件" autocomplete="on">
+        <input class="main-inputBorder my-10" type="password" placeholder="密碼" autocomplete="on">
+        <div class="t-center my-10"><span class="forgetpassword_toggle">忘記密碼</span></div>
+        <input class="btn main_Rbtn blue-btn" type="button" value="登入">
+        <p class="my-20 t-center">或</p>
+        <button class="facebook_login"><span class="icon mr-10"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 帳號登入</span></button>
+        <button class="google_login"><span class="icon mr-10"><img src="images/cube/google.png" alt=""></span><span>使用 Google 帳號登入</span></button>
+      </form>
+      <div class="t-center"><span>還沒有帳號嗎？</span>
+        <button class="sign_up_toggle">註冊</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="sign_up">
+      <div class="pop_head">
+        <div class="pop_logo"><img src="images/cube/logo.png" alt=""></div>
+        <div class="text"><span class="textlogo"><img src="images/cube/CUBEAI-text.png" alt=""></span>
+          <h2 class="title">歡迎您・立即註冊！</h2>
+        </div>
+        <p>智能探索最理想房價</p>
+      </div>
+      <form action="">
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">帳號<span class="t-red ml-5">*</span></label>
+            <input type="text" placeholder="請輸入您的帳號" autocomplete="off">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">密碼<span class="t-red ml-5">*</span></label>
+            <input type="password" placeholder="請輸入您的密碼" autocomplete="off">
+          </div>
+        </div>
+        <div class="form-row _w">
+          <div class="form-row _h">
+            <label class="form_label">E-mail<span class="t-red ml-5">*</span></label>
+            <input type="email" placeholder="請輸入您的E-mail" autocomplete="off">
+          </div>
+          <div class="form-row _h">
+            <label class="form_label">電話</label>
+            <input type="text" placeholder="請輸入您的電話" autocomplete="off">
+          </div>
+        </div>
+        <div class="form-row _h">
+          <label class="form_label">選擇會員身份
+            <div class="pure_select_border">
+              <select id="Identity">
+                <option value="選擇會員身份">選擇會員身份</option>
+                <option value="買家">買家</option>
+                <option value="賣家(屋主或代理人)">賣家(屋主或代理人)</option>
+                <option value="房仲(房產經紀人)">房仲(房產經紀人)</option>
+                <option value="仲介公司">仲介公司</option>
+                <option value="建商">建商</option>
+              </select>
+            </div>
+          </label>
+        </div>
+      </form>
+      <div class="text_and_line">或使用社群媒體註冊</div>
+      <div class="form-row _w">
+        <button class="facebook_login"><span class="icon"><img src="images/cube/facebook.png" alt=""></span><span>使用 Facebook 註冊</span></button>
+        <button class="google_login"><span class="icon"><img src="images/cube/google.png" alt=""></span><span>使用 Google 註冊</span></button>
+      </div>
+      <div class="t-center"><span class="mb10" style="font-size:14px;">若建立帳戶，即表示我同意 CUBE AI 的 網站條款、隱私權政策 與 授權條款。</span></div>
+      <div class="t-center mt-10"><span>還沒有帳號嗎？</span>
+        <button class="sign_in_toggle">登入</button>
+      </div>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop" id="forgetpassword">
+      <div class="pop_head">
+        <div class="text d-flex mb-20">
+          <h2 class="title">忘記密碼</h2>
+        </div>
+        <p>請輸入電子郵件</p>
+      </div>
+      <form action="">
+        <input class="main-inputBorder my-20" type="email" placeholder="電子郵件">
+        <input class="btn main_Rbtn blue-btn" type="button" value="確認">
+      </form>
+      <div class="pop_close"><i class="icon-cancel"></i></div>
+    </div>
+    <div class="pop_bg"></div>
+    <script>
+      $('#welcome').each(function(){
+          //- $(this).prev('#header').addClass('white');
+          //- $(this).prev('#header').addClass('fixed');
+      
+          $('body').css('overflow','hidden');
+          $('html').css('overflow','hidden');
+      
+      
+          let windowHeight = window.screen.availHeight;
+      
+          if (jQuery(window).width() < 767) {
+              $('body').css('height', windowHeight);
+              $('body').css('max-height', windowHeight);
+              $('#welcome').css('height', windowHeight);
+              $('#welcom').css('max-height', windowHeight);
+          }
+      
+          if (jQuery(window).width() > 1200) {
+              $('.welcome-item .has_toggle').click(function(){
+                  $(this).toggleClass('active').parents().siblings().find('.has_toggle').removeClass('active');
+                  $(this).next().toggle().parents().siblings().find('.toggle-inner').hide();
+              });
+          }
+      
+          if (jQuery(window).width() < 1199) {
+              $('.has_toggle').click(function(){
+                  $(this).addClass('active');
+                  $(this).next().show();
+              });
+              $('.toggle-innerClose').click(function(){
+                  $(this).parent().prev().removeClass('active');
+                  $(this).parent().hide();
+              });
+          }
+      });
+      
+      
+    </script>
+  </body>
+</html>

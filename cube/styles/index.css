@@ -64,6 +64,10 @@
       #index .search-nav li.active a {
         background-color: #0050E6;
         color: #fff; }
+  @media screen and (max-width: 1440px) {
+    #index .search-nav li a i {
+      line-height: 1.4;
+      font-size: 32px; } }
   @media screen and (max-width: 991px) {
     #index {
       display: block;
@@ -111,11 +115,11 @@
     font-weight: 300; }
   @media screen and (max-width: 1440px) {
     .home-inner .title {
-      font-size: 46px; } }
+      font-size: 43px;
+      margin-bottom: 0; } }
   @media screen and (max-width: 991px) {
     .home-inner .title {
-      font-size: 40px;
-      margin-bottom: 10px; } }
+      font-size: 40px; } }
   @media screen and (max-width: 600px) {
     .home-inner {
       position: fixed;
@@ -144,9 +148,10 @@
     text-align: left; }
   @media screen and (max-width: 1440px) {
     .search-box {
-      width: 54vw; }
-      .search-box .w80 {
-        width: 52%; } }
+      width: 700px;
+      margin-top: 3vh; }
+      .search-box .btm {
+        padding: 14px; } }
   @media screen and (max-width: 991px) {
     .search-box {
       width: 90vw; }
@@ -233,6 +238,9 @@
         margin-right: 0; }
     .search-box_row .input-select.structure .pure_select_underline:nth-child(2) {
       margin-left: 0; }
+  @media screen and (max-width: 1440px) {
+    .search-box_row .input-select {
+      margin: 8px 10px; } }
   @media screen and (max-width: 600px) {
     .search-box_row {
       -ms-flex-wrap: wrap;
@@ -325,6 +333,9 @@
           -ms-flex: 53%;
               flex: 53%;
       margin-left: 8px; } }
+  @media screen and (max-width: 1440px) {
+    .address-row > *:first-child {
+      margin-left: 10px; } }
   @media screen and (max-width: 600px) {
     .address-row > *:first-child {
       -webkit-box-flex: 110px;
@@ -410,9 +421,9 @@
               flex: 51% 0 0; } }
   @media screen and (min-width: 992px) {
     .price-row > *:last-child {
-      -webkit-box-flex: 51.8%;
-          -ms-flex: 51.8% 0 0px;
-              flex: 51.8% 0 0; } }
+      -webkit-box-flex: 54%;
+          -ms-flex: 54% 0 0px;
+              flex: 54% 0 0; } }
   @media screen and (min-width: 1441px) {
     .price-row > *:last-child {
       -webkit-box-flex: 51.6%;

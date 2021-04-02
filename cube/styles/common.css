@@ -1282,6 +1282,10 @@ img {
   background-color: transparent;
   color: #0050E6; }
 
+.btn-gary {
+  color: #fff;
+  background-color: #909090; }
+
 .btn-gradient {
   color: #fff;
   background: #1A2658;
@@ -4076,6 +4080,9 @@ header:not(#header-web) {
   @media screen and (min-width: 480px) {
     #header .search-btn {
       display: none; } }
+  @media screen and (max-width: 1440px) {
+    #header {
+      padding: 16px 46px 10px; } }
   @media screen and (max-width: 991px) {
     #header {
       -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.16);

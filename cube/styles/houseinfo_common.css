@@ -188,7 +188,7 @@ table {
         opacity: 1; } }
 
 .houseinfo-iframe {
-  padding: 30px 45px 30px 30px; }
+  padding: 30px 60px 30px 48px; }
   .houseinfo-iframe input, .houseinfo-iframe .pure_select_border select {
     width: auto;
     display: inline-block;
