@@ -55,15 +55,15 @@
           <div class="welcome-inner">
             <div class="welcome-item">
               <div class="has_toggle">
-                <div class="welcome-item_icon"><img src="images/cube/welcome-1.svg"></div>
+                <div class="welcome-item_icon"><img src="images/cube/welcome-1.png"></div>
                 <div class="welcome-item_text">找 APPLE 物件</div>
               </div>
               <div class="toggle-inner"><span class="toggle-innerClose"><i class="icon-cancel"></i></span>
                 <form>
                   <div class="l-half">
-                    <div class="l-half_w50 px-20">
+                    <div class="l-half_w50">
                       <div class="form-row _h range-slider">
-                        <div class="form_label" id="confidence">
+                        <div class="form_label mb-20" id="confidence">
                           <label for="amount">估價信心</label>
                           <div class="form-value">
                             <div class="form-value_num" id="confidence_amount"></div>
@@ -72,15 +72,21 @@
                         <div id="confidence_range"></div>
                       </div>
                     </div>
-                    <div class="l-half_w50 px-20">
-                      <div class="form-row _h range-slider">
-                        <div class="form_label" id="totalPrice">
-                          <label for="amount">總價</label>
-                          <div class="form-value">
-                            <div class="form-value_num" id="totalPrice_amount"></div><span class="form-value_unit">萬</span>
+                    <div class="l-half_w50">
+                      <div class="form-row _h range-slider ml-30">
+                        <div class="form_label">
+                          <label class="mb-10" for="amount">預算</label>
+                          <div class="switch-field">
+                            <input id="housePrice-default" type="radio" name="housePrice" value="default" checked="">
+                            <label for="housePrice-default">不限</label>
+                            <input id="housePrice-1" type="radio" name="housePrice" value="3000">
+                            <label for="housePrice-1">3000萬以上</label>
+                            <input id="housePrice-2" type="radio" name="housePrice" value="2000">
+                            <label for="housePrice-2">2000萬以上</label>
+                            <input id="housePrice-3" type="radio" name="housePrice" value="1000">
+                            <label for="housePrice-3">低於1000萬</label>
                           </div>
                         </div>
-                        <div id="totalPrice_range"></div>
                       </div>
                     </div>
                     <div class="search-box_row">
@@ -94,15 +100,15 @@
             </div>
             <div class="welcome-item">
               <div class="has_toggle">
-                <div class="welcome-item_icon"><img src="images/cube/welcome-2.svg"></div>
+                <div class="welcome-item_icon"><img src="images/cube/welcome-2.png"></div>
                 <div class="welcome-item_text">預測房價</div>
               </div>
               <div class="toggle-inner"><span class="toggle-innerClose"><i class="icon-cancel"></i></span>
                 <form>
                   <div class="l-half">
-                    <div class="l-half_w50 px-20">
+                    <div class="l-half_w50">
                       <div class="form-row _h range-slider">
-                        <div class="form_label" id="confidence2">
+                        <div class="form_label mb-20" id="confidence2">
                           <label for="amount">估價信心</label>
                           <div class="form-value">
                             <div class="form-value_num" id="confidence_amount2"></div>
@@ -111,15 +117,21 @@
                         <div id="confidence_range2"></div>
                       </div>
                     </div>
-                    <div class="l-half_w50 px-20">
-                      <div class="form-row _h range-slider">
-                        <div class="form_label" id="totalPrice2">
-                          <label for="amount">總價</label>
-                          <div class="form-value">
-                            <div class="form-value_num" id="totalPrice_amount2"></div><span class="form-value_unit">萬</span>
+                    <div class="l-half_w50">
+                      <div class="form-row _h range-slider ml-30">
+                        <div class="form_label">
+                          <label class="mb-10" for="amount">預算</label>
+                          <div class="switch-field">
+                            <input id="housePrice-default" type="radio" name="housePrice" value="default" checked="">
+                            <label for="housePrice-default">不限</label>
+                            <input id="housePrice-1" type="radio" name="housePrice" value="3000">
+                            <label for="housePrice-1">3000萬以上</label>
+                            <input id="housePrice-2" type="radio" name="housePrice" value="2000">
+                            <label for="housePrice-2">2000萬以上</label>
+                            <input id="housePrice-3" type="radio" name="housePrice" value="1000">
+                            <label for="housePrice-3">低於1000萬</label>
                           </div>
                         </div>
-                        <div id="totalPrice_range2"></div>
                       </div>
                     </div>
                     <div class="search-box_row">
@@ -133,7 +145,7 @@
             </div>
             <div class="welcome-item">
               <div class="has_toggle">
-                <div class="welcome-item_icon"><img src="images/cube/welcome-3.svg"></div>
+                <div class="welcome-item_icon"><img src="images/cube/welcome-3.png"></div>
                 <div class="welcome-item_text">追蹤表現</div>
               </div>
               <div class="toggle-inner px-0"><span class="toggle-innerClose"><i class="icon-cancel"></i></span>
@@ -145,10 +157,10 @@
               </div>
             </div>
             <div class="welcome-item"><a href=""> 
-                <div class="welcome-item_icon"><img src="images/cube/welcome-4.svg"></div>
+                <div class="welcome-item_icon"><img src="images/cube/welcome-4.png"></div>
                 <div class="welcome-item_text">我的合約</div></a></div>
             <div class="welcome-item"><a href=""> 
-                <div class="welcome-item_icon"><img src="images/cube/welcome-5.svg"></div>
+                <div class="welcome-item_icon"><img src="images/cube/welcome-5.png"></div>
                 <div class="welcome-item_text">我的錢包</div></a></div>
           </div>
         </div>
@@ -273,11 +285,14 @@
                   $(this).toggleClass('active').parents().siblings().find('.has_toggle').removeClass('active');
                   $(this).next().toggle().parents().siblings().find('.toggle-inner').hide();
               });
+              $('.toggle-innerClose').click(function(){
+                  $(this).parent().prev().removeClass('active');
+                  $(this).parent().hide();
+              });
           }
       
           if (jQuery(window).width() < 1199) {
               $('.has_toggle').click(function(){
-                  $(this).addClass('active');
                   $(this).next().show();
               });
               $('.toggle-innerClose').click(function(){
